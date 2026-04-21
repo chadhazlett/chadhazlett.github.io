@@ -9,6 +9,28 @@ projects.
 ::: {.card-grid}
 
 ::: {.card}
+### sensemakr
+
+**Sensitivity analysis tools for regression results to unobserved
+confounding.** Implements the methods in
+[Cinelli & Hazlett (2020, JRSS B)](https://doi.org/10.1111/rssb.12348):
+robustness value, bias-adjusted estimates, contour plots, extreme-scenario
+bounds. Maintained by
+[Carlos Cinelli](https://carloscinelli.com); see his
+[documentation site](https://carloscinelli.com/sensemakr/) for
+illustrations and demos.
+
+[Website →](https://carloscinelli.com/sensemakr/) •
+[GitHub →](https://github.com/carloscinelli/sensemakr) •
+[CRAN →](https://cran.r-project.org/package=sensemakr) •
+Stata: `ssc install sensemakr`
+
+::: {.meta}
+R / Stata • Sensitivity analysis
+:::
+:::
+
+::: {.card}
 ### KBAL
 
 **Kernel balancing** for estimating causal effects and population-level
@@ -17,10 +39,15 @@ means of features in a reproducing-kernel Hilbert space — a nonparametric
 analog to entropy balancing that degrades gracefully under
 misspecification.
 
+Includes the `kpop()` wrapper for survey reweighting, implementing the
+method in Hartman, Hazlett & Sterbenz (2024), *Kpop: A kernel balancing
+approach for reducing specification assumptions in survey weighting*,
+[JRSS A](https://doi.org/10.1093/jrsssa/qnae082).
+
 [GitHub →](https://github.com/chadhazlett/KBAL)
 
 ::: {.meta}
-R • Causal inference, balancing
+R • Causal inference, balancing, survey weighting
 :::
 :::
 
@@ -45,10 +72,14 @@ R • With Doeun Kim
 one pre-treatment and one post-treatment period are observed, using
 stability-of-trend assumptions instead of parallel trends.
 
-[GitHub →](https://github.com/chadhazlett/scqe)
+A companion **browser-based app** lets you run SCQE on aggregate data with
+no R setup — useful for quick exploration and teaching.
+
+[R package →](https://github.com/chadhazlett/scqe) •
+[Web app →](https://amiwulf.shinyapps.io/SCQE_demo/)
 
 ::: {.meta}
-R • Panel causal inference
+R / Shiny • Panel causal inference
 :::
 :::
 
