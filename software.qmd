@@ -102,6 +102,31 @@ R / Shiny • Panel causal inference
 :::
 
 ::: {.card}
+### KRLS
+
+**Kernel Regularized Least Squares.** A flexible nonparametric regression
+that relaxes the linearity assumption while staying interpretable: coefficients
+have the familiar marginal-effect interpretation, and results degrade
+gracefully under misspecification. Widely used as a machine-learning
+alternative to OLS in political science and policy analysis.
+
+Implements the method in Hainmueller & Hazlett (2014),
+[Political Analysis](https://doi.org/10.1093/pan/mpt019). The Stata port
+is described in Ferwerda, Hainmueller & Hazlett (2015), *Journal of
+Statistical Software*.
+
+Install in R with `install.packages("KRLS")`, or in Stata with
+`ssc install krls`.
+
+[CRAN →](https://cran.r-project.org/package=KRLS) •
+[GitHub →](https://github.com/chadhazlett/KRLS)
+
+::: {.meta}
+R / Stata • With Jens Hainmueller
+:::
+:::
+
+::: {.card}
 ### CBPS
 
 **Covariate Balancing Propensity Score**. Contributor to the R package
