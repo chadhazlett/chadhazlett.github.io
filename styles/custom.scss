@@ -65,6 +65,25 @@ code, pre, kbd, samp {
   opacity: 0.85;
 }
 
+// Publications page — year headings
+.pub-year-heading {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.pub-year-heading:first-child {
+  margin-top: 0.5rem;
+}
+
+.pub-year-section .csl-entry {
+  margin-bottom: 0.6rem;
+}
+
 // Print: CV page etc.
 @media print {
   .navbar, .nav-footer, .sidebar { display: none !important; }

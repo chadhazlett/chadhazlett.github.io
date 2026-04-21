@@ -1,32 +1,63 @@
 ---
 title: "Publications"
+nocite: |
+  @*
 ---
 
-A full list of my papers is maintained on
+The list below reflects my [April 2025 CV](assets/cv_hazlett_april2025.pdf)
+plus more recent working papers visible on
 [Google Scholar](https://scholar.google.com/citations?user=pbD0dGwAAAAJ).
-This page mirrors that list, grouped by year. If you'd prefer the PDF list,
-it's on my [CV](cv.qmd).
+Entries marked *Working paper* are in progress, under review, or recently
+posted.
 
-::: {.callout-note collapse=true}
-## About this list
-
-The entries below are auto-generated from my master bibliography file
-(`references.bib`). If something looks out of date, please let me know —
-the list is rebuilt on every push.
-:::
-
-```{=html}
-<!-- Publications render from references.bib via nocite: "@*" below. -->
-```
-
-## All publications
+If something looks wrong or out of date, please
+[let me know](mailto:chazlett@stat.ucla.edu) — the list rebuilds
+automatically from [`references.bib`](https://github.com/chadhazlett/chadhazlett.github.io/blob/main/references.bib).
 
 ---
 
 ::: {#refs}
 :::
 
----
-nocite: |
-  @*
----
+```{=html}
+<script>
+// Group the #refs bibliography by year (descending) and insert year headings.
+// Runs client-side after Quarto's citeproc has populated #refs.
+document.addEventListener('DOMContentLoaded', function () {
+  const refs = document.getElementById('refs');
+  if (!refs) return;
+
+  const entries = Array.from(refs.querySelectorAll('.csl-entry'));
+  if (entries.length === 0) return;
+
+  const groups = new Map();
+  for (const entry of entries) {
+    const text = entry.textContent;
+    const m = text.match(/\((\d{4})\)/) || text.match(/\b(19\d{2}|20\d{2})\b/);
+    const year = m ? m[1] : 'Undated';
+    if (!groups.has(year)) groups.set(year, []);
+    groups.get(year).push(entry);
+  }
+
+  const years = Array.from(groups.keys()).sort(function (a, b) {
+    if (a === 'Undated') return 1;
+    if (b === 'Undated') return -1;
+    return parseInt(b, 10) - parseInt(a, 10);
+  });
+
+  // Preserve the refs container; swap in year-grouped content
+  while (refs.firstChild) refs.removeChild(refs.firstChild);
+  for (const year of years) {
+    const h2 = document.createElement('h2');
+    h2.className = 'pub-year-heading';
+    h2.textContent = year;
+    refs.appendChild(h2);
+
+    const section = document.createElement('div');
+    section.className = 'references csl-bib-body hanging-indent pub-year-section';
+    for (const entry of groups.get(year)) section.appendChild(entry);
+    refs.appendChild(section);
+  }
+});
+</script>
+```
