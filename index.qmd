@@ -18,7 +18,7 @@ about:
       text: Google Scholar
       href: https://scholar.google.com/citations?user=pbD0dGwAAAAJ
     - icon: journal-bookmark
-      text: Practically Causal
+      text: Practical Causal Inference
       href: https://practicallycausal.com
 ---
 
@@ -40,7 +40,7 @@ I work on three connected methodological threads:
 
 I apply these tools to questions in political violence and mass atrocity
 prevention, environmental and health policy, and medicine. I co-direct the
-[Practically Causal](https://practicallycausal.com) group with
+[Practical Causal Inference lab](https://practicallycausal.com) with
 [Onyebuchi Arah](https://ph.ucla.edu/about/faculty-staff-directory/onyebuchi-arah),
 and the [Early Warning Project](https://earlywarningproject.ushmm.org/)'s
 statistical risk assessment with the

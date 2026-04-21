@@ -4,7 +4,7 @@ title: "Teaching"
 
 I teach graduate courses in causal inference and machine learning for the
 social sciences at UCLA, and co-lead the
-[Practically Causal](https://practicallycausal.com) educational initiative.
+[Practical Causal Inference lab](https://practicallycausal.com).
 
 ## Current courses (Spring 2026)
 
@@ -46,8 +46,8 @@ UCLA Statistics • PhD
 
 ## Broader causal inference resources
 
-The [Practically Causal](https://practicallycausal.com) site, which I
-co-direct with [Onyebuchi Arah](https://ph.ucla.edu/about/faculty-staff-directory/onyebuchi-arah),
+The [Practical Causal Inference lab](https://practicallycausal.com) site,
+which I co-direct with [Onyebuchi Arah](https://ph.ucla.edu/about/faculty-staff-directory/onyebuchi-arah),
 hosts:
 
 - getting-started guides aimed at applied researchers,
