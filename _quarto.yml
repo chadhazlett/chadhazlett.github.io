@@ -38,9 +38,7 @@ website:
 
 format:
   html:
-    theme:
-      dark:  [darkly, styles/theme-dark.scss, styles/custom.scss]
-      light: [flatly, styles/theme-light.scss, styles/custom.scss]
+    theme: [sandstone, styles/theme-sandstone.scss, styles/custom.scss]
     css: styles/custom.scss
     toc: true
     toc-location: right

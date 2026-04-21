@@ -2,11 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
-$link-color:        #5E81AC;
+// Sandstone overrides — keep Nord blue for link consistency with card/pub styles
+$link-color:        #3f6a92;
 $link-hover-color:  darken($link-color, 10%);
-$body-color:        #2e3440;
+$body-color:        #3e3f3a;
+$body-bg:           #f8f5f0;      // warm cream
 $headings-font-weight: 600;
-$navbar-bg:         #2e3440;
+
+// Subtle accent panels a shade warmer than body
+$panel-bg:          #f1ece1;
 
 /*-- scss:rules --*/
 
@@ -17,11 +21,6 @@ $navbar-bg:         #2e3440;
 
 h1, h2, h3, h4 {
   letter-spacing: -0.01em;
-}
-
-.hero {
-  border-top: 2px solid $link-color;
-  padding-top: 2rem;
 }
 
 hr {

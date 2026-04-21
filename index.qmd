@@ -2,50 +2,123 @@
 title: "Chad Hazlett"
 pagetitle: "Chad Hazlett"
 toc: false
-about:
-  template: trestles
-  image: assets/headshot.jpg
-  image-shape: round
-  image-width: 14em
-  links:
-    - icon: envelope
-      text: Email
-      href: mailto:chazlett@stat.ucla.edu
-    - icon: github
-      text: GitHub
-      href: https://github.com/chadhazlett
-    - icon: mortarboard-fill
-      text: Google Scholar
-      href: https://scholar.google.com/citations?user=pbD0dGwAAAAJ
-    - icon: journal-bookmark
-      text: Practical Causal Inference
-      href: https://practicallycausal.com
+page-layout: full
+include-in-header:
+  - text: |
+      <meta name="description" content="Chad Hazlett — Professor of Political Science and Statistics at UCLA. Causal inference methods for politics, policy, and medicine.">
 ---
 
-I am a faculty member at UCLA, jointly appointed in the Departments of
-[Political Science](https://polisci.ucla.edu/person/chad-hazlett/) and
-[Statistics & Data Science](https://statistics.ucla.edu/).
+```{=html}
+<section class="hero">
+  <div class="hero-inner">
+    <img src="assets/headshot.jpg" alt="Chad Hazlett" class="hero-photo">
+    <div class="hero-text">
+      <h1>Chad Hazlett</h1>
+      <p class="hero-title">Professor of Political Science and Statistics, UCLA</p>
+      <p class="hero-strap">Causal inference methods for hard questions in politics, policy, and medicine.</p>
+      <div class="hero-ctas">
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="software.html">Software</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="cv.html">CV</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-My research develops methods for causal inference — tools that let us learn
-honestly from data when randomized experiments are impossible or impractical.
-I work on three connected methodological threads:
+<section class="featured-section">
+  <h2>Featured work</h2>
+  <div id="featured-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="featured-paper">
+          <h3>Making sense of sensitivity: Extending omitted variable bias</h3>
+          <p class="lead">A general, interpretable framework for asking <em>how much</em> unobserved confounding would have to exist to overturn a result — now the standard tool for honest observational-studies reporting.</p>
+          <p class="meta">Cinelli &amp; Hazlett · <em>JRSS B</em> · 2020</p>
+          <a href="https://doi.org/10.1111/rssb.12348" target="_blank" rel="noopener" class="btn btn-outline-primary">Read →</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="featured-paper">
+          <h3>kpop: A kernel balancing approach for survey weighting</h3>
+          <p class="lead">Weights non-representative survey samples to match population targets in a reproducing-kernel space — reducing the specification assumptions practitioners usually have to defend.</p>
+          <p class="meta">Hartman, Hazlett &amp; Sterbenz · <em>JRSS A</em> · 2024</p>
+          <a href="https://doi.org/10.1093/jrsssa/qnae082" target="_blank" rel="noopener" class="btn btn-outline-primary">Read →</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="featured-paper">
+          <h3>Wildfire exposure increases pro-environment voting</h3>
+          <p class="lead">A natural-experiment study of how climate-related hazards reshape political behavior — and where partisanship still dominates.</p>
+          <p class="meta">Hazlett &amp; Mildenberger · <em>APSR</em> · 2020</p>
+          <a href="https://doi.org/10.1017/S0003055420000441" target="_blank" rel="noopener" class="btn btn-outline-primary">Read →</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="featured-paper">
+          <h3>From "is it unconfounded?" to "how much confounding would it take?"</h3>
+          <p class="lead">A sensitivity-based alternative to binary debates over causal identification in observational social science — applied to support for peace in Colombia.</p>
+          <p class="meta">Hazlett &amp; Parente · <em>Journal of Politics</em> · 2023</p>
+          <a href="https://doi.org/10.1086/723995" target="_blank" rel="noopener" class="btn btn-outline-primary">Read →</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="featured-paper">
+          <h3>Covariate balancing propensity score for a continuous treatment</h3>
+          <p class="lead">Extends CBPS beyond binary treatments — estimating effects of variables like exposure intensity or ad spending without heroic parametric assumptions.</p>
+          <p class="meta">Fong, Hazlett &amp; Imai · <em>Annals of Applied Statistics</em> · 2018</p>
+          <a href="https://doi.org/10.1214/17-aoas1101" target="_blank" rel="noopener" class="btn btn-outline-primary">Read →</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="featured-paper">
+          <h3>Safe learning outside randomized trials: SCQE for COVID-19 therapies</h3>
+          <p class="lead">Bounds the effects of remdesivir, hydroxychloroquine, and dexamethasone using only a plausible assumption about baseline trends — demonstrating how SCQE could have informed safe decisions before RCTs completed.</p>
+          <p class="meta">Wulf, Hazlett, et al. · <em>Observational Studies</em> · 2025</p>
+          <a href="https://doi.org/10.1353/obs.2025.a973069" target="_blank" rel="noopener" class="btn btn-outline-primary">Read →</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#featured-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#featured-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
 
-- **Identification strategies** that clarify what assumptions are doing the
-  work, and what we can and can't conclude when they fail.
-- **Sensitivity analyses** that let researchers communicate honestly about
-  how much their conclusions depend on those assumptions.
-- **Estimation and modeling tools** — kernel-based regression, balancing
-  methods, and related techniques — that relax functional-form assumptions
-  without giving up interpretability.
-
-I apply these tools to questions in political violence and mass atrocity
-prevention, environmental and health policy, and medicine. I co-direct the
-[Practical Causal Inference lab](https://practicallycausal.com) with
-[Onyebuchi Arah](https://ph.ucla.edu/about/faculty-staff-directory/onyebuchi-arah),
-and the [Early Warning Project](https://earlywarningproject.ushmm.org/)'s
-statistical risk assessment with the
-[US Holocaust Memorial Museum](https://www.ushmm.org/).
-
-See the [Research](research.qmd), [Publications](publications.qmd),
-[Teaching](teaching.qmd), and [Software](software.qmd) pages for more, or
-download my [CV](cv.qmd).
+<nav class="home-blocks" aria-label="Site sections">
+  <a class="block" href="research.html">
+    <h3>Research</h3>
+    <p>Identification strategies, sensitivity analysis, and flexible estimation — applied to civil violence, environment, and medicine.</p>
+    <span class="more">More →</span>
+  </a>
+  <a class="block" href="teaching.html">
+    <h3>Teaching</h3>
+    <p>PS 200C (Political Science) and Stat 256 (Statistics) — graduate causal inference at UCLA.</p>
+    <span class="more">More →</span>
+  </a>
+  <a class="block" href="software.html">
+    <h3>Software</h3>
+    <p>R packages: <code>sensemakr</code>, <code>KBAL</code> / <code>kpop</code>, <code>scqe</code>, <code>KRLS</code>, and more.</p>
+    <span class="more">More →</span>
+  </a>
+  <a class="block" href="https://practicallycausal.com" target="_blank" rel="noopener">
+    <h3>Practical Causal Inference lab</h3>
+    <p>A research and training hub for applied causal inference, co-directed with Onyebuchi Arah.</p>
+    <span class="more">Visit →</span>
+  </a>
+</nav>
+```
