@@ -13,7 +13,7 @@ Click **Abstract** under any entry to expand.
 ::: {.pub}
 Rohde, A., & Hazlett, C. Causal progress with imperfect placebo treatments and outcomes. *Revise and Resubmit, Journal of the Royal Statistical Society: A*.
 
-<span class="pub-links"><a href="https://arxiv.org/abs/2310.15266" target="_blank" rel="noopener">arXiv</a></span>
+<span class="pub-links"><a href="https://arxiv.org/abs/2310.15266" target="_blank" rel="noopener">arXiv</a> · <a href="assets/papers/rohde_hazlett_placebo_arxiv.pdf" target="_blank" rel="noopener">PDF</a></span>
 :::
 
 ::: {.pub}
