@@ -37,6 +37,7 @@ include-in-header:
       <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
       <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
       <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -73,18 +74,24 @@ include-in-header:
       </div>
       <div class="carousel-item">
         <div class="featured-paper">
-          <h3>Covariate balancing propensity score for a continuous treatment</h3>
-          <p class="lead">Extends CBPS beyond binary treatments — estimating effects of variables like exposure intensity or ad spending without heroic parametric assumptions.</p>
-          <p class="meta">Fong, Hazlett &amp; Imai · <em>Annals of Applied Statistics</em> · 2018</p>
-          <a href="https://doi.org/10.1214/17-aoas1101" target="_blank" rel="noopener" class="btn btn-outline-primary">Read →</a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="featured-paper">
           <h3>Safe learning outside randomized trials: SCQE for COVID-19 therapies</h3>
           <p class="lead">Bounds the effects of remdesivir, hydroxychloroquine, and dexamethasone using only a plausible assumption about baseline trends — demonstrating how SCQE could have informed safe decisions before RCTs completed.</p>
           <p class="meta">Wulf, Hazlett, et al. · <em>Observational Studies</em> · 2025</p>
           <a href="https://doi.org/10.1353/obs.2025.a973069" target="_blank" rel="noopener" class="btn btn-outline-primary">Read →</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="featured-paper">
+          <h3>Seeing like a district: What close-election designs for leader characteristics can and cannot tell us</h3>
+          <p class="lead">Clarifies what the popular close-election regression discontinuity can — and cannot — identify when researchers use it to study how leader traits shape policy and conflict.</p>
+          <p class="meta">Bertoli &amp; Hazlett · <em>Political Analysis</em> · Forthcoming</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="featured-paper">
+          <h3>Inference at the data's edge: Gaussian processes for extrapolation uncertainty</h3>
+          <p class="lead">Uses Gaussian-process regression to make model-dependency visible — quantifying rather than masking the uncertainty that arises when we extrapolate beyond well-supported regions of covariate space.</p>
+          <p class="meta">Hazlett · Working paper</p>
         </div>
       </div>
     </div>
