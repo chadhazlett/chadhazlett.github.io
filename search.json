@@ -32,7 +32,7 @@
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "I teach graduate courses in causal inference and machine learning for the social sciences at UCLA, and co-lead the Practically Causal educational initiative."
+    "text": "I teach graduate courses in causal inference and machine learning for the social sciences at UCLA, and co-lead the Practical Causal Inference lab."
   },
   {
     "objectID": "teaching.html#current-courses-spring-2026",
@@ -46,7 +46,7 @@
     "href": "teaching.html#broader-causal-inference-resources",
     "title": "Teaching",
     "section": "Broader causal inference resources",
-    "text": "Broader causal inference resources\nThe Practically Causal site, which I co-direct with Onyebuchi Arah, hosts:\n\ngetting-started guides aimed at applied researchers,\nshort courses and tutorials on specific methods (sensitivity, balancing, kernel methods, etc.),\na directory of software and companion materials.\n\nIf you’re a researcher looking to adopt causal methods in your own work without committing to a full graduate course, that’s the best starting point."
+    "text": "Broader causal inference resources\nThe Practical Causal Inference lab site, which I co-direct with Onyebuchi Arah, hosts:\n\ngetting-started guides aimed at applied researchers,\nshort courses and tutorials on specific methods (sensitivity, balancing, kernel methods, etc.),\na directory of software and companion materials.\n\nIf you’re a researcher looking to adopt causal methods in your own work without committing to a full graduate course, that’s the best starting point."
   },
   {
     "objectID": "teaching.html#past-courses",
@@ -102,6 +102,6 @@
     "href": "index.html",
     "title": "Chad Hazlett",
     "section": "",
-    "text": "I am a faculty member at UCLA, jointly appointed in the Departments of Political Science and Statistics & Data Science.\nMy research develops methods for causal inference — tools that let us learn honestly from data when randomized experiments are impossible or impractical. I work on three connected methodological threads:\n\nIdentification strategies that clarify what assumptions are doing the work, and what we can and can’t conclude when they fail.\nSensitivity analyses that let researchers communicate honestly about how much their conclusions depend on those assumptions.\nEstimation and modeling tools — kernel-based regression, balancing methods, and related techniques — that relax functional-form assumptions without giving up interpretability.\n\nI apply these tools to questions in political violence and mass atrocity prevention, environmental and health policy, and medicine. I co-direct the Practically Causal group with Onyebuchi Arah, and the Early Warning Project’s statistical risk assessment with the US Holocaust Memorial Museum.\nSee the Research, Publications, Teaching, and Software pages for more, or download my CV."
+    "text": "I am a faculty member at UCLA, jointly appointed in the Departments of Political Science and Statistics & Data Science.\nMy research develops methods for causal inference — tools that let us learn honestly from data when randomized experiments are impossible or impractical. I work on three connected methodological threads:\n\nIdentification strategies that clarify what assumptions are doing the work, and what we can and can’t conclude when they fail.\nSensitivity analyses that let researchers communicate honestly about how much their conclusions depend on those assumptions.\nEstimation and modeling tools — kernel-based regression, balancing methods, and related techniques — that relax functional-form assumptions without giving up interpretability.\n\nI apply these tools to questions in political violence and mass atrocity prevention, environmental and health policy, and medicine. I co-direct the Practical Causal Inference lab with Onyebuchi Arah, and the Early Warning Project’s statistical risk assessment with the US Holocaust Memorial Museum.\nSee the Research, Publications, Teaching, and Software pages for more, or download my CV."
   }
 ]
