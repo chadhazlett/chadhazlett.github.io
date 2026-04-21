@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4f6e8e39d58fc27844bbea688e7b8f02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5b0ba4820bea0a97778af8e184c9f2e6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -197,13 +197,13 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="pub">
 <p>Cho, S., Kim, D., &amp; Hazlett, C. (2026). Inference at the Data’s Edge: Gaussian Processes for Estimation and Inference in the Face of Extrapolation Uncertainty. <em>Political Analysis</em>, 1–20.</p>
-<p><span class="pub-links"><a href="https://doi.org/10.1017/pan.2026.10032" target="_blank" rel="noopener">DOI</a></span></p>
+<p><span class="pub-links"><a href="https://doi.org/10.1017/pan.2026.10032" target="_blank" rel="noopener">DOI</a> · <a href="assets/papers/cho_kim_hazlett_2026_political_analysis.pdf" target="_blank" rel="noopener">PDF</a></span></p>
 <details class="pub-abstract">
 <summary>
 Abstract
 </summary>
 <div class="pub-abstract-body">
-<p>The Gaussian Process (GP) combines a highly flexible non-linear regression approach with rigorous handling of uncertainty. A key feature of this approach is that, while it can be used to produce a conditional expectation function representing the mode of a posterior conditional distribution, it does not “choose a particular model fit” and construct uncertainty estimates conditional on putting full faith in that model. This is valuable because the uncertainty estimates reflect the lesser knowledge we have at locations near, at, or beyond the edge of the observed data, where results from other approaches would become highly model-dependent. We first offer an accessible explanation of GPs, and provide an implementation more suitable to social science inference problems, which reduces the number of user-chosen hyperparameters from three to zero. We then illustrate the settings in which GPs can be most valuable: those where conventional approaches have poor properties due to model-dependency / extrapolation in data-sparse regions. Specifically, we demonstrate the usefulness of GPs in contexts where (i) treated and control groups have poor covariate overlap; (ii) regression discontinuity, which depends on model estimates taken at or just beyond the edge of their supporting data; and (iii) interrupted time-series designs, where models are fitted prior to an event but extrapolated after it.</p>
+<p>Many inferential tasks involve fitting models to observed data and predicting outcomes at new covariate values, requiring interpolation or extrapolation. Conventional methods select a single best-fitting model, discarding fits that were similarly plausible in-sample but would yield sharply different predictions out-of-sample. Gaussian processes (GPs) offer a principled alternative. Rather than committing to one conditional expectation function, GPs deliver a posterior distribution over outcomes at any covariate value. This posterior effectively retains the range of models consistent with the data, widening uncertainty intervals where extrapolation magnifies divergence. In this way, the GP’s uncertainty estimates reflect the implications of extrapolation on our predictions, helping to tame the “dangers of extreme counterfactuals” (King and Zeng, 2006). The approach requires (i) specifying a covariance function linking outcome similarity to covariate similarity and (ii) assuming Gaussian noise around the conditional expectation. We provide an accessible introduction to GPs with emphasis on this property, along with a simple, automated procedure for hyperparameter selection implemented in the R package <code>gpss</code>. We illustrate the value of GPs for capturing counterfactual uncertainty in three settings: (i) treatment effect estimation with poor overlap, (ii) interrupted time series requiring extrapolation beyond pre-intervention data, and (iii) regression discontinuity designs where estimates hinge on boundary behavior.</p>
 </div>
 </details>
 </div>
