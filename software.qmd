@@ -20,10 +20,12 @@ bounds. Maintained by
 [documentation site](https://carloscinelli.com/sensemakr/) for
 illustrations and demos.
 
+Install in R with `install.packages("sensemakr")`, or in Stata with
+`ssc install sensemakr`.
+
 [Website →](https://carloscinelli.com/sensemakr/) •
-[GitHub →](https://github.com/carloscinelli/sensemakr) •
 [CRAN →](https://cran.r-project.org/package=sensemakr) •
-Stata: `ssc install sensemakr`
+[GitHub →](https://github.com/carloscinelli/sensemakr)
 
 ::: {.meta}
 R / Stata • Sensitivity analysis
@@ -44,6 +46,9 @@ method in Hartman, Hazlett & Sterbenz (2024), *Kpop: A kernel balancing
 approach for reducing specification assumptions in survey weighting*,
 [JRSS A](https://doi.org/10.1093/jrsssa/qnae082).
 
+Install with `install.packages("kbal")`.
+
+[CRAN →](https://cran.r-project.org/package=kbal) •
 [GitHub →](https://github.com/chadhazlett/KBAL)
 
 ::: {.meta}
@@ -64,7 +69,10 @@ from three to zero, with convenience functions for regression discontinuity
 Implements the method in Cho, Kim & Hazlett (2026), *Inference at the Data's
 Edge*, [Political Analysis](https://doi.org/10.1017/pan.2026.10032).
 
+Install with `install.packages("gpss")`.
+
 [Website →](https://doeunkim.org/gpss/) •
+[CRAN →](https://cran.r-project.org/package=gpss) •
 [GitHub →](https://github.com/doeun-kim/gpss)
 
 ::: {.meta}
@@ -82,8 +90,11 @@ stability-of-trend assumptions instead of parallel trends.
 A companion **browser-based app** lets you run SCQE on aggregate data with
 no R setup — useful for quick exploration and teaching.
 
-[R package →](https://github.com/chadhazlett/scqe) •
-[Web app →](https://amiwulf.shinyapps.io/SCQE_demo/)
+Install with `install.packages("scqe")`.
+
+[Web app →](https://amiwulf.shinyapps.io/SCQE_demo/) •
+[CRAN →](https://cran.r-project.org/package=scqe) •
+[GitHub →](https://github.com/chadhazlett/scqe)
 
 ::: {.meta}
 R / Shiny • Panel causal inference
@@ -98,8 +109,10 @@ implementing propensity score estimation that simultaneously models
 treatment and balances covariates — including extensions to continuous
 treatments.
 
-[GitHub →](https://github.com/kosukeimai/CBPS) •
-[CRAN →](https://cran.r-project.org/package=CBPS)
+Install with `install.packages("CBPS")`.
+
+[CRAN →](https://cran.r-project.org/package=CBPS) •
+[GitHub →](https://github.com/kosukeimai/CBPS)
 
 ::: {.meta}
 R • With Fong, Imai, Ratkovic
