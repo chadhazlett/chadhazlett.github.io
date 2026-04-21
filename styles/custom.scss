@@ -65,8 +65,87 @@ code, pre, kbd, samp {
   opacity: 0.85;
 }
 
+// Publications page — paper entries
+.pub {
+  margin-bottom: 1.25rem;
+}
+
+.pub .pub-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.6rem;
+  margin-top: 0.25rem;
+  font-size: 0.88em;
+  align-items: baseline;
+}
+
+.pub .pub-links a,
+.pub .pub-abstract-toggle {
+  display: inline-block;
+  padding: 0.12rem 0.55rem;
+  border: 1px solid rgba(128, 128, 128, 0.35);
+  border-radius: 999px;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.85;
+  cursor: pointer;
+  transition: opacity 0.15s ease, border-color 0.15s ease;
+}
+
+.pub .pub-links a:hover,
+.pub .pub-abstract-toggle:hover {
+  opacity: 1;
+  border-color: #5E81AC;
+}
+
+.pub details.pub-abstract {
+  margin-top: 0.4rem;
+}
+
+.pub details.pub-abstract > summary {
+  display: inline-block;
+  padding: 0.12rem 0.55rem;
+  border: 1px solid rgba(128, 128, 128, 0.35);
+  border-radius: 999px;
+  font-size: 0.88em;
+  opacity: 0.85;
+  cursor: pointer;
+  list-style: none;
+  transition: opacity 0.15s ease, border-color 0.15s ease;
+}
+
+.pub details.pub-abstract > summary::-webkit-details-marker {
+  display: none;
+}
+
+.pub details.pub-abstract > summary::before {
+  content: "▸ ";
+  display: inline-block;
+  width: 0.9em;
+  transition: transform 0.15s ease;
+}
+
+.pub details.pub-abstract[open] > summary::before {
+  content: "▾ ";
+}
+
+.pub details.pub-abstract > summary:hover {
+  opacity: 1;
+  border-color: #5E81AC;
+}
+
+.pub details.pub-abstract > .pub-abstract-body {
+  margin: 0.6rem 0 0;
+  padding: 0.6rem 0.9rem;
+  border-left: 2px solid rgba(94, 129, 172, 0.6);
+  background: rgba(128, 128, 128, 0.05);
+  font-size: 0.96em;
+  line-height: 1.55;
+}
+
 // Print: CV page etc.
 @media print {
   .navbar, .nav-footer, .sidebar { display: none !important; }
   body { color: #000; background: #fff; }
+  .pub details.pub-abstract { display: none; }
 }
