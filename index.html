@@ -38,13 +38,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-545e312ed5f9e120d6e9b5e6d18067b7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-60e1437b7f40ccdbf1b4d64fd6777f45.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-8a9b1ab0bf54ce890453f4e131a8f858.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,172 +72,13 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<meta name="description" content="Chad Hazlett — Professor of Political Science and Statistics at UCLA. Causal inference methods for politics, policy, and medicine.">
 
 
 <link rel="stylesheet" href="styles/custom.scss">
 </head>
 
-<body class="nav-fixed fullcontent quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = true;
-    const darkModeDefault = authorPrefersDark;
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -293,78 +133,162 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="assets/headshot.jpg" class="about-image
-  round " style="height: 14em; width: 14em;">
+<main class="content column-page" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Chad Hazlett</h1>
 </div>
-<div class="quarto-title-meta">
+
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
   </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="mailto:chazlett@stat.ucla.edu" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-  <a href="https://github.com/chadhazlett" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="https://scholar.google.com/citations?user=pbD0dGwAAAAJ" class="about-link" rel="" target="">
-    <i class="bi bi-mortarboard-fill"></i>
-     <span class="about-link-text">Google Scholar</span>
-  </a>
-  <a href="https://practicallycausal.com" class="about-link" rel="" target="">
-    <i class="bi bi-journal-bookmark"></i>
-     <span class="about-link-text">Practical Causal Inference</span>
-  </a>
-</div>
+
+
+<section class="hero">
+  <div class="hero-inner">
+    <img src="assets/headshot.jpg" alt="Chad Hazlett" class="hero-photo">
+    <div class="hero-text">
+      <h1>Chad Hazlett</h1>
+      <p class="hero-title">Professor of Political Science and Statistics, UCLA</p>
+      <p class="hero-strap">Causal inference methods for hard questions in politics, policy, and medicine.</p>
+      <div class="hero-ctas">
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="software.html">Software</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="cv.html">CV</a>
+      </div>
+    </div>
   </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
+</section>
 
-<p>I am a faculty member at UCLA, jointly appointed in the Departments of <a href="https://polisci.ucla.edu/person/chad-hazlett/">Political Science</a> and <a href="https://statistics.ucla.edu/">Statistics &amp; Data Science</a>.</p>
-<p>My research develops methods for causal inference — tools that let us learn honestly from data when randomized experiments are impossible or impractical. I work on three connected methodological threads:</p>
-<ul>
-<li><strong>Identification strategies</strong> that clarify what assumptions are doing the work, and what we can and can’t conclude when they fail.</li>
-<li><strong>Sensitivity analyses</strong> that let researchers communicate honestly about how much their conclusions depend on those assumptions.</li>
-<li><strong>Estimation and modeling tools</strong> — kernel-based regression, balancing methods, and related techniques — that relax functional-form assumptions without giving up interpretability.</li>
-</ul>
-<p>I apply these tools to questions in political violence and mass atrocity prevention, environmental and health policy, and medicine. I co-direct the <a href="https://practicallycausal.com">Practical Causal Inference lab</a> with <a href="https://ph.ucla.edu/about/faculty-staff-directory/onyebuchi-arah">Onyebuchi Arah</a>, and the <a href="https://earlywarningproject.ushmm.org/">Early Warning Project</a>’s statistical risk assessment with the <a href="https://www.ushmm.org/">US Holocaust Memorial Museum</a>.</p>
-<p>See the <a href="./research.html">Research</a>, <a href="./publications.html">Publications</a>, <a href="./teaching.html">Teaching</a>, and <a href="./software.html">Software</a> pages for more, or download my <a href="./cv.html">CV</a>.</p>
+<section class="featured-section">
+  <h2 class="anchored">Featured work</h2>
+  <div id="featured-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#featured-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="featured-paper">
+          <h3 class="anchored">Making sense of sensitivity: Extending omitted variable bias</h3>
+          <p class="lead">A general, interpretable framework for asking <em>how much</em> unobserved confounding would have to exist to overturn a result — now the standard tool for honest observational-studies reporting.</p>
+          <p class="meta">Cinelli &amp; Hazlett · <em>JRSS B</em> · 2020</p>
+          <a href="https://doi.org/10.1111/rssb.12348" target="_blank" rel="noopener" class="btn btn-outline-primary">Read →</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="featured-paper">
+          <h3 class="anchored">kpop: A kernel balancing approach for survey weighting</h3>
+          <p class="lead">Weights non-representative survey samples to match population targets in a reproducing-kernel space — reducing the specification assumptions practitioners usually have to defend.</p>
+          <p class="meta">Hartman, Hazlett &amp; Sterbenz · <em>JRSS A</em> · 2024</p>
+          <a href="https://doi.org/10.1093/jrsssa/qnae082" target="_blank" rel="noopener" class="btn btn-outline-primary">Read →</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="featured-paper">
+          <h3 class="anchored">Wildfire exposure increases pro-environment voting</h3>
+          <p class="lead">A natural-experiment study of how climate-related hazards reshape political behavior — and where partisanship still dominates.</p>
+          <p class="meta">Hazlett &amp; Mildenberger · <em>APSR</em> · 2020</p>
+          <a href="https://doi.org/10.1017/S0003055420000441" target="_blank" rel="noopener" class="btn btn-outline-primary">Read →</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="featured-paper">
+          <h3 class="anchored">From "is it unconfounded?" to "how much confounding would it take?"</h3>
+          <p class="lead">A sensitivity-based alternative to binary debates over causal identification in observational social science — applied to support for peace in Colombia.</p>
+          <p class="meta">Hazlett &amp; Parente · <em>Journal of Politics</em> · 2023</p>
+          <a href="https://doi.org/10.1086/723995" target="_blank" rel="noopener" class="btn btn-outline-primary">Read →</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="featured-paper">
+          <h3 class="anchored">Covariate balancing propensity score for a continuous treatment</h3>
+          <p class="lead">Extends CBPS beyond binary treatments — estimating effects of variables like exposure intensity or ad spending without heroic parametric assumptions.</p>
+          <p class="meta">Fong, Hazlett &amp; Imai · <em>Annals of Applied Statistics</em> · 2018</p>
+          <a href="https://doi.org/10.1214/17-aoas1101" target="_blank" rel="noopener" class="btn btn-outline-primary">Read →</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="featured-paper">
+          <h3 class="anchored">Safe learning outside randomized trials: SCQE for COVID-19 therapies</h3>
+          <p class="lead">Bounds the effects of remdesivir, hydroxychloroquine, and dexamethasone using only a plausible assumption about baseline trends — demonstrating how SCQE could have informed safe decisions before RCTs completed.</p>
+          <p class="meta">Wulf, Hazlett, et al. · <em>Observational Studies</em> · 2025</p>
+          <a href="https://doi.org/10.1353/obs.2025.a973069" target="_blank" rel="noopener" class="btn btn-outline-primary">Read →</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#featured-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#featured-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<nav class="home-blocks" aria-label="Site sections">
+  <a class="block" href="research.html">
+    <h3 class="anchored">Research</h3>
+    <p>Identification strategies, sensitivity analysis, and flexible estimation — applied to civil violence, environment, and medicine.</p>
+    <span class="more">More →</span>
+  </a>
+  <a class="block" href="teaching.html">
+    <h3 class="anchored">Teaching</h3>
+    <p>PS 200C (Political Science) and Stat 256 (Statistics) — graduate causal inference at UCLA.</p>
+    <span class="more">More →</span>
+  </a>
+  <a class="block" href="software.html">
+    <h3 class="anchored">Software</h3>
+    <p>R packages: <code>sensemakr</code>, <code>KBAL</code> / <code>kpop</code>, <code>scqe</code>, <code>KRLS</code>, and more.</p>
+    <span class="more">More →</span>
+  </a>
+  <a class="block" href="https://practicallycausal.com" target="_blank" rel="noopener">
+    <h3 class="anchored">Practical Causal Inference lab</h3>
+    <p>A research and training hub for applied causal inference, co-directed with Onyebuchi Arah.</p>
+    <span class="more">Visit →</span>
+  </a>
+</nav>
 
 
-</main></div>
-</div>
- <!-- /main -->
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
