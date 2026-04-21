@@ -19,11 +19,8 @@ renders with Quarto and publishes to the `gh-pages` branch.
 
 ## Updating publications
 
-1. Visit [your Scholar profile](https://scholar.google.com/citations?user=pbD0dGwAAAAJ).
-2. Select all entries, Export → BibTeX → "Export all my articles".
-3. Save over `references.bib`.
-4. (Optional) Tidy: `npx bibtex-tidy --curly --numeric --sort=-year references.bib`
-5. Commit + push.
+`publications.qmd` is plain markdown mirroring the CV. To add an entry,
+edit that file directly, then commit and push. No bib file.
 
 ## Updating CV
 
