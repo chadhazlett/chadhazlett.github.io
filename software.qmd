@@ -54,14 +54,21 @@ R • Causal inference, balancing, survey weighting
 ::: {.card}
 ### gpss
 
-**Generalized propensity score and balancing**. Framework for balancing-
-based estimation with continuous, multi-valued, and mixed treatments,
-plus tools for diagnostics and sensitivity.
+**Gaussian Processes for Social Science.** Non-parametric regression with
+principled uncertainty quantification — the posterior reflects the lesser
+knowledge we have at the edge of or beyond the observed data, where other
+approaches become highly model-dependent. Reduces user-chosen hyperparameters
+from three to zero, with convenience functions for regression discontinuity
+(`gp_rdd()`), interrupted time-series (`gp_its()`), and general GP fitting.
 
+Implements the method in Cho, Kim & Hazlett (2026), *Inference at the Data's
+Edge*, [Political Analysis](https://doi.org/10.1017/pan.2026.10032).
+
+[Website →](https://doeunkim.org/gpss/) •
 [GitHub →](https://github.com/doeun-kim/gpss)
 
 ::: {.meta}
-R • With Doeun Kim
+R • With Soonhong Cho and Doeun Kim
 :::
 :::
 

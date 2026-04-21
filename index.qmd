@@ -91,7 +91,8 @@ include-in-header:
         <div class="featured-paper">
           <h3>Inference at the data's edge: Gaussian processes for extrapolation uncertainty</h3>
           <p class="lead">Uses Gaussian-process regression to make model-dependency visible — quantifying rather than masking the uncertainty that arises when we extrapolate beyond well-supported regions of covariate space.</p>
-          <p class="meta">Hazlett · Working paper</p>
+          <p class="meta">Cho, Kim &amp; Hazlett · <em>Political Analysis</em> · 2026</p>
+          <a href="https://doi.org/10.1017/pan.2026.10032" target="_blank" rel="noopener" class="btn btn-outline-primary">Read →</a>
         </div>
       </div>
     </div>
