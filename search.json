@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "A full list of my papers is maintained on Google Scholar. This page mirrors that list, grouped by year. If you’d prefer the PDF list, it’s on my CV."
+  },
+  {
+    "objectID": "publications.html#all-publications",
+    "href": "publications.html#all-publications",
+    "title": "Publications",
+    "section": "All publications",
+    "text": "All publications\n\n\n\nCinelli, C., & Hazlett, C. (2020). Making sense of sensitivity: Extending omitted variable bias. Journal of the Royal Statistical Society Series B: Statistical Methodology, 82(1), 39–67.\n\n\nFong, C., Hazlett, C., & Imai, K. (2018). Covariate balancing propensity score for a continuous treatment: Application to the efficacy of political advertisements. The Annals of Applied Statistics, 12(1), 156–177.\n\n\nHainmueller, J., & Hazlett, C. (2014). Kernel regularized least squares: Reducing misspecification bias with a flexible and interpretable machine learning approach. Political Analysis, 22(2), 143–168.\n\n\nHazlett, C., & Mildenberger, M. (2020). Wildfire exposure increases pro-environment voting within democratic but not republican areas. American Political Science Review, 114(4), 1359–1365."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "I teach graduate courses in causal inference and machine learning for the social sciences at UCLA, and co-lead the Practically Causal educational initiative."
+  },
+  {
+    "objectID": "teaching.html#current-courses-spring-2026",
+    "href": "teaching.html#current-courses-spring-2026",
+    "title": "Teaching",
+    "section": "Current courses (Spring 2026)",
+    "text": "Current courses (Spring 2026)\n\n\nPS 200C — Causal Inference\nGraduate course for political science PhD students. Covers identification, estimation, and inference for causal effects: potential outcomes, matching and weighting, instrumental variables, regression discontinuity, difference-in-differences, synthetic controls, sensitivity analysis.\nCourse site → • GitHub →\n\nUCLA Political Science • PhD\n\n\n\nStat 256 — Causality\nGraduate statistics course on causality: foundations of causal inference, identification under ignorability, instruments, sensitivity, modern estimation (doubly robust methods, machine-learning-based approaches), and open problems at the methodological frontier.\nCourse site → • GitHub →\n\nUCLA Statistics • PhD"
+  },
+  {
+    "objectID": "teaching.html#broader-causal-inference-resources",
+    "href": "teaching.html#broader-causal-inference-resources",
+    "title": "Teaching",
+    "section": "Broader causal inference resources",
+    "text": "Broader causal inference resources\nThe Practically Causal site, which I co-direct with Onyebuchi Arah, hosts:\n\ngetting-started guides aimed at applied researchers,\nshort courses and tutorials on specific methods (sensitivity, balancing, kernel methods, etc.),\na directory of software and companion materials.\n\nIf you’re a researcher looking to adopt causal methods in your own work without committing to a full graduate course, that’s the best starting point."
+  },
+  {
+    "objectID": "teaching.html#past-courses",
+    "href": "teaching.html#past-courses",
+    "title": "Teaching",
+    "section": "Past courses",
+    "text": "Past courses\nA full list of past teaching is on my CV. Selected course materials from recent years are on GitHub."
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "My current CV (July 2025) is available below.\nDownload CV (PDF)\n\n\n  Your browser can't embed PDFs inline.\n  Download the CV here."
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "R packages I maintain or contribute to. Most implement methods from my papers; a few are infrastructure for collaborative projects.\n\n\nKBAL\nKernel balancing for estimating causal effects and population-level quantities without imposing a parametric outcome model. Balances on the means of features in a reproducing-kernel Hilbert space — a nonparametric analog to entropy balancing that degrades gracefully under misspecification.\nGitHub →\n\nR • Causal inference, balancing\n\n\n\ngpss\nGeneralized propensity score and balancing. Framework for balancing- based estimation with continuous, multi-valued, and mixed treatments, plus tools for diagnostics and sensitivity.\nGitHub →\n\nR • With Doeun Kim\n\n\n\nscqe\nStability Controlled Quasi-Experiment. Bounds causal effects when only one pre-treatment and one post-treatment period are observed, using stability-of-trend assumptions instead of parallel trends.\nGitHub →\n\nR • Panel causal inference\n\n\n\nCBPS\nCovariate Balancing Propensity Score. Contributor to the R package implementing propensity score estimation that simultaneously models treatment and balances covariates — including extensions to continuous treatments.\nGitHub → • CRAN →\n\nR • With Fong, Imai, Ratkovic\n\n\n\nEarlyWarningProject\nStatistical pipeline for the Early Warning Project’s annual forecasts of mass-atrocity risk, in partnership with the US Holocaust Memorial Museum.\nGitHub →\n\nR • Mass atrocity forecasting\n\n\n\nSmaller tools and replication code for specific papers are on my GitHub profile."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My work sits at the intersection of political science, statistics, and applied methodology. I’m motivated by a single question: when the conditions for a clean experiment aren’t available, how can we still learn something honest from the data we have?\nThat question breaks into three methodological threads and several application areas."
+  },
+  {
+    "objectID": "research.html#methodological-threads",
+    "href": "research.html#methodological-threads",
+    "title": "Research",
+    "section": "Methodological threads",
+    "text": "Methodological threads\n\nIdentification strategies\nHow do we translate substantive assumptions into claims the data can speak to? And what do our conclusions become when those assumptions fail? Work here includes dedicated treatments of instrumental-variables-like designs under imperfect conditions, difference-in-differences extensions, and synthetic-control-style estimators tailored to rare, high-stakes outcomes.\n\n\nSensitivity analysis\nEven well-identified analyses rest on assumptions that can’t be fully tested. Sensitivity analysis makes the size of that uncertainty explicit — how strong would unobserved confounding or violations of exchangeability have to be to overturn a conclusion? I’ve contributed tools for sensitivity to omitted variable bias in regression, in instrumental-variable settings, in weighting- and matching-based analyses, and in synthetic-control designs. The goal is to give readers a principled vocabulary for debating results rather than arguing past one another.\n\n\nEstimation and modeling\nMany causal estimators embed strong parametric choices. I work on methods that relax those choices while keeping interpretability: kernel-based regression (KRLS), kernel balancing (KBAL), covariate balancing propensity scores for continuous and multi-valued treatments, and prognostic-score augmented estimators. The emphasis is on making flexible methods safe — well-behaved in small samples, transparent about what they’re doing, and accompanied by honest standard errors."
+  },
+  {
+    "objectID": "research.html#application-areas",
+    "href": "research.html#application-areas",
+    "title": "Research",
+    "section": "Application areas",
+    "text": "Application areas\n\nPolitical violence and mass atrocity prevention\nWith the US Holocaust Memorial Museum I co-lead the Early Warning Project’s statistical risk assessment — annual forecasts of which countries are at heightened risk of mass killing. Related work studies how terrorist attacks reshape domestic coalitions and support for security forces, and how conflict and its aftermath interact with institutional trust.\n\n\nEnvironmental and health policy\nQuestions about wildfire exposure and climate attitudes, air pollution and mortality, and evaluating state-level policies (e.g., firearm regulations, treatment-access laws) where randomized experiments are impossible.\n\n\nMedicine\nCollaborations with medical colleagues on causal questions in clinical data — from immunotherapy response to treatment sequencing — where small samples and rich covariates demand flexible, interpretable methods."
+  },
+  {
+    "objectID": "research.html#get-in-touch",
+    "href": "research.html#get-in-touch",
+    "title": "Research",
+    "section": "Get in touch",
+    "text": "Get in touch\nIf you’re working on a methodological or applied problem that sounds like one of these, I’m always glad to hear about it — see the home page for contact info."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Chad Hazlett",
+    "section": "",
+    "text": "I am a faculty member at UCLA, jointly appointed in the Departments of Political Science and Statistics & Data Science.\nMy research develops methods for causal inference — tools that let us learn honestly from data when randomized experiments are impossible or impractical. I work on three connected methodological threads:\n\nIdentification strategies that clarify what assumptions are doing the work, and what we can and can’t conclude when they fail.\nSensitivity analyses that let researchers communicate honestly about how much their conclusions depend on those assumptions.\nEstimation and modeling tools — kernel-based regression, balancing methods, and related techniques — that relax functional-form assumptions without giving up interpretability.\n\nI apply these tools to questions in political violence and mass atrocity prevention, environmental and health policy, and medicine. I co-direct the Practically Causal group with Onyebuchi Arah, and the Early Warning Project’s statistical risk assessment with the US Holocaust Memorial Museum.\nSee the Research, Publications, Teaching, and Software pages for more, or download my CV."
+  }
+]
