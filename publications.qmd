@@ -2,19 +2,36 @@
 title: "Publications"
 ---
 
-The list below mirrors my [April 2025 CV](assets/cv_hazlett_april2025.pdf).
+The list below mirrors my [April 2026 CV](assets/cv_hazlett_april2026.pdf).
 If you're looking for the most up-to-date picture including recent working
 papers, see my [Google Scholar profile](https://scholar.google.com/citations?user=pbD0dGwAAAAJ).
 
 Click **Abstract** under any entry to expand.
 
+## Work in Progress
+
+::: {.pub}
+Rohde, A., & Hazlett, C. Causal progress with imperfect placebo treatments and outcomes. *Revise and Resubmit, Journal of the Royal Statistical Society: A*.
+
+<span class="pub-links"><a href="https://arxiv.org/abs/2310.15266" target="_blank" rel="noopener">arXiv</a></span>
+:::
+
+::: {.pub}
+Hazlett, C., & Xu, Y. Trajectory balancing: A general weighting approach to causal inference with panel data.
+
+<span class="pub-links"><a href="https://ssrn.com/abstract=3214231" target="_blank" rel="noopener">SSRN</a></span>
+:::
 
 ## Peer-reviewed
 
 *Authorship usually alphabetical.*
 
 ::: {.pub}
-Cho, S., Kim, D., & Hazlett, C. (2026). Inference at the Data's Edge: Gaussian Processes for Estimation and Inference in the Face of Extrapolation Uncertainty. *Political Analysis*.
+Hazlett, C., McMurry, N., Shinkre, T. (2026+). Post-treatment problems: What can we say about the effect of a treatment among sub-groups who (would) respond in some way? *Forthcoming in Political Analysis*.
+:::
+
+::: {.pub}
+Cho, S., Kim, D., & Hazlett, C. (2026). Inference at the Data's Edge: Gaussian Processes for Estimation and Inference in the Face of Extrapolation Uncertainty. *Political Analysis*, 1–20.
 
 <span class="pub-links"><a href="https://doi.org/10.1017/pan.2026.10032" target="_blank" rel="noopener">DOI</a></span>
 
@@ -29,7 +46,43 @@ The Gaussian Process (GP) combines a highly flexible non-linear regression appro
 :::
 
 ::: {.pub}
-Wulf, D., Hazlett, C., Hill, B., Chiang, J., Goodman-Meza, D., Pasanuic, B., Arah, O., Erlandson, K., Montague, B. Safe learning outside of randomized trials: Application of the stability-controlled quasi-experiment to the effects of three COVID-19 therapies. *Observational Studies*.
+Rapp, A. M., Ponting, C., Ramos, G., Escovar, E., Hazlett, C., Tan, P. Z., Torres, V. & Chavira, D. A. (2026). A data-driven approach to identifying determinants of depression in rural Latine adolescents. *Cultural Diversity & Ethnic Minority Psychology*.
+
+<span class="pub-links"><a href="https://doi.org/10.1037/cdp0000768" target="_blank" rel="noopener">DOI</a></span>
+:::
+
+::: {.pub}
+Hartman, E., Hazlett, C., Sterbenz, C. (2025). Kpop: A kernel balancing approach for reducing specification assumptions in survey weighting. *Journal of the Royal Statistical Society Series A: Statistics in Society*.
+
+<span class="pub-links"><a href="https://doi.org/10.1093/jrsssa/qnae082" target="_blank" rel="noopener">DOI</a></span>
+
+<details class="pub-abstract">
+<summary>Abstract</summary>
+<div class="pub-abstract-body">
+
+With the precipitous decline in response rates, researchers and pollsters have been left with highly nonrepresentative samples, relying on constructed weights to make these samples representative of the desired target population. Though practitioners employ valuable expert knowledge to choose what variables X must be adjusted for, they rarely defend particular functional forms relating these variables to the response process or the outcome. Unfortunately, commonly used calibration weights—which make the weighted mean of X in the sample equal that of the population—only ensure correct adjustment when the portion of the outcome and the response process left unexplained by linear functions of X are independent. To alleviate this functional form dependency, we describe kernel balancing for population weighting (kpop). This approach replaces the design matrix X with a kernel matrix, K encoding high-order information about X. Weights are then found to make the weighted average row of K among sampled units approximately equal to that of the target population. This produces good calibration on a wide range of smooth functions of X, without relying on the user to decide which X or what functions of them to include. We describe the method and illustrate it by application to polling data from the 2016 US presidential election.
+
+</div>
+</details>
+:::
+
+::: {.pub}
+Bertoli, A., & Hazlett, C. (2025). Seeing like a district: Understanding what close-election designs for leader characteristics can and cannot tell us. *Political Analysis*, 1–19.
+
+<span class="pub-links"><a href="https://doi.org/10.1017/pan.2025.5" target="_blank" rel="noopener">DOI</a></span>
+
+<details class="pub-abstract">
+<summary>Abstract</summary>
+<div class="pub-abstract-body">
+
+Does leader age matter for the likelihood of interstate conflict? Many studies in biology, psychology, and physiology have found that aggression tends to decline with age throughout the adult lifespan, particularly in males. Moreover, a number of major international conflicts have been attributed to young leaders, including the conquests of Alexander the Great and the ambitious military campaigns of Napoleon. However, the exact nature of the relationship between leader age and international conflict has been difficult to study because of the endogeneity problem. Leaders do not come to power randomly. Rather, many domestic and international factors influence who becomes the leader of a country, and some of these factors could correlate with the chances of interstate conflict. For instance, wary democratic publics might favor older leaders when future international conflict seems likely, inducing a relationship between older leaders and interstate conflict. This article overcomes such confounding by using a regression discontinuity design. Specifically, it looks at close elections of national leaders who had large differences in age. It finds that when older candidates barely defeated younger ones, countries were much less likely to engage in military conflict. Its sample is also fairly representative of democracies more broadly, meaning that the findings likely hold true for cases outside the sample. The results demonstrate the important role that individuals play in shaping world politics. They also illustrate the value of design-based inference for learning about important questions in the study of international relations and peace science.
+
+</div>
+</details>
+:::
+
+::: {.pub}
+Hazlett\*, C., Wulf\*, D., Hill, B., Chiang, J., Goodman-Meza, D., Pasanuic, B., Arah, O., Erlandson, K., Montague, B. (2025). Safe learning outside of randomized trials: Application of the stability-controlled quasi-experiment to the effects of three COVID-19 therapies. *Observational Studies*. (Hazlett and Wulf co-first authors.)
 
 <span class="pub-links"><a href="https://doi.org/10.1353/obs.2025.a973069" target="_blank" rel="noopener">DOI</a></span>
 
@@ -44,13 +97,53 @@ When estimating the effects of medical therapies from their use outside of rando
 :::
 
 ::: {.pub}
-Faries, D., Gao, C., Zhang, X., Hazlett, C., Stamey, J., Yang, S., Ding, P., Shan, M., Sheffield, K., Dreyer, N. (2024+). Real Effect or Bias? Best Practices for Evaluating the Robustness of Real-World Evidence through Quantitative Sensitivity Analysis for Unmeasured Confounding. *Forthcoming, Pharmaceutical Studies*.
+Cinelli, C., & Hazlett, C. (2025). An omitted variable bias framework for sensitivity analysis of instrumental variables. *Biometrika*, 112(2).
+
+<span class="pub-links"><a href="https://doi.org/10.1093/biomet/asaf004" target="_blank" rel="noopener">DOI</a></span>
 
 <details class="pub-abstract">
 <summary>Abstract</summary>
 <div class="pub-abstract-body">
 
-The assumption of ‘no unmeasured confounders’ is a critical but
+We develop an omitted variable bias framework for sensitivity analysis of instrumental variable estimates that naturally handles multiple side effects (violations of the exclusion restriction assumption) and confounders (violations of the ignorability of the instrument assumption) of the instrument, exploits expert knowledge to bound sensitivity parameters and can be easily implemented with standard software. Specifically, we introduce sensitivity statistics for routine reporting, such as (extreme) robustness values for instrumental variables, describing the minimum strength that omitted variables need to have to change the conclusions of a study. Next, we provide visual displays that fully characterize the sensitivity of point estimates and confidence intervals to violations of the standard instrumental variable assumptions. Finally, we offer formal bounds on the worst possible bias under the assumption that the maximum explanatory power of omitted variables is no stronger than a multiple of the explanatory power of observed variables. Conveniently, many pivotal conclusions regarding the sensitivity of the instrumental variable estimate (e.g., tests against the null hypothesis of a zero causal effect) can be reached simply through separate sensitivity analyses of the effect of the instrument on the treatment (the first stage) and the effect of the instrument on the outcome (the reduced form). We apply our methods in a running example that uses proximity to college as an instrumental variable to estimate the returns to schooling.
+
+</div>
+</details>
+:::
+
+::: {.pub}
+Cho, S., Kim, D., & Hazlett, C. (2025+). Inference at the data's edge: Gaussian processes for modeling and inference under model-dependency, poor overlap, and extrapolation. *Political Analysis* (forthcoming).
+:::
+
+::: {.pub}
+Cinelli, C., Ferwerda, J., Hazlett, C. (2024). sensemakr: Sensitivity Analysis Tools for OLS in R and Stata. *Forthcoming, Observational Studies*.
+
+<span class="pub-links"><a href="https://doi.org/10.1353/obs.2024.a946583" target="_blank" rel="noopener">DOI</a></span>
+
+<details class="pub-abstract">
+<summary>Abstract</summary>
+<div class="pub-abstract-body">
+
+This tutorial introduces the package sensemakr for R and Stata, which implements a suite of sensitivity analysis tools for regression models developed in Cinelli and Hazlett (2020, 2022). Given a regression model, sensemakr can compute sensitivity statistics for routine reporting, such as the robustness value , which describes the minimum strength that unobserved confounders need to have to overturn a research conclusion. The package also provides plotting tools that visually demonstrate the sensitivity of point estimates and t-values to hypothetical confounders. Finally, sensemakr implements formal bounds on sensitivity parameters by means of comparison with the explanatory power of observed variables. All these tools are based on the familiar "omitted variable bias" framework, do not require assumptions regarding the functional form of the treatment assignment mechanism nor the distribution of the unobserved confounders, and naturally handle multiple, non-linear confounders. With sensemakr, users can transparently report the sensitivity of their causal inferences to unobserved confounding, thereby enabling a more precise, quantitative debate as to what can be concluded from imperfect observational studies.
+
+</div>
+</details>
+:::
+
+::: {.pub}
+Ramos, A., Hazlett, C. and Smith, S. (2023). Beyond poverty as a proxy: reducing inequality in infant mortality by identifying and targeting higher risk births. *Nature Scientific Reports*.
+:::
+
+::: {.pub}
+Faries, D., Gao, C., Zhang, X., Hazlett, C., Stamey, J., Yang, S., Ding, P., Shan, M., Sheffield, K., Dreyer, N. (2025). Real Effect or Bias? Best Practices for Evaluating the Robustness of Real-World Evidence through Quantitative Sensitivity Analysis for Unmeasured Confounding. *Pharmaceutical Statistics*, 24(2), e2457.
+
+<span class="pub-links"><a href="https://doi.org/10.1002/pst.2457" target="_blank" rel="noopener">DOI</a></span>
+
+<details class="pub-abstract">
+<summary>Abstract</summary>
+<div class="pub-abstract-body">
+
+The assumption of 'no unmeasured confounders' is a critical but
 unverifiable assumption required for causal inference yet quantitative
 sensitivity analyses to assess robustness of real-world evidence remains
 underutilized. The lack of use is likely in part due to complexity of
@@ -78,64 +171,6 @@ illustration purposes.
 :::
 
 ::: {.pub}
-Bertoli, A., Hazlett, C. (2024+). Seeing like a district: Understanding what close-election designs for leader characteristics can and cannot tell us. *Forthcoming, Political Analysis*.
-
-<details class="pub-abstract">
-<summary>Abstract</summary>
-<div class="pub-abstract-body">
-
-Does leader age matter for the likelihood of interstate conflict? Many studies in biology, psychology, and physiology have found that aggression tends to decline with age throughout the adult lifespan, particularly in males. Moreover, a number of major international conflicts have been attributed to young leaders, including the conquests of Alexander the Great and the ambitious military campaigns of Napoleon. However, the exact nature of the relationship between leader age and international conflict has been difficult to study because of the endogeneity problem. Leaders do not come to power randomly. Rather, many domestic and international factors influence who becomes the leader of a country, and some of these factors could correlate with the chances of interstate conflict. For instance, wary democratic publics might favor older leaders when future international conflict seems likely, inducing a relationship between older leaders and interstate conflict. This article overcomes such confounding by using a regression discontinuity design. Specifically, it looks at close elections of national leaders who had large differences in age. It finds that when older candidates barely defeated younger ones, countries were much less likely to engage in military conflict. Its sample is also fairly representative of democracies more broadly, meaning that the findings likely hold true for cases outside the sample. The results demonstrate the important role that individuals play in shaping world politics. They also illustrate the value of design-based inference for learning about important questions in the study of international relations and peace science.
-
-</div>
-</details>
-:::
-
-::: {.pub}
-Cinelli, C., Ferwerda, J., Hazlett, C. (2024+). sensemakr: Sensitivity Analysis Tools for OLS in R and Stata. *Forthcoming, Observational Studies*.
-
-<span class="pub-links"><a href="https://doi.org/10.1353/obs.2024.a946583" target="_blank" rel="noopener">DOI</a></span>
-
-<details class="pub-abstract">
-<summary>Abstract</summary>
-<div class="pub-abstract-body">
-
-This tutorial introduces the package sensemakr for R and Stata, which implements a suite of sensitivity analysis tools for regression models developed in Cinelli and Hazlett (2020, 2022). Given a regression model, sensemakr can compute sensitivity statistics for routine reporting, such as the robustness value , which describes the minimum strength that unobserved confounders need to have to overturn a research conclusion. The package also provides plotting tools that visually demonstrate the sensitivity of point estimates and t-values to hypothetical confounders. Finally, sensemakr implements formal bounds on sensitivity parameters by means of comparison with the explanatory power of observed variables. All these tools are based on the familiar "omitted variable bias" framework, do not require assumptions regarding the functional form of the treatment assignment mechanism nor the distribution of the unobserved confounders, and naturally handle multiple, non-linear confounders. With sensemakr, users can transparently report the sensitivity of their causal inferences to unobserved confounding, thereby enabling a more precise, quantitative debate as to what can be concluded from imperfect observational studies.
-
-</div>
-</details>
-:::
-
-::: {.pub}
-Cinelli, C., Hazlett, C. (2024+) An Omitted Variable Bias Framework for Sensitivity Analysis of Instrumental Variables. *Forthcoming, Biometrika*.
-
-<span class="pub-links"><a href="https://doi.org/10.1093/biomet/asaf004" target="_blank" rel="noopener">DOI</a></span>
-
-<details class="pub-abstract">
-<summary>Abstract</summary>
-<div class="pub-abstract-body">
-
-We develop an omitted variable bias framework for sensitivity analysis of instrumental variable estimates that naturally handles multiple side effects (violations of the exclusion restriction assumption) and confounders (violations of the ignorability of the instrument assumption) of the instrument, exploits expert knowledge to bound sensitivity parameters and can be easily implemented with standard software. Specifically, we introduce sensitivity statistics for routine reporting, such as (extreme) robustness values for instrumental variables, describing the minimum strength that omitted variables need to have to change the conclusions of a study. Next, we provide visual displays that fully characterize the sensitivity of point estimates and confidence intervals to violations of the standard instrumental variable assumptions. Finally, we offer formal bounds on the worst possible bias under the assumption that the maximum explanatory power of omitted variables is no stronger than a multiple of the explanatory power of observed variables. Conveniently, many pivotal conclusions regarding the sensitivity of the instrumental variable estimate (e.g., tests against the null hypothesis of a zero causal effect) can be reached simply through separate sensitivity analyses of the effect of the instrument on the treatment (the first stage) and the effect of the instrument on the outcome (the reduced form). We apply our methods in a running example that uses proximity to college as an instrumental variable to estimate the returns to schooling.
-
-</div>
-</details>
-:::
-
-::: {.pub}
-Hartman, E., Hazlett, C., Sterbenz, C. (2024). Kpop: A kernel balancing approach for reducing specification assumptions in survey weighting. *Journal of the Royal Statistical Society Series A: Statistics in Society*.
-
-<span class="pub-links"><a href="https://doi.org/10.1093/jrsssa/qnae082" target="_blank" rel="noopener">DOI</a></span>
-
-<details class="pub-abstract">
-<summary>Abstract</summary>
-<div class="pub-abstract-body">
-
-With the precipitous decline in response rates, researchers and pollsters have been left with highly nonrepresentative samples, relying on constructed weights to make these samples representative of the desired target population. Though practitioners employ valuable expert knowledge to choose what variables X must be adjusted for, they rarely defend particular functional forms relating these variables to the response process or the outcome. Unfortunately, commonly used calibration weights—which make the weighted mean of X in the sample equal that of the population—only ensure correct adjustment when the portion of the outcome and the response process left unexplained by linear functions of X are independent. To alleviate this functional form dependency, we describe kernel balancing for population weighting (kpop). This approach replaces the design matrix X with a kernel matrix, K encoding high-order information about X. Weights are then found to make the weighted average row of K among sampled units approximately equal to that of the target population. This produces good calibration on a wide range of smooth functions of X, without relying on the user to decide which X or what functions of them to include. We describe the method and illustrate it by application to polling data from the 2016 US presidential election.
-
-</div>
-</details>
-:::
-
-::: {.pub}
 Fabbe, K., Hazlett, C., Sinmazdemir, T. (2024). Threat Perceptions, Loyalties and Attitudes Towards Peace: The Effects of Civilian Victimization among Syrian Refugees in Turkey. *Conflict Management and Peace Sciences*.
 
 <span class="pub-links"><a href="https://doi.org/10.1177/07388942231172754" target="_blank" rel="noopener">DOI</a></span>
@@ -144,14 +179,10 @@ Fabbe, K., Hazlett, C., Sinmazdemir, T. (2024). Threat Perceptions, Loyalties an
 <summary>Abstract</summary>
 <div class="pub-abstract-body">
 
-For refugees who have fled civil conflict, do experiences of victimization by one armed group push them to support the opposing armed groups? Or, does victimization cause refugees to revoke their support for all armed groups, whatever side they are on, and call instead for peace? This paper studies the effect of civilian victimization on threat perceptions, loyalties, and attitudes toward peace in the context of Syrian refugees in Turkey, many of whom faced regime-caused violence prior to their departure. Our research strategy leverages variation in home destruction caused by barrel bombs to examine the effect of violence on refugees’ views. We find that refugees who lose their home to barrel bombs withdraw support from armed actors and are more supportive of ending the war and finding peace. Suggestive evidence shows that while victims do not disengage from issues in Syria, they do show less optimism about an opposition victory.
+For refugees who have fled civil conflict, do experiences of victimization by one armed group push them to support the opposing armed groups? Or, does victimization cause refugees to revoke their support for all armed groups, whatever side they are on, and call instead for peace? This paper studies the effect of civilian victimization on threat perceptions, loyalties, and attitudes toward peace in the context of Syrian refugees in Turkey, many of whom faced regime-caused violence prior to their departure. Our research strategy leverages variation in home destruction caused by barrel bombs to examine the effect of violence on refugees' views. We find that refugees who lose their home to barrel bombs withdraw support from armed actors and are more supportive of ending the war and finding peace. Suggestive evidence shows that while victims do not disengage from issues in Syria, they do show less optimism about an opposition victory.
 
 </div>
 </details>
-:::
-
-::: {.pub}
-Ramos, A., Hazlett, C. and Smith, S. (2023). Beyond poverty as a proxy: reducing inequality in infant mortality by identifying and targeting higher risk births. *Nature Scientific Reports*.
 :::
 
 ::: {.pub}
@@ -163,7 +194,7 @@ Cesar B. Martinez-Alvarez, Chad Hazlett, Paasha Mahdavi, and Michael L. Ross. (2
 <summary>Abstract</summary>
 <div class="pub-abstract-body">
 
-1) offer two criticisms of our study (2): that it “rests on feeble grounds” empirically and that a policy we recommend—scaling-up support for renewable energy—is less effective than carbon pricing. Both are misplaced.
+1) offer two criticisms of our study (2): that it "rests on feeble grounds" empirically and that a policy we recommend—scaling-up support for renewable energy—is less effective than carbon pricing. Both are misplaced.
 
 </div>
 </details>
@@ -178,7 +209,7 @@ Hazlett, C., Parente F. (2023) From "Is it unconfounded?" to "How much confoundi
 <summary>Abstract</summary>
 <div class="pub-abstract-body">
 
-Attention to the credibility of causal claims has increased tremendously in recent years. When relying on observational data, debate often centers on whether investigators have ruled out any bias due to confounding. However, the relevant scientific question is generally not whether bias is precisely zero but whether it is problematic enough to alter one’s research conclusion. We argue that sensitivity analyses would improve research practice by showing how results would change under plausible degrees of confounding, or equivalently, by revealing what one must argue about the strength of confounding to sustain a research conclusion. This would improve scrutiny of studies in which nonzero bias is expected and of those in which authors argue for zero bias but results may be fragile to confounding too weak to be ruled out. We illustrate this using off-the-shelf sensitivity tools to examine two potential influences on support for the FARC peace agreement in Colombia.
+Attention to the credibility of causal claims has increased tremendously in recent years. When relying on observational data, debate often centers on whether investigators have ruled out any bias due to confounding. However, the relevant scientific question is generally not whether bias is precisely zero but whether it is problematic enough to alter one's research conclusion. We argue that sensitivity analyses would improve research practice by showing how results would change under plausible degrees of confounding, or equivalently, by revealing what one must argue about the strength of confounding to sustain a research conclusion. This would improve scrutiny of studies in which nonzero bias is expected and of those in which authors argue for zero bias but results may be fragile to confounding too weak to be ruled out. We illustrate this using off-the-shelf sensitivity tools to examine two potential influences on support for the FARC peace agreement in Colombia.
 
 </div>
 </details>
@@ -193,7 +224,7 @@ Cesar B. Martinez-Alvarez, Chad Hazlett, Paasha Mahdavi, and Michael L. Ross. Po
 <summary>Abstract</summary>
 <div class="pub-abstract-body">
 
-For countries to rapidly decarbonize, they need strong leadership, according to both academic studies and popular accounts. But leadership is difficult to measure, and its importance is unclear. We use original data to investigate the role of presidents, prime ministers, and monarchs in 155 countries from 1990 to 2015 in changing their countries’ gasoline taxes and subsidies. Our findings suggest that the impact of leaders on fossil fuel taxes and subsidies is surprisingly limited and often ephemeral. This holds true regardless of the leader’s age, gender, education, or political ideology. Rulers who govern during an economic crisis perform no better or worse than other rulers. Even presidents and prime ministers who were recognized by the United Nations for environmental leadership had no more success than other leaders in reducing subsidies or raising fuel taxes. Where leaders appear to play an important role—primarily in countries with large subsidies—their reforms often failed, with subsidies returning to prereform levels within the first 12 mo 62% of the time, and within 5 y 87% of the time. Our findings suggest that leaders of all types find it exceptionally hard to raise the cost of fossil fuels for consumers. To promote deep decarbonization, leaders are likely to have more success with other types of policies, such as reducing the costs and increasing the availability of renewable energy.
+For countries to rapidly decarbonize, they need strong leadership, according to both academic studies and popular accounts. But leadership is difficult to measure, and its importance is unclear. We use original data to investigate the role of presidents, prime ministers, and monarchs in 155 countries from 1990 to 2015 in changing their countries' gasoline taxes and subsidies. Our findings suggest that the impact of leaders on fossil fuel taxes and subsidies is surprisingly limited and often ephemeral. This holds true regardless of the leader's age, gender, education, or political ideology. Rulers who govern during an economic crisis perform no better or worse than other rulers. Even presidents and prime ministers who were recognized by the United Nations for environmental leadership had no more success than other leaders in reducing subsidies or raising fuel taxes. Where leaders appear to play an important role—primarily in countries with large subsidies—their reforms often failed, with subsidies returning to prereform levels within the first 12 mo 62% of the time, and within 5 y 87% of the time. Our findings suggest that leaders of all types find it exceptionally hard to raise the cost of fossil fuels for consumers. To promote deep decarbonization, leaders are likely to have more success with other types of policies, such as reducing the costs and increasing the availability of renewable energy.
 
 </div>
 </details>
@@ -208,7 +239,7 @@ A. Akhazhanov, A. More, A. Amini, C. Hazlett, T. Treu, S. Birrer, and the Dark E
 <summary>Abstract</summary>
 <div class="pub-abstract-body">
 
-Strongly lensed quadruply imaged quasars (quads) are extraordinary objects. They are very rare in the sky and yet they provide unique information about a wide range of topics, including the expansion history and the composition of the Universe, the distribution of stars and dark matter in galaxies, the host galaxies of quasars, and the stellar initial mass function. Finding them in astronomical images is a classic ‘needle in a haystack’ problem, as they are outnumbered by other (contaminant) sources by many orders of magnitude. To solve this problem, we develop state-of-the-art deep learning methods and train them on realistic simulated quads based on real images of galaxies taken from the Dark Energy Survey, with realistic source and deflector models, including the chromatic effects of microlensing. The performance of the best methods on a mixture of simulated and real objects is excellent, yielding area under the receiver operating curve in the range of 0.86–0.89. Recall is close to 100 per cent down to total magnitude i ∼ 21 indicating high completeness, while precision declines from 85 per cent to 70 per cent in the range i ∼ 17–21. The methods are extremely fast: training on 2 million samples takes 20 h on a GPU machine, and 108 multiband cut-outs can be evaluated per GPU-hour. The speed and performance of the method pave the way to apply it to large samples of astronomical sources, bypassing the need for photometric pre-selection that is likely to be a major cause of incompleteness in current samples of known quads.
+Strongly lensed quadruply imaged quasars (quads) are extraordinary objects. They are very rare in the sky and yet they provide unique information about a wide range of topics, including the expansion history and the composition of the Universe, the distribution of stars and dark matter in galaxies, the host galaxies of quasars, and the stellar initial mass function. Finding them in astronomical images is a classic 'needle in a haystack' problem, as they are outnumbered by other (contaminant) sources by many orders of magnitude. To solve this problem, we develop state-of-the-art deep learning methods and train them on realistic simulated quads based on real images of galaxies taken from the Dark Energy Survey, with realistic source and deflector models, including the chromatic effects of microlensing. The performance of the best methods on a mixture of simulated and real objects is excellent, yielding area under the receiver operating curve in the range of 0.86–0.89. Recall is close to 100 per cent down to total magnitude i ∼ 21 indicating high completeness, while precision declines from 85 per cent to 70 per cent in the range i ∼ 17–21. The methods are extremely fast: training on 2 million samples takes 20 h on a GPU machine, and 108 multiband cut-outs can be evaluated per GPU-hour. The speed and performance of the method pave the way to apply it to large samples of astronomical sources, bypassing the need for photometric pre-selection that is likely to be a major cause of incompleteness in current samples of known quads.
 
 </div>
 </details>
@@ -223,7 +254,7 @@ Graeme Blair, Mohammed Bukar, Rebecca Littman, Elizabeth R. Nugent, Rebecca Wolf
 <summary>Abstract</summary>
 <div class="pub-abstract-body">
 
-Violent extremist groups such as the Islamic State and Boko Haram have proliferated across the world in recent decades. While considerable scholarship addresses why people join violent extremist groups, much less attention has been paid to how former members reenter society. Yet successfully ending conflict requires reluctant communities to accept former members back home. In this research, we find that radio messages delivered by trusted authorities in Nigeria lead to large, positive changes in people’s willingness to accept former Boko Haram fighters back home and make people think their neighbors are more in favor of reintegration. Our results show that messages from leaders can create change on a mass scale at low cost, helping to end conflict and division.
+Violent extremist groups such as the Islamic State and Boko Haram have proliferated across the world in recent decades. While considerable scholarship addresses why people join violent extremist groups, much less attention has been paid to how former members reenter society. Yet successfully ending conflict requires reluctant communities to accept former members back home. In this research, we find that radio messages delivered by trusted authorities in Nigeria lead to large, positive changes in people's willingness to accept former Boko Haram fighters back home and make people think their neighbors are more in favor of reintegration. Our results show that messages from leaders can create change on a mass scale at low cost, helping to end conflict and division.
 
 </div>
 </details>
@@ -281,7 +312,7 @@ Hazlett, C., Wainstein, L. (2020). Understanding, choosing, and unifying multile
 <summary>Abstract</summary>
 <div class="pub-abstract-body">
 
-When working with grouped data, investigators may choose between “fixed effects” models (FE) with specialized (e.g., cluster-robust) standard errors, or “multilevel models” (MLMs) employing “random effects.” We review the claims given in published works regarding this choice, then clarify how these approaches work and compare by showing that: (i) random effects employed in MLMs are simply “regularized” fixed effects; (ii) unmodified MLMs are consequently susceptible to bias—but there is a longstanding remedy; and (iii) the “default” MLM standard errors rely on narrow assumptions that can lead to undercoverage in many settings. Our review of over 100 papers using MLM in political science, education, and sociology show that these “known” concerns have been widely ignored in practice. We describe how to debias MLM’s coefficient estimates, and provide an option to more flexibly estimate their standard errors. Most illuminating, once MLMs are adjusted in these two ways the point estimate and standard error for the target coefficient are exactly equal to those of the analogous FE model with cluster-robust standard errors. For investigators working with observational data and who are interested only in inference on the target coefficient, either approach is equally appropriate and preferable to uncorrected MLM.
+When working with grouped data, investigators may choose between "fixed effects" models (FE) with specialized (e.g., cluster-robust) standard errors, or "multilevel models" (MLMs) employing "random effects." We review the claims given in published works regarding this choice, then clarify how these approaches work and compare by showing that: (i) random effects employed in MLMs are simply "regularized" fixed effects; (ii) unmodified MLMs are consequently susceptible to bias—but there is a longstanding remedy; and (iii) the "default" MLM standard errors rely on narrow assumptions that can lead to undercoverage in many settings. Our review of over 100 papers using MLM in political science, education, and sociology show that these "known" concerns have been widely ignored in practice. We describe how to debias MLM's coefficient estimates, and provide an option to more flexibly estimate their standard errors. Most illuminating, once MLMs are adjusted in these two ways the point estimate and standard error for the target coefficient are exactly equal to those of the analogous FE model with cluster-robust standard errors. For investigators working with observational data and who are interested only in inference on the target coefficient, either approach is equally appropriate and preferable to uncorrected MLM.
 
 </div>
 </details>
@@ -296,7 +327,7 @@ Hazlett, C., Maokola, W., Wulf, D. (2020). Inference without randomization or ig
 <summary>Abstract</summary>
 <div class="pub-abstract-body">
 
-The stability‐controlled quasi‐experiment (SCQE) is an approach to study the effects of nonrandomized, newly adopted treatments. While covariate adjustment techniques rely on a “no unobserved confounding” assumption, SCQE imposes an assumption on the change in the average nontreatment outcome between successive cohorts (the “baseline trend”). We provide inferential tools for SCQE and its first application, examining whether isoniazid preventive therapy (IPT) reduced tuberculosis (TB) incidence among 26 715 HIV patients in Tanzania. After IPT became available, 16% of untreated patients developed TB within a year, compared with only 0.5% of patients under treatment. Thus, a simple difference in means suggests a 15.5 percentage point (pp) lower risk (p ≪ .001). Adjusting for covariates using numerous techniques leaves this effectively unchanged. Yet, due to confounding biases, such estimates can be misleading regardless of their statistical strength. By contrast, SCQE reveals valid causal effect estimates for any chosen assumption on the baseline trend. For example, assuming a baseline trend near 0 (no change in TB incidence over time, absent this treatment) implies a small and insignificant effect. To argue IPT was beneficial requires arguing that the nontreatment incidence would have risen by at least 0.7 pp per year, which is plausible but far from certain. SCQE may produce narrow estimates when the plausible range of baseline trends can be sufficiently constrained, while in every case it tells us what baseline trends must be believed in order to sustain a given conclusion, protecting against inferences that rely upon infeasible assumptions.
+The stability‐controlled quasi‐experiment (SCQE) is an approach to study the effects of nonrandomized, newly adopted treatments. While covariate adjustment techniques rely on a "no unobserved confounding" assumption, SCQE imposes an assumption on the change in the average nontreatment outcome between successive cohorts (the "baseline trend"). We provide inferential tools for SCQE and its first application, examining whether isoniazid preventive therapy (IPT) reduced tuberculosis (TB) incidence among 26 715 HIV patients in Tanzania. After IPT became available, 16% of untreated patients developed TB within a year, compared with only 0.5% of patients under treatment. Thus, a simple difference in means suggests a 15.5 percentage point (pp) lower risk (p ≪ .001). Adjusting for covariates using numerous techniques leaves this effectively unchanged. Yet, due to confounding biases, such estimates can be misleading regardless of their statistical strength. By contrast, SCQE reveals valid causal effect estimates for any chosen assumption on the baseline trend. For example, assuming a baseline trend near 0 (no change in TB incidence over time, absent this treatment) implies a small and insignificant effect. To argue IPT was beneficial requires arguing that the nontreatment incidence would have risen by at least 0.7 pp per year, which is plausible but far from certain. SCQE may produce narrow estimates when the plausible range of baseline trends can be sufficiently constrained, while in every case it tells us what baseline trends must be believed in order to sustain a given conclusion, protecting against inferences that rely upon infeasible assumptions.
 
 </div>
 </details>
@@ -345,7 +376,7 @@ Cinelli, C., & Hazlett, C. (2020). Making sense of sensitivity: Extending omitte
 <summary>Abstract</summary>
 <div class="pub-abstract-body">
 
-We extend the omitted variable bias framework with a suite of tools for sensitivity analysis in regression models that does not require assumptions on the functional form of the treatment assignment mechanism nor on the distribution of the unobserved confounders, naturally handles multiple confounders, possibly acting non-linearly, exploits expert knowledge to bound sensitivity parameters and can be easily computed by using only standard regression results. In particular, we introduce two novel sensitivity measures suited for routine reporting. The robustness value describes the minimum strength of association that unobserved confounding would need to have, both with the treatment and with the outcome, to change the research conclusions. The partial R2 of the treatment with the outcome shows how strongly confounders explaining all the residual outcome variation would have to be associated with the treatment to eliminate the estimated effect. Next, we offer graphical tools for elaborating on problematic confounders, examining the sensitivity of point estimates and t-values, as well as ‘extreme scenarios’. Finally, we describe problems with a common ‘benchmarking’ practice and introduce a novel procedure to bound the strength of confounders formally on the basis of a comparison with observed covariates. We apply these methods to a running example that estimates the effect of exposure to violence on attitudes toward peace.
+We extend the omitted variable bias framework with a suite of tools for sensitivity analysis in regression models that does not require assumptions on the functional form of the treatment assignment mechanism nor on the distribution of the unobserved confounders, naturally handles multiple confounders, possibly acting non-linearly, exploits expert knowledge to bound sensitivity parameters and can be easily computed by using only standard regression results. In particular, we introduce two novel sensitivity measures suited for routine reporting. The robustness value describes the minimum strength of association that unobserved confounding would need to have, both with the treatment and with the outcome, to change the research conclusions. The partial R2 of the treatment with the outcome shows how strongly confounders explaining all the residual outcome variation would have to be associated with the treatment to eliminate the estimated effect. Next, we offer graphical tools for elaborating on problematic confounders, examining the sensitivity of point estimates and t-values, as well as 'extreme scenarios'. Finally, we describe problems with a common 'benchmarking' practice and introduce a novel procedure to bound the strength of confounders formally on the basis of a comparison with observed covariates. We apply these methods to a running example that estimates the effect of exposure to violence on attitudes toward peace.
 
 </div>
 </details>
@@ -360,7 +391,7 @@ Hazlett, C. (2020). Angry or Weary? How violence impacts attitudes toward peace 
 <summary>Abstract</summary>
 <div class="pub-abstract-body">
 
-Does exposure to violence motivate individuals to support further violence or to seek peace? Such questions are central to our understanding of how conflicts evolve, terminate, and recur. Yet, convincing empirical evidence as to which response dominates—even in a specific case—has been elusive, owing to the inability to rule out confounding biases. This article employs a natural experiment based on the indiscriminacy of violence within villages in Darfur to examine how refugees’ experiences of violence affect their attitudes toward peace. The results are consistent with a pro-peace or “weary” response: individuals directly harmed by violence were more likely to report that peace is possible and less likely to demand execution of their enemies. This provides microlevel evidence supporting earlier country-level work on “war-weariness” and extends the growing literature on the effects of violence on individuals by including attitudes toward peace as an important outcome. These findings suggest that victims harmed by violence during war can play a positive role in settlement and reconciliation processes.
+Does exposure to violence motivate individuals to support further violence or to seek peace? Such questions are central to our understanding of how conflicts evolve, terminate, and recur. Yet, convincing empirical evidence as to which response dominates—even in a specific case—has been elusive, owing to the inability to rule out confounding biases. This article employs a natural experiment based on the indiscriminacy of violence within villages in Darfur to examine how refugees' experiences of violence affect their attitudes toward peace. The results are consistent with a pro-peace or "weary" response: individuals directly harmed by violence were more likely to report that peace is possible and less likely to demand execution of their enemies. This provides microlevel evidence supporting earlier country-level work on "war-weariness" and extends the growing literature on the effects of violence on individuals by including attitudes toward peace as an important outcome. These findings suggest that victims harmed by violence during war can play a positive role in settlement and reconciliation processes.
 
 </div>
 </details>
@@ -375,7 +406,7 @@ Hazlett, C. (2019). Estimating causal effects of new treatments despite self-sel
 <summary>Abstract</summary>
 <div class="pub-abstract-body">
 
-Providing terminally ill patients with access to experimental treatments, as allowed by recent “right to try” laws and “expanded access” programs, poses a variety of ethical questions. While practitioners and investigators may assume it is impossible to learn the effects of these treatment without randomized trials, this paper describes a simple tool to estimate the effects of these experimental treatments on those who take them, despite the problem of selection into treatment, and without assumptions about the selection process. The key assumption is that the average outcome, such as survival, would remain stable over time in the absence of the new treatment. Such an assumption is unprovable, but can often be credibly judged by reference to historical data and by experts familiar with the disease and its treatment. Further, where this assumption may be violated, the result can be adjusted to account for a hypothesized change in the non-treatment outcome, or to conduct a sensitivity analysis. The method is simple to understand and implement, requiring just four numbers to form a point estimate. Such an approach can be used not only to learn which experimental treatments are promising, but also to warn us when treatments are actually harmful – especially when they might otherwise appear to be beneficial, as illustrated by example here. While this note focuses on experimental medical treatments as a motivating case, more generally this approach can be employed where a new treatment becomes available or has a large increase in uptake, where selection bias is a concern, and where an assumption on the change in average non-treatment outcome over time can credibly be imposed.
+Providing terminally ill patients with access to experimental treatments, as allowed by recent "right to try" laws and "expanded access" programs, poses a variety of ethical questions. While practitioners and investigators may assume it is impossible to learn the effects of these treatment without randomized trials, this paper describes a simple tool to estimate the effects of these experimental treatments on those who take them, despite the problem of selection into treatment, and without assumptions about the selection process. The key assumption is that the average outcome, such as survival, would remain stable over time in the absence of the new treatment. Such an assumption is unprovable, but can often be credibly judged by reference to historical data and by experts familiar with the disease and its treatment. Further, where this assumption may be violated, the result can be adjusted to account for a hypothesized change in the non-treatment outcome, or to conduct a sensitivity analysis. The method is simple to understand and implement, requiring just four numbers to form a point estimate. Such an approach can be used not only to learn which experimental treatments are promising, but also to warn us when treatments are actually harmful – especially when they might otherwise appear to be beneficial, as illustrated by example here. While this note focuses on experimental medical treatments as a motivating case, more generally this approach can be employed where a new treatment becomes available or has a large increase in uptake, where selection bias is a concern, and where an assumption on the change in average non-treatment outcome over time can credibly be imposed.
 
 </div>
 </details>
@@ -390,7 +421,7 @@ Fabbe, K., Hazlett, C., & Sinmazdemir, T. (2019). A persuasive peace: Syrian ref
 <summary>Abstract</summary>
 <div class="pub-abstract-body">
 
-Civilians who have fled violent conflict and settled in neighboring countries are integral to processes of civil war termination. Contingent on their attitudes, they can either back peaceful settlements or support warring groups and continued fighting. Attitudes toward peaceful settlement are expected to be especially obdurate for civilians who have been exposed to violence. In a survey of 1,120 Syrian refugees in Turkey conducted in 2016, we use experiments to examine attitudes towards two critical phases of conflict termination – a ceasefire and a peace agreement. We examine the rigidity/flexibility of refugees’ attitudes to see if subtle changes in how wartime losses are framed or in who endorses a peace process can shift willingness to compromise with the incumbent Assad regime. Our results show, first, that refugees are far more likely to agree to a ceasefire proposed by a civilian as opposed to one proposed by armed actors from either the Syrian government or the opposition. Second, simply describing the refugee community’s wartime experience as suffering rather than sacrifice substantially increases willingness to compromise with the regime to bring about peace. This effect remains strong among those who experienced greater violence. Together, these results show that even among a highly pro-opposition population that has experienced severe violence, willingness to settle and make peace are remarkably flexible and dependent upon these cues.
+Civilians who have fled violent conflict and settled in neighboring countries are integral to processes of civil war termination. Contingent on their attitudes, they can either back peaceful settlements or support warring groups and continued fighting. Attitudes toward peaceful settlement are expected to be especially obdurate for civilians who have been exposed to violence. In a survey of 1,120 Syrian refugees in Turkey conducted in 2016, we use experiments to examine attitudes towards two critical phases of conflict termination – a ceasefire and a peace agreement. We examine the rigidity/flexibility of refugees' attitudes to see if subtle changes in how wartime losses are framed or in who endorses a peace process can shift willingness to compromise with the incumbent Assad regime. Our results show, first, that refugees are far more likely to agree to a ceasefire proposed by a civilian as opposed to one proposed by armed actors from either the Syrian government or the opposition. Second, simply describing the refugee community's wartime experience as suffering rather than sacrifice substantially increases willingness to compromise with the regime to bring about peace. This effect remains strong among those who experienced greater violence. Together, these results show that even among a highly pro-opposition population that has experienced severe violence, willingness to settle and make peace are remarkably flexible and dependent upon these cues.
 
 </div>
 </details>
@@ -419,7 +450,7 @@ The affect misattribution procedure (
  AMP
  effect remains positive, it decreases significantly in magnitude. Moreover, this reduction in the mean
  AMP
- effect under incentives masks large heterogeneity: one subset of individuals continues to experience the ‘full’
+ effect under incentives masks large heterogeneity: one subset of individuals continues to experience the 'full'
  AMP
  effect, while another reduces their effect to approximately zero. The
  AMP
@@ -479,7 +510,7 @@ Hazlett, C., Woldorff, M.G. (2004). Mechanisms of Moving the Mind's Eye: Plannin
 <summary>Abstract</summary>
 <div class="pub-abstract-body">
 
-The usefulness of attentional orienting, both in the real world and in the laboratory, depends not only on the ability to attend to objects or other inputs but also on the ability to shift attention between them. Although understanding the basic characteristics of these shifts is a critical step toward understanding the brain mechanisms that produce them, the literature remains unresolved on a very basic and potentially revealing characteristic of these shifts—namely, whether attention takes longer to shift a farther distance across the visual field. We addressed this question using a series of behavioral tasks involving the voluntary orienting of attention to locations in the visual field. The findings support a model in which attentional shifts include separate “planning” and “execution” stages and in which only the planning stage requires more time for shifts of a greater distance. These results offer resolution to the longstanding debate concerning the effect of attentional shift distance on shift time and provide insight into the fundamental mechanisms of attentional shifting.
+The usefulness of attentional orienting, both in the real world and in the laboratory, depends not only on the ability to attend to objects or other inputs but also on the ability to shift attention between them. Although understanding the basic characteristics of these shifts is a critical step toward understanding the brain mechanisms that produce them, the literature remains unresolved on a very basic and potentially revealing characteristic of these shifts—namely, whether attention takes longer to shift a farther distance across the visual field. We addressed this question using a series of behavioral tasks involving the voluntary orienting of attention to locations in the visual field. The findings support a model in which attentional shifts include separate "planning" and "execution" stages and in which only the planning stage requires more time for shifts of a greater distance. These results offer resolution to the longstanding debate concerning the effect of attentional shift distance on shift time and provide insight into the fundamental mechanisms of attentional shifting.
 
 </div>
 </details>
@@ -515,4 +546,3 @@ Weissman, D. H., Woldorff, M. G., Hazlett, C. J., & Mangun, G. R. (2002). Effect
 ::: {.pub}
 "Not On Our Watch: American Mobilization for Darfur" (with R.J. Hamilton). In *War in Darfur and the Search for Peace*, Alex De Waal (Ed.). Cambridge, MA: Harvard University Press. 2007.
 :::
-

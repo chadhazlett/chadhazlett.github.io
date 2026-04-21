@@ -5,13 +5,13 @@ toc: false
 
 My current CV is available below.
 
-[**Download CV (PDF)**](assets/cv_hazlett_april2025.pdf){.btn .btn-primary role="button"}
+[**Download CV (PDF)**](assets/cv_hazlett_april2026.pdf){.btn .btn-primary role="button"}
 
 ```{=html}
 <div style="margin-top: 1.5rem; border: 1px solid rgba(128,128,128,0.25); border-radius: 6px; overflow: hidden;">
-<object data="assets/cv_hazlett_april2025.pdf" type="application/pdf" width="100%" height="900px">
+<object data="assets/cv_hazlett_april2026.pdf" type="application/pdf" width="100%" height="900px">
   <p>Your browser can't embed PDFs inline.
-  <a href="assets/cv_hazlett_april2025.pdf">Download the CV here.</a></p>
+  <a href="assets/cv_hazlett_april2026.pdf">Download the CV here.</a></p>
 </object>
 </div>
 ```
