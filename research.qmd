@@ -1,0 +1,71 @@
+---
+title: "Research"
+---
+
+My work sits at the intersection of political science, statistics, and applied
+methodology. I'm motivated by a single question: *when the conditions for a
+clean experiment aren't available, how can we still learn something honest
+from the data we have?*
+
+That question breaks into three methodological threads and several
+application areas.
+
+## Methodological threads
+
+### Identification strategies
+
+How do we translate substantive assumptions into claims the data can speak
+to? And what do our conclusions become when those assumptions fail? Work
+here includes dedicated treatments of instrumental-variables-like designs
+under imperfect conditions, difference-in-differences extensions, and
+synthetic-control-style estimators tailored to rare, high-stakes outcomes.
+
+### Sensitivity analysis
+
+Even well-identified analyses rest on assumptions that can't be fully tested.
+Sensitivity analysis makes the *size* of that uncertainty explicit — how
+strong would unobserved confounding or violations of exchangeability have to
+be to overturn a conclusion? I've contributed tools for sensitivity to
+omitted variable bias in regression, in instrumental-variable settings, in
+weighting- and matching-based analyses, and in synthetic-control designs.
+The goal is to give readers a principled vocabulary for debating results
+rather than arguing past one another.
+
+### Estimation and modeling
+
+Many causal estimators embed strong parametric choices. I work on methods
+that relax those choices while keeping interpretability: kernel-based
+regression (KRLS), kernel balancing (KBAL), covariate balancing propensity
+scores for continuous and multi-valued treatments, and prognostic-score
+augmented estimators. The emphasis is on making flexible methods *safe* —
+well-behaved in small samples, transparent about what they're doing, and
+accompanied by honest standard errors.
+
+## Application areas
+
+### Political violence and mass atrocity prevention
+
+With the US Holocaust Memorial Museum I co-lead the
+[Early Warning Project](https://earlywarningproject.ushmm.org/)'s statistical
+risk assessment — annual forecasts of which countries are at heightened risk
+of mass killing. Related work studies how terrorist attacks reshape domestic
+coalitions and support for security forces, and how conflict and its
+aftermath interact with institutional trust.
+
+### Environmental and health policy
+
+Questions about wildfire exposure and climate attitudes, air pollution and
+mortality, and evaluating state-level policies (e.g., firearm regulations,
+treatment-access laws) where randomized experiments are impossible.
+
+### Medicine
+
+Collaborations with medical colleagues on causal questions in clinical data
+— from immunotherapy response to treatment sequencing — where small samples
+and rich covariates demand flexible, interpretable methods.
+
+## Get in touch
+
+If you're working on a methodological or applied problem that sounds like
+one of these, I'm always glad to hear about it — see the
+[home page](index.qmd) for contact info.

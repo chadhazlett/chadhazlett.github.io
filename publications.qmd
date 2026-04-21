@@ -1,0 +1,32 @@
+---
+title: "Publications"
+---
+
+A full list of my papers is maintained on
+[Google Scholar](https://scholar.google.com/citations?user=pbD0dGwAAAAJ).
+This page mirrors that list, grouped by year. If you'd prefer the PDF list,
+it's on my [CV](cv.qmd).
+
+::: {.callout-note collapse=true}
+## About this list
+
+The entries below are auto-generated from my master bibliography file
+(`references.bib`). If something looks out of date, please let me know —
+the list is rebuilt on every push.
+:::
+
+```{=html}
+<!-- Publications render from references.bib via nocite: "@*" below. -->
+```
+
+## All publications
+
+---
+
+::: {#refs}
+:::
+
+---
+nocite: |
+  @*
+---

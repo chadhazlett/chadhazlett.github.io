@@ -1,0 +1,66 @@
+---
+title: "Teaching"
+---
+
+I teach graduate courses in causal inference and machine learning for the
+social sciences at UCLA, and co-lead the
+[Practically Causal](https://practicallycausal.com) educational initiative.
+
+## Current courses (Spring 2026)
+
+::: {.card-grid}
+
+::: {.card}
+### PS 200C — Causal Inference
+
+Graduate course for political science PhD students. Covers identification,
+estimation, and inference for causal effects: potential outcomes, matching
+and weighting, instrumental variables, regression discontinuity,
+difference-in-differences, synthetic controls, sensitivity analysis.
+
+[Course site →](https://chadhazlett.github.io/ps200c-2026/) •
+[GitHub →](https://github.com/chadhazlett/ps200c-2026)
+
+::: {.meta}
+UCLA Political Science • PhD
+:::
+:::
+
+::: {.card}
+### Stat 256 — Causality
+
+Graduate statistics course on causality: foundations of causal inference,
+identification under ignorability, instruments, sensitivity, modern
+estimation (doubly robust methods, machine-learning-based approaches),
+and open problems at the methodological frontier.
+
+[Course site →](https://chadhazlett.github.io/stat256-2026/) •
+[GitHub →](https://github.com/chadhazlett/stat256-2026)
+
+::: {.meta}
+UCLA Statistics • PhD
+:::
+:::
+
+:::
+
+## Broader causal inference resources
+
+The [Practically Causal](https://practicallycausal.com) site, which I
+co-direct with [Onyebuchi Arah](https://ph.ucla.edu/about/faculty-staff-directory/onyebuchi-arah),
+hosts:
+
+- getting-started guides aimed at applied researchers,
+- short courses and tutorials on specific methods (sensitivity, balancing,
+  kernel methods, etc.),
+- a directory of software and companion materials.
+
+If you're a researcher looking to adopt causal methods in your own work
+without committing to a full graduate course, that's the best starting
+point.
+
+## Past courses
+
+A full list of past teaching is on my [CV](cv.qmd). Selected course
+materials from recent years are on
+[GitHub](https://github.com/chadhazlett?tab=repositories).

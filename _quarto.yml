@@ -1,0 +1,57 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - CNAME
+    - assets/
+
+website:
+  title: "Chad Hazlett"
+  site-url: "https://chadhazlett.com"
+  favicon: assets/favicon.svg
+  navbar:
+    background: primary
+    search: false
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: teaching.qmd
+        text: Teaching
+      - href: software.qmd
+        text: Software
+      - href: cv.qmd
+        text: CV
+    right:
+      - icon: github
+        href: https://github.com/chadhazlett
+        aria-label: GitHub
+      - icon: mortarboard-fill
+        href: https://scholar.google.com/citations?user=pbD0dGwAAAAJ
+        aria-label: Google Scholar
+  page-footer:
+    left: "© 2026 Chad Hazlett"
+    right: "Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      dark:  [darkly, styles/theme-dark.scss, styles/custom.scss]
+      light: [flatly, styles/theme-light.scss, styles/custom.scss]
+    css: styles/custom.scss
+    toc: true
+    toc-location: right
+    toc-depth: 3
+    mainfont: "Source Sans 3"
+    monofont: "JetBrains Mono"
+    fontsize: 1.05em
+    linkcolor: "#5E81AC"
+    anchor-sections: true
+    smooth-scroll: true
+    link-external-newwindow: true
+
+bibliography: references.bib
+csl: csl/apa.csl

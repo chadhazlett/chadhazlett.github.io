@@ -1,0 +1,89 @@
+---
+title: "Software"
+---
+
+R packages I maintain or contribute to. Most implement methods from
+[my papers](publications.qmd); a few are infrastructure for collaborative
+projects.
+
+::: {.card-grid}
+
+::: {.card}
+### KBAL
+
+**Kernel balancing** for estimating causal effects and population-level
+quantities without imposing a parametric outcome model. Balances on the
+means of features in a reproducing-kernel Hilbert space — a nonparametric
+analog to entropy balancing that degrades gracefully under
+misspecification.
+
+[GitHub →](https://github.com/chadhazlett/KBAL)
+
+::: {.meta}
+R • Causal inference, balancing
+:::
+:::
+
+::: {.card}
+### gpss
+
+**Generalized propensity score and balancing**. Framework for balancing-
+based estimation with continuous, multi-valued, and mixed treatments,
+plus tools for diagnostics and sensitivity.
+
+[GitHub →](https://github.com/doeun-kim/gpss)
+
+::: {.meta}
+R • With Doeun Kim
+:::
+:::
+
+::: {.card}
+### scqe
+
+**Stability Controlled Quasi-Experiment**. Bounds causal effects when only
+one pre-treatment and one post-treatment period are observed, using
+stability-of-trend assumptions instead of parallel trends.
+
+[GitHub →](https://github.com/chadhazlett/scqe)
+
+::: {.meta}
+R • Panel causal inference
+:::
+:::
+
+::: {.card}
+### CBPS
+
+**Covariate Balancing Propensity Score**. Contributor to the R package
+implementing propensity score estimation that simultaneously models
+treatment and balances covariates — including extensions to continuous
+treatments.
+
+[GitHub →](https://github.com/kosukeimai/CBPS) •
+[CRAN →](https://cran.r-project.org/package=CBPS)
+
+::: {.meta}
+R • With Fong, Imai, Ratkovic
+:::
+:::
+
+::: {.card}
+### EarlyWarningProject
+
+Statistical pipeline for the
+[Early Warning Project](https://earlywarningproject.ushmm.org/)'s annual
+forecasts of mass-atrocity risk, in partnership with the US Holocaust
+Memorial Museum.
+
+[GitHub →](https://github.com/chadhazlett/EarlyWarningProject)
+
+::: {.meta}
+R • Mass atrocity forecasting
+:::
+:::
+
+:::
+
+Smaller tools and replication code for specific papers are on
+[my GitHub profile](https://github.com/chadhazlett?tab=repositories).

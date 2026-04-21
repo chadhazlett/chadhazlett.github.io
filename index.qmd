@@ -1,0 +1,51 @@
+---
+title: "Chad Hazlett"
+pagetitle: "Chad Hazlett"
+toc: false
+about:
+  template: trestles
+  image: assets/headshot.jpg
+  image-shape: round
+  image-width: 14em
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:chazlett@stat.ucla.edu
+    - icon: github
+      text: GitHub
+      href: https://github.com/chadhazlett
+    - icon: mortarboard-fill
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=pbD0dGwAAAAJ
+    - icon: journal-bookmark
+      text: Practically Causal
+      href: https://practicallycausal.com
+---
+
+I am a faculty member at UCLA, jointly appointed in the Departments of
+[Political Science](https://polisci.ucla.edu/person/chad-hazlett/) and
+[Statistics & Data Science](https://statistics.ucla.edu/).
+
+My research develops methods for causal inference — tools that let us learn
+honestly from data when randomized experiments are impossible or impractical.
+I work on three connected methodological threads:
+
+- **Identification strategies** that clarify what assumptions are doing the
+  work, and what we can and can't conclude when they fail.
+- **Sensitivity analyses** that let researchers communicate honestly about
+  how much their conclusions depend on those assumptions.
+- **Estimation and modeling tools** — kernel-based regression, balancing
+  methods, and related techniques — that relax functional-form assumptions
+  without giving up interpretability.
+
+I apply these tools to questions in political violence and mass atrocity
+prevention, environmental and health policy, and medicine. I co-direct the
+[Practically Causal](https://practicallycausal.com) group with
+[Onyebuchi Arah](https://ph.ucla.edu/about/faculty-staff-directory/onyebuchi-arah),
+and the [Early Warning Project](https://earlywarningproject.ushmm.org/)'s
+statistical risk assessment with the
+[US Holocaust Memorial Museum](https://www.ushmm.org/).
+
+See the [Research](research.qmd), [Publications](publications.qmd),
+[Teaching](teaching.qmd), and [Software](software.qmd) pages for more, or
+download my [CV](cv.qmd).
