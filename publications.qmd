@@ -69,7 +69,7 @@ With the precipitous decline in response rates, researchers and pollsters have b
 ::: {.pub}
 Bertoli, A., & Hazlett, C. (2025). Seeing like a district: Understanding what close-election designs for leader characteristics can and cannot tell us. *Political Analysis*, 1–19.
 
-<span class="pub-links"><a href="https://doi.org/10.1017/pan.2025.5" target="_blank" rel="noopener">DOI</a></span>
+<span class="pub-links"><a href="https://doi.org/10.1017/pan.2025.5" target="_blank" rel="noopener">DOI</a> · <a href="assets/papers/bertoli_hazlett_2025_seeing_like_district.pdf" target="_blank" rel="noopener">PDF</a></span>
 
 <details class="pub-abstract">
 <summary>Abstract</summary>
@@ -218,7 +218,7 @@ Attention to the credibility of causal claims has increased tremendously in rece
 ::: {.pub}
 Cesar B. Martinez-Alvarez, Chad Hazlett, Paasha Mahdavi, and Michael L. Ross. Political Leadership Has Limited Impact on Fossil Fuel Taxes and Subsidies. (2022) *Proceedings of the National Academy of Sciences*, 119 (47).
 
-<span class="pub-links"><a href="https://doi.org/10.1073/pnas.2208024119" target="_blank" rel="noopener">DOI</a></span>
+<span class="pub-links"><a href="https://doi.org/10.1073/pnas.2208024119" target="_blank" rel="noopener">DOI</a> · <a href="assets/papers/martinezalvarez_2022_political_leadership.pdf" target="_blank" rel="noopener">PDF</a></span>
 
 <details class="pub-abstract">
 <summary>Abstract</summary>
@@ -276,7 +276,7 @@ COVID-19 can be life-threatening to individuals with chronic diseases. To preven
 ::: {.pub}
 Blum, A., Hazlett, C., & Posner, D. N. (2021). Measuring Ethnic Bias: Can Misattribution-Based Tools from Social Psychology Reveal Group Biases that Economics Games Cannot? *Political Analysis*. 29(3), 385–404.
 
-<span class="pub-links"><a href="https://doi.org/10.1017/pan.2020.37" target="_blank" rel="noopener">DOI</a></span>
+<span class="pub-links"><a href="https://doi.org/10.1017/pan.2020.37" target="_blank" rel="noopener">DOI</a> · <a href="assets/papers/blum_hazlett_posner_2021_ethnic_bias.pdf" target="_blank" rel="noopener">PDF</a></span>
 
 <details class="pub-abstract">
 <summary>Abstract</summary>
@@ -306,7 +306,7 @@ Understanding how the most severe mass atrocities have historically come to an e
 ::: {.pub}
 Hazlett, C., Wainstein, L. (2020). Understanding, choosing, and unifying multilevel and fixed effect approaches. *Political Analysis*: 1–20.
 
-<span class="pub-links"><a href="https://doi.org/10.1017/pan.2020.41" target="_blank" rel="noopener">DOI</a></span>
+<span class="pub-links"><a href="https://doi.org/10.1017/pan.2020.41" target="_blank" rel="noopener">DOI</a> · <a href="assets/papers/hazlett_wainstein_2020_multilevel.pdf" target="_blank" rel="noopener">PDF</a></span>
 
 <details class="pub-abstract">
 <summary>Abstract</summary>
@@ -321,7 +321,7 @@ When working with grouped data, investigators may choose between "fixed effects"
 ::: {.pub}
 Hazlett, C., Maokola, W., Wulf, D. (2020). Inference without randomization or ignorability: A stability-controlled quasi-experiment on the prevention of tuberculosis. *Statistics in Medicine*, 39(28), 4149–4186.
 
-<span class="pub-links"><a href="https://doi.org/10.1002/sim.8717" target="_blank" rel="noopener">DOI</a></span>
+<span class="pub-links"><a href="https://doi.org/10.1002/sim.8717" target="_blank" rel="noopener">DOI</a> · <a href="assets/papers/hazlett_maokola_wulf_2020_tuberculosis.pdf" target="_blank" rel="noopener">PDF</a></span>
 
 <details class="pub-abstract">
 <summary>Abstract</summary>
@@ -400,7 +400,7 @@ Does exposure to violence motivate individuals to support further violence or to
 ::: {.pub}
 Hazlett, C. (2019). Estimating causal effects of new treatments despite self-selection: The case of experimental medical treatments. *Journal of Causal Inference*, 7(1).
 
-<span class="pub-links"><a href="https://doi.org/10.1515/jci-2018-0019" target="_blank" rel="noopener">DOI</a></span>
+<span class="pub-links"><a href="https://doi.org/10.1515/jci-2018-0019" target="_blank" rel="noopener">DOI</a> · <a href="assets/papers/hazlett_2019_new_treatments.pdf" target="_blank" rel="noopener">PDF</a></span>
 
 <details class="pub-abstract">
 <summary>Abstract</summary>
@@ -430,13 +430,13 @@ Civilians who have fled violent conflict and settled in neighboring countries ar
 ::: {.pub}
 Fong, C., Hazlett, C., & Imai, K. (2018). Covariate balancing propensity score for a continuous treatment: Application to the efficacy of political advertisements. *The Annals of Applied Statistics*, 12(1), 156–177.
 
-<span class="pub-links"><a href="https://doi.org/10.1214/17-aoas1101" target="_blank" rel="noopener">DOI</a></span>
+<span class="pub-links"><a href="https://doi.org/10.1214/17-aoas1101" target="_blank" rel="noopener">DOI</a> · <a href="assets/papers/fong_hazlett_imai_2018_cbps_continuous.pdf" target="_blank" rel="noopener">PDF</a></span>
 :::
 
 ::: {.pub}
 Hazlett, C., & Berinsky, A. (2018). Stress-testing the affect misattribution procedure: Heterogeneous control of affect misattribution procedure effects under incentives. *British Journal of Social Psychology*, 57(1), 61–74.
 
-<span class="pub-links"><a href="https://doi.org/10.1111/bjso.12217" target="_blank" rel="noopener">DOI</a></span>
+<span class="pub-links"><a href="https://doi.org/10.1111/bjso.12217" target="_blank" rel="noopener">DOI</a> · <a href="assets/papers/hazlett_berinsky_2018_amp.pdf" target="_blank" rel="noopener">PDF</a></span>
 
 <details class="pub-abstract">
 <summary>Abstract</summary>
@@ -465,7 +465,7 @@ The affect misattribution procedure (
 ::: {.pub}
 Ross, M. L., Hazlett, C., & Mahdavi, P. (2017). Global progress and backsliding on gasoline taxes and subsidies. *Nature Energy*, 2(1), 1–6.
 
-<span class="pub-links"><a href="https://doi.org/10.1038/nenergy.2016.201" target="_blank" rel="noopener">DOI</a></span>
+<span class="pub-links"><a href="https://doi.org/10.1038/nenergy.2016.201" target="_blank" rel="noopener">DOI</a> · <a href="assets/papers/ross_hazlett_mahdavi_2017_gasoline.pdf" target="_blank" rel="noopener">PDF</a></span>
 :::
 
 ::: {.pub}
