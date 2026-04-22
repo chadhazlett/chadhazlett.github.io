@@ -1,33 +1,5 @@
 [
   {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "I teach graduate courses in causal inference and machine learning for the social sciences at UCLA, and co-lead the Practical Causal Inference lab."
-  },
-  {
-    "objectID": "teaching.html#current-courses-spring-2026",
-    "href": "teaching.html#current-courses-spring-2026",
-    "title": "Teaching",
-    "section": "Current courses (Spring 2026)",
-    "text": "Current courses (Spring 2026)\n\n\nPS 200C — Causal Inference\nGraduate course for political science PhD students. Covers identification, estimation, and inference for causal effects: potential outcomes, matching and weighting, instrumental variables, regression discontinuity, difference-in-differences, synthetic controls, sensitivity analysis.\nCourse site → • GitHub →\n\nUCLA Political Science • PhD\n\n\n\nStat 256 — Causality\nGraduate statistics course on causality: foundations of causal inference, identification under ignorability, instruments, sensitivity, modern estimation (doubly robust methods, machine-learning-based approaches), and open problems at the methodological frontier.\nCourse site → • GitHub →\n\nUCLA Statistics • PhD"
-  },
-  {
-    "objectID": "teaching.html#broader-causal-inference-resources",
-    "href": "teaching.html#broader-causal-inference-resources",
-    "title": "Teaching",
-    "section": "Broader causal inference resources",
-    "text": "Broader causal inference resources\nThe Practical Causal Inference lab site, which I co-direct with Onyebuchi Arah, hosts:\n\ngetting-started guides aimed at applied researchers,\nshort courses and tutorials on specific methods (sensitivity, balancing, kernel methods, etc.),\na directory of software and companion materials.\n\nIf you’re a researcher looking to adopt causal methods in your own work without committing to a full graduate course, that’s the best starting point."
-  },
-  {
-    "objectID": "teaching.html#past-courses",
-    "href": "teaching.html#past-courses",
-    "title": "Teaching",
-    "section": "Past courses",
-    "text": "Past courses\nA full list of past teaching is on my CV. Selected course materials from recent years are on GitHub."
-  },
-  {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Publications",
@@ -56,6 +28,48 @@
     "text": "Book Chapters\n\n“Beset on all sides: Children and the Landscape of Conflict in North East Nigeria.” (With Hilary Matfess and Graeme Blair). In Cradled by Conflict: Child Involvement with Armed Groups in Contemporary Conflict. Ed: Siobhan O’Neil, Kato Van Broeckhoven.\n\n\n“Not On Our Watch: American Mobilization for Darfur” (with R.J. Hamilton). In War in Darfur and the Search for Peace, Alex De Waal (Ed.). Cambridge, MA: Harvard University Press. 2007."
   },
   {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "I teach graduate courses in causal inference and machine learning for the social sciences at UCLA, and co-lead the Practical Causal Inference lab."
+  },
+  {
+    "objectID": "teaching.html#current-courses-spring-2026",
+    "href": "teaching.html#current-courses-spring-2026",
+    "title": "Teaching",
+    "section": "Current courses (Spring 2026)",
+    "text": "Current courses (Spring 2026)\n\n\nPS 200C — Causal Inference\nGraduate course for political science PhD students. Covers identification, estimation, and inference for causal effects: potential outcomes, matching and weighting, instrumental variables, regression discontinuity, difference-in-differences, synthetic controls, sensitivity analysis.\nCourse site → • GitHub →\n\nUCLA Political Science • PhD\n\n\n\nStat 256 — Causality\nGraduate statistics course on causality: foundations of causal inference, identification under ignorability, instruments, sensitivity, modern estimation (doubly robust methods, machine-learning-based approaches), and open problems at the methodological frontier.\nCourse site → • GitHub →\n\nUCLA Statistics • PhD"
+  },
+  {
+    "objectID": "teaching.html#broader-causal-inference-resources",
+    "href": "teaching.html#broader-causal-inference-resources",
+    "title": "Teaching",
+    "section": "Broader causal inference resources",
+    "text": "Broader causal inference resources\nThe Practical Causal Inference lab site, which I co-direct with Onyebuchi Arah, hosts:\n\ngetting-started guides aimed at applied researchers,\nshort courses and tutorials on specific methods (sensitivity, balancing, kernel methods, etc.),\na directory of software and companion materials.\n\nIf you’re a researcher looking to adopt causal methods in your own work without committing to a full graduate course, that’s the best starting point."
+  },
+  {
+    "objectID": "teaching.html#past-courses",
+    "href": "teaching.html#past-courses",
+    "title": "Teaching",
+    "section": "Past courses",
+    "text": "Past courses\nA full list of past teaching is on my CV. Selected course materials from recent years are on GitHub."
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "My current CV is available below.\nDownload CV (PDF)\n\n\n  Your browser can't embed PDFs inline.\n  Download the CV here."
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "R packages I maintain or contribute to. Most implement methods from my papers; a few are infrastructure for collaborative projects.\n\n\nsensemakr\nSensitivity analysis tools for regression results to unobserved confounding. Implements the methods in Cinelli & Hazlett (2020, JRSS B): robustness value, bias-adjusted estimates, contour plots, extreme-scenario bounds. Maintained by Carlos Cinelli; see his documentation site for illustrations and demos.\nInstall in R with install.packages(\"sensemakr\"), or in Stata with ssc install sensemakr.\nWebsite → • CRAN → • GitHub →\n\nR / Stata • Sensitivity analysis\n\n\n\nKBAL\nKernel balancing for estimating causal effects and population-level quantities without imposing a parametric outcome model. Balances on the means of features in a reproducing-kernel Hilbert space — a nonparametric analog to entropy balancing that degrades gracefully under misspecification.\nIncludes the kpop() wrapper for survey reweighting, implementing the method in Hartman, Hazlett & Sterbenz (2024), Kpop: A kernel balancing approach for reducing specification assumptions in survey weighting, JRSS A.\nInstall with install.packages(\"kbal\").\nCRAN → • GitHub →\n\nR • Causal inference, balancing, survey weighting\n\n\n\ngpss\nGaussian Processes for Social Science. Non-parametric regression with principled uncertainty quantification — the posterior reflects the lesser knowledge we have at the edge of or beyond the observed data, where other approaches become highly model-dependent. Reduces user-chosen hyperparameters from three to zero, with convenience functions for regression discontinuity (gp_rdd()), interrupted time-series (gp_its()), and general GP fitting.\nImplements the method in Cho, Kim & Hazlett (2026), Inference at the Data’s Edge, Political Analysis.\nInstall with install.packages(\"gpss\").\nWebsite → • CRAN → • GitHub →\n\nR • With Soonhong Cho and Doeun Kim\n\n\n\nscqe\nStability Controlled Quasi-Experiment. Bounds causal effects when only one pre-treatment and one post-treatment period are observed, using stability-of-trend assumptions instead of parallel trends.\nA companion browser-based app lets you run SCQE on aggregate data with no R setup — useful for quick exploration and teaching.\nInstall with install.packages(\"scqe\").\nWeb app → • CRAN → • GitHub →\n\nR / Shiny • Panel causal inference\n\n\n\nKRLS\nKernel Regularized Least Squares. A flexible nonparametric regression that relaxes the linearity assumption while staying interpretable: coefficients have the familiar marginal-effect interpretation, and results degrade gracefully under misspecification. Widely used as a machine-learning alternative to OLS in political science and policy analysis.\nImplements the method in Hainmueller & Hazlett (2014), Political Analysis. The Stata port is described in Ferwerda, Hainmueller & Hazlett (2015), Journal of Statistical Software.\nInstall in R with install.packages(\"KRLS\"), or in Stata with ssc install krls.\nCRAN → • GitHub →\n\nR / Stata • With Jens Hainmueller\n\n\n\nCBPS\nCovariate Balancing Propensity Score. Contributor to the R package implementing propensity score estimation that simultaneously models treatment and balances covariates — including extensions to continuous treatments.\nInstall with install.packages(\"CBPS\").\nCRAN → • GitHub →\n\nR • With Fong, Imai, Ratkovic\n\n\n\nEarlyWarningProject\nStatistical pipeline for the Early Warning Project’s annual forecasts of mass-atrocity risk, in partnership with the US Holocaust Memorial Museum.\nGitHub →\n\nR • Mass atrocity forecasting\n\n\n\nSmaller tools and replication code for specific papers are on my GitHub profile."
+  },
+  {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Research",
@@ -82,20 +96,6 @@
     "title": "Research",
     "section": "Get in touch",
     "text": "Get in touch\nIf you’re working on a methodological or applied problem that sounds like one of these, I’m always glad to hear about it — see the home page for contact info."
-  },
-  {
-    "objectID": "software.html",
-    "href": "software.html",
-    "title": "Software",
-    "section": "",
-    "text": "R packages I maintain or contribute to. Most implement methods from my papers; a few are infrastructure for collaborative projects.\n\n\nsensemakr\nSensitivity analysis tools for regression results to unobserved confounding. Implements the methods in Cinelli & Hazlett (2020, JRSS B): robustness value, bias-adjusted estimates, contour plots, extreme-scenario bounds. Maintained by Carlos Cinelli; see his documentation site for illustrations and demos.\nInstall in R with install.packages(\"sensemakr\"), or in Stata with ssc install sensemakr.\nWebsite → • CRAN → • GitHub →\n\nR / Stata • Sensitivity analysis\n\n\n\nKBAL\nKernel balancing for estimating causal effects and population-level quantities without imposing a parametric outcome model. Balances on the means of features in a reproducing-kernel Hilbert space — a nonparametric analog to entropy balancing that degrades gracefully under misspecification.\nIncludes the kpop() wrapper for survey reweighting, implementing the method in Hartman, Hazlett & Sterbenz (2024), Kpop: A kernel balancing approach for reducing specification assumptions in survey weighting, JRSS A.\nInstall with install.packages(\"kbal\").\nCRAN → • GitHub →\n\nR • Causal inference, balancing, survey weighting\n\n\n\ngpss\nGaussian Processes for Social Science. Non-parametric regression with principled uncertainty quantification — the posterior reflects the lesser knowledge we have at the edge of or beyond the observed data, where other approaches become highly model-dependent. Reduces user-chosen hyperparameters from three to zero, with convenience functions for regression discontinuity (gp_rdd()), interrupted time-series (gp_its()), and general GP fitting.\nImplements the method in Cho, Kim & Hazlett (2026), Inference at the Data’s Edge, Political Analysis.\nInstall with install.packages(\"gpss\").\nWebsite → • CRAN → • GitHub →\n\nR • With Soonhong Cho and Doeun Kim\n\n\n\nscqe\nStability Controlled Quasi-Experiment. Bounds causal effects when only one pre-treatment and one post-treatment period are observed, using stability-of-trend assumptions instead of parallel trends.\nA companion browser-based app lets you run SCQE on aggregate data with no R setup — useful for quick exploration and teaching.\nInstall with install.packages(\"scqe\").\nWeb app → • CRAN → • GitHub →\n\nR / Shiny • Panel causal inference\n\n\n\nKRLS\nKernel Regularized Least Squares. A flexible nonparametric regression that relaxes the linearity assumption while staying interpretable: coefficients have the familiar marginal-effect interpretation, and results degrade gracefully under misspecification. Widely used as a machine-learning alternative to OLS in political science and policy analysis.\nImplements the method in Hainmueller & Hazlett (2014), Political Analysis. The Stata port is described in Ferwerda, Hainmueller & Hazlett (2015), Journal of Statistical Software.\nInstall in R with install.packages(\"KRLS\"), or in Stata with ssc install krls.\nCRAN → • GitHub →\n\nR / Stata • With Jens Hainmueller\n\n\n\nCBPS\nCovariate Balancing Propensity Score. Contributor to the R package implementing propensity score estimation that simultaneously models treatment and balances covariates — including extensions to continuous treatments.\nInstall with install.packages(\"CBPS\").\nCRAN → • GitHub →\n\nR • With Fong, Imai, Ratkovic\n\n\n\nEarlyWarningProject\nStatistical pipeline for the Early Warning Project’s annual forecasts of mass-atrocity risk, in partnership with the US Holocaust Memorial Museum.\nGitHub →\n\nR • Mass atrocity forecasting\n\n\n\nSmaller tools and replication code for specific papers are on my GitHub profile."
-  },
-  {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "CV",
-    "section": "",
-    "text": "My current CV is available below.\nDownload CV (PDF)\n\n\n  Your browser can't embed PDFs inline.\n  Download the CV here."
   },
   {
     "objectID": "index.html",
