@@ -58,9 +58,3 @@ hosts:
 If you're a researcher looking to adopt causal methods in your own work
 without committing to a full graduate course, that's the best starting
 point.
-
-## Past courses
-
-A full list of past teaching is on my [CV](cv.qmd). Selected course
-materials from recent years are on
-[GitHub](https://github.com/chadhazlett?tab=repositories).
