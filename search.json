@@ -49,13 +49,6 @@
     "text": "Broader causal inference resources\nThe Practical Causal Inference lab site, which I co-direct with Onyebuchi Arah, hosts:\n\ngetting-started guides aimed at applied researchers,\nshort courses and tutorials on specific methods (sensitivity, balancing, kernel methods, etc.),\na directory of software and companion materials.\n\nIf you’re a researcher looking to adopt causal methods in your own work without committing to a full graduate course, that’s the best starting point."
   },
   {
-    "objectID": "teaching.html#past-courses",
-    "href": "teaching.html#past-courses",
-    "title": "Teaching",
-    "section": "Past courses",
-    "text": "Past courses\nA full list of past teaching is on my CV. Selected course materials from recent years are on GitHub."
-  },
-  {
     "objectID": "cv.html",
     "href": "cv.html",
     "title": "CV",
