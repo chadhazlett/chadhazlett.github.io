@@ -18,8 +18,7 @@ estimation, and inference for causal effects: potential outcomes, matching
 and weighting, instrumental variables, regression discontinuity,
 difference-in-differences, synthetic controls, sensitivity analysis.
 
-[Course site →](https://chadhazlett.github.io/ps200c-2026/) •
-[GitHub →](https://github.com/chadhazlett/ps200c-2026)
+[Course site →](https://chadhazlett.github.io/ps200c-2026/)
 
 ::: {.meta}
 UCLA Political Science • PhD
@@ -34,8 +33,7 @@ identification under ignorability, instruments, sensitivity, modern
 estimation (doubly robust methods, machine-learning-based approaches),
 and open problems at the methodological frontier.
 
-[Course site →](https://chadhazlett.github.io/stat256-2026/) •
-[GitHub →](https://github.com/chadhazlett/stat256-2026)
+[Course site →](https://chadhazlett.github.io/stat256-2026/)
 
 ::: {.meta}
 UCLA Statistics • PhD
