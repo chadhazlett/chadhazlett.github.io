@@ -1,0 +1,28 @@
+---
+title: "Causality you can believe in?"
+subtitle: "The identification challenge and taking assumptions seriously"
+toc: false
+resources:
+  - Hazlett_SICSS2026.pdf
+---
+
+**Chad Hazlett** · Summer Institute in Computational Social Science (SICSS) 2026, UCLA
+
+A talk on causal identification: why credible causal claims rest on assumptions that
+cannot be checked in the data; how the main identification strategies (experiments,
+conditional ignorability, RDD/ITS, difference-in-differences, instrumental variables,
+and learning from prior outcomes) each carry their own demanding assumptions; and how
+sensitivity analysis and partial identification --- "safe inference" --- let us state
+honestly what we can and cannot conclude.
+
+[Download the slides (PDF)](Hazlett_SICSS2026.pdf){.btn .btn-primary target="_blank"}
+
+```{=html}
+<div style="margin-top:1.5rem;">
+<iframe src="Hazlett_SICSS2026.pdf" width="100%" height="640"
+        style="border:1px solid #ddd;">
+  Your browser cannot display embedded PDFs.
+  <a href="Hazlett_SICSS2026.pdf">Download the slides</a>.
+</iframe>
+</div>
+```
