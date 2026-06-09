@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://chadhazlett.com/publications.html</loc>
-    <lastmod>2026-05-05T23:54:58.385Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chadhazlett.com/teaching.html</loc>
-    <lastmod>2026-05-05T23:54:58.386Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chadhazlett.com/cv.html</loc>
-    <lastmod>2026-05-05T23:54:58.385Z</lastmod>
-  </url>
-  <url>
     <loc>https://chadhazlett.com/software.html</loc>
-    <lastmod>2026-05-05T23:54:58.385Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chadhazlett.com/research.html</loc>
-    <lastmod>2026-05-05T23:54:58.385Z</lastmod>
+    <lastmod>2026-06-09T19:18:21.408Z</lastmod>
   </url>
   <url>
     <loc>https://chadhazlett.com/index.html</loc>
-    <lastmod>2026-05-05T23:54:58.385Z</lastmod>
+    <lastmod>2026-06-09T19:18:21.408Z</lastmod>
+  </url>
+  <url>
+    <loc>https://chadhazlett.com/cv.html</loc>
+    <lastmod>2026-06-09T19:18:21.408Z</lastmod>
+  </url>
+  <url>
+    <loc>https://chadhazlett.com/research.html</loc>
+    <lastmod>2026-06-09T19:18:21.408Z</lastmod>
+  </url>
+  <url>
+    <loc>https://chadhazlett.com/publications.html</loc>
+    <lastmod>2026-06-09T19:18:21.408Z</lastmod>
+  </url>
+  <url>
+    <loc>https://chadhazlett.com/teaching.html</loc>
+    <lastmod>2026-06-09T19:18:21.410Z</lastmod>
+  </url>
+  <url>
+    <loc>https://chadhazlett.com/SICSS2026/index.html</loc>
+    <lastmod>2026-06-09T19:18:21.274Z</lastmod>
   </url>
 </urlset>
