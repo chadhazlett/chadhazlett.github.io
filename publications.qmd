@@ -351,7 +351,7 @@ One political barrier to climate reforms is the temporal mismatch between short-
 ::: {.pub #hazlett_2020_kernel_balancing}
 Hazlett, C. (2020). Kernel Balancing: A flexible non-parametric weighting procedure for estimating causal effects. *Statistica Sinica*.
 
-<span class="pub-links"><a href="https://doi.org/10.5705/ss.202017.0555" target="_blank" rel="noopener">DOI</a> · <a href="https://www3.stat.sinica.edu.tw/statistica/oldpdf/A30n32.pdf" target="_blank" rel="noopener">PDF</a> · <a href="assets/papers/kbal_supp_ss.pdf" target="_blank" rel="noopener">Supplement</a></span>
+<span class="pub-links"><a href="https://www3.stat.sinica.edu.tw/statistica/j30n3/j30n32/j30n32.html" target="_blank" rel="noopener">Journal</a> · <a href="https://www3.stat.sinica.edu.tw/statistica/oldpdf/A30n32.pdf" target="_blank" rel="noopener">PDF</a> · <a href="assets/papers/kbal_supp_ss.pdf" target="_blank" rel="noopener">Supplement</a></span>
 :::
 
 ::: {.pub #hazlett_campos_2020_perp}
