@@ -42,6 +42,27 @@ UCLA Statistics • PhD
 
 :::
 
+## Short courses (2026)
+
+::: {.card-grid}
+
+::: {.card}
+### Introduction to Causal Inference
+
+Two-day short course at the Academia Sinica ISSM (International Summer School
+in the Social Sciences), Taipei. Causal identification as the central problem;
+potential outcomes and causal graphs; randomized experiments and conditional
+ignorability. Includes in-class pencil-and-paper worksheets.
+
+[Course materials →](ISSM2026/)
+
+::: {.meta}
+Academia Sinica ISSM • July 2026
+:::
+:::
+
+:::
+
 ## Broader causal inference resources
 
 The [Practical Causal Inference lab](https://practicallycausal.com) site,

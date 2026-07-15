@@ -1,0 +1,37 @@
+---
+title: "Introduction to Causal Inference"
+subtitle: "Identification, potential outcomes, and causal graphs"
+toc: false
+resources:
+  - ISSM2026_Day1_slides.pdf
+  - ISSM2026_WS1_potential_outcomes.pdf
+  - ISSM2026_WS2_experiments_ignorability.pdf
+---
+
+**Chad Hazlett** · Academia Sinica ISSM 2026 · July 16–17
+
+This two-day course concentrates on the foundational idea behind all causal
+inference: causal identification, and how it differs from an ordinary
+statistical problem. A causal claim always concerns the relationship between
+quantities we can observe and quantities we can never observe, and for this
+reason it can never be settled by data alone --- we must always grapple with
+assumptions. The course introduces two complementary notational systems that
+let us state these assumptions and challenges with mathematical precision: the
+potential outcomes model and graphical/structural causal models. We put both to
+work in the context of two central strategies for making causal claims:
+randomized experiments, and the attempt to recover causal claims from
+observational data through controlled comparisons under the assumption of no
+unobserved confounding. Throughout, students rehearse and consolidate these
+ideas with pencil-and-paper worksheets completed in class.
+
+## Materials
+
+| Session | Topic | Slides | In-class worksheets |
+|---|---|---|---|
+| **Day 1** <br> July 16 | Potential outcomes and ignorability | [Slides (PDF)](ISSM2026_Day1_slides.pdf){target="_blank"} | [WS1: Potential Outcomes (PDF)](ISSM2026_WS1_potential_outcomes.pdf){target="_blank"} <br> [WS2: Experiments & Ignorability (PDF)](ISSM2026_WS2_experiments_ignorability.pdf){target="_blank"} |
+| **Day 2** <br> July 17 | Causal graphs and what they reveal | *posted after the session* | *posted after the session* |
+
+: {.striped tbl-colwidths="[14,34,22,30]"}
+
+Slides are posted as handouts (one page per slide). Worksheets are meant to be
+worked by hand in class; blank copies are linked here for reference.
