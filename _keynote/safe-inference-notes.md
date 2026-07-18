@@ -117,7 +117,27 @@ literature, which still tries to *use the data* to point-identify):
 > *Declare a defensible interval for δ (the residual bias), then report the
 > entire ATT band across that interval.*
 
-That is safe inference in one line. Sensitivity analysis, partial
+That is safe inference in one line.
+
+**IT IS A METHODS TALK (decided 2026-07-18).** The room just spent 2 days in
+potential outcomes + DAGs; the deck must carry *mechanical, notation-bearing*
+slides, not only narrative sinew. Concretely, ground everything in the estimand
+and Y(0)-imputation, worked at three levels of knowledge of Y(0):
+
+- **Estimand:** `ATT = E[Y_i(1) − Y_i(0) | D_i = 1]`; for treated units `Y_i(1)`
+  observed, `Y_i(0)` missing; `ATT̂ = (1/n₁) Σ_{i:D=1} [Y_i − Ŷ_i(0)]`.
+  *Every design is just a claim about `Ŷ_i(0)`.* (← ties to course Thesis 4.)
+- **Case 1 (know it):** `Y_i(0) ≈ y₀` ⇒ `ATT̂ = Ȳ_treated − y₀`; single arm suffices.
+- **Case 2 (bound it):** `Ŷ_i(0) = m_i + δ` ⇒ `ATT(δ) = Ȳ_treated − m̄ − δ`; defensible
+  δ-interval → ATT band; band clears 0 ⇔ condition 2 holds.
+- **SCQE (model the trend):** cohorts with treated share π_c;
+  `Ȳ_c = Ȳ(0)_c + ATT·π_c` ⇒ `ΔȲ = ΔȲ(0) + ATT·Δπ`, with the untestable piece
+  `ΔȲ(0) ≡ δ` (the baseline trend). Solve: **`ATT(δ) = (ΔȲ − δ)/Δπ`**. Ignorability
+  is *replaced* by a nameable, boundable trend. Same δ-band move as Case 2.
+  *(Reconcile notation with Hazlett 2020 Stat. Med. — Chad has canonical SCQE slides.)*
+
+These live as the "methods spine" inside the engine section of the deck
+(`safe-inference-slides.tex`). Sensitivity analysis, partial
 identification, and SCQE are all instances. Four ways to get at Y(0):
 
 - **Know it** — prognosis near-deterministic (e.g., uniformly fatal disease),
@@ -342,7 +362,16 @@ you assumed.*
   dissertation chapters) so "SCALE" isn't a gesture.
 - **Slide build** → medium decided: **Beamer** (inherit `../slides/day1.tex`
   preamble; teaser + reusable frames noted in §9). Timeline is tight — keynote is
-  **20 July 2026**. Ready to outline the deck against the timed §5 arc on your go.
+  **20 July 2026**.
+  - *Skeleton drafted:* `_keynote/safe-inference-slides.tex` — self-contained,
+    frame-by-frame against the §5 arc, with a **methods spine** (estimand →
+    Case 1/2 → SCQE identity) in the engine section. Reuse hooks marked for
+    `motivating_cases.tex` (contact/microfinance = commission; smoking = the
+    "you already believe in safe inference" beat) and `theses.tex` (open on
+    theses 3 & 4).
+  - *Not yet compiled* (drafted, not build-verified). TODO figures flagged inline:
+    dimmer-vs-switch, TB raw-gap-vs-band, GBM study-group→ATT.
+  - *Still to slot in:* Chad's canonical SCQE slides/figures; COVID×3 one-liners.
 
 ---
 

@@ -1,0 +1,385 @@
+% =====================================================================
+%  SAFE INFERENCE — keynote (20 July 2026)
+%  SKELETON / OUTLINE, not a finished deck. Frame titles + terse content
+%  + figure/reuse hooks, mapped 1:1 to the timed arc in
+%  _keynote/safe-inference-notes.md §5. No polish yet — react, then draft.
+%
+%  Preamble is a compact self-contained copy of ../../slides/day1.tex so
+%  this compiles standalone. Reusable frames referenced in comments live
+%  in ../../slides/custom/ (motivating_cases.tex, theses.tex).
+% =====================================================================
+\documentclass[xcolor=dvipsnames]{beamer}
+
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsfonts,bm}
+\usepackage[english]{babel}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\usepackage{ulem}
+
+\usetheme{Warsaw}
+\definecolor{someblue}{rgb}{0,.1,0.8}
+\newcommand\makebiggaps{\addtolength{\itemsep}{.5\baselineskip}}
+\newcommand\YY{Y(0)}                    % counterfactual shorthand for the talk
+\newcommand\E{\mathbb{E}}
+\newcommand\ATT{\text{ATT}}
+\newcommand\att{\widehat{\text{ATT}}}
+\setbeamertemplate{navigation symbols}{}
+
+\title[Safe Inference]{Safe Inference}
+\subtitle{Say only what you can defend --- and refuse to abandon what you can}
+\author{Chad Hazlett}
+\date{20 July 2026}
+
+\begin{document}
+
+\begin{frame}[plain]\titlepage\end{frame}
+
+% =====================================================================
+\section{Where we left off}
+% ---- BRIDGE from the 2-day course; audience has the machinery fresh ----
+
+\begin{frame}{You left with four theses}
+\small
+% REUSE: ../../slides/custom/theses.tex  ->  \allTheses  (or thesisThree/Four)
+\begin{itemize}\makebiggaps
+\item<1-> \textbf{(3)} There are no ``causal methods.'' Credibility comes from the
+      \emph{assumptions and the story behind them}, not the technique.
+\item<2-> \textbf{(4)} Experiments are not a separate \emph{kind} of knowledge ---
+      every design leans on assumptions; the trial just makes one hold by design.
+\end{itemize}
+\medskip
+\onslide<3->{\textbf{This talk is what theses 3 and 4 demand you actually \emph{do}.}}
+\end{frame}
+
+% =====================================================================
+\section{The near-miss}   % ARC 1 — cold open (~3 min). GBM, unresolved.
+
+\begin{frame}{A treatment we are nearly sure worked}
+% TODO: tell it as a person, not a method. GBM. ~30 sec, human.
+\begin{itemize}\makebiggaps
+\item A therapy. A patient population whose untreated course we know all too well.
+\item Strong reason to believe it helped.
+\item \textbf{Not credited} --- because it didn't come from an experiment.
+\end{itemize}
+\vfill
+\onslide<2->{\centering\emph{We'll come back to this. (Hold the name.)}}
+\end{frame}
+
+\begin{frame}{The question under the near-miss}
+\centering\large
+How many \emph{defensible} truths do we throw away ---\\[.4em]
+and would we even \emph{notice}?
+\end{frame}
+
+% =====================================================================
+\section{Two errors}      % ARC 2 (~4 min)
+
+\begin{frame}{Two ways to be wrong}
+\begin{itemize}\makebiggaps
+\item<1-> \textbf{Commission} --- assert an effect that isn't defensible.
+\item<2-> \textbf{Omission} --- fail to assert an effect that \emph{is} defensible.
+\end{itemize}
+\vfill
+% NB: evoke Type I / II, do NOT label them — room will hear the ordinary ones.
+\onslide<3->{\textbf{We police the first. We are structurally blind to the second.}}
+\end{frame}
+
+\begin{frame}{Both live in \emph{your} work, not just medicine}
+\begin{itemize}\makebiggaps
+\item<1-> Commission: the observational estimate you report with a straight face.
+\item<2-> Omission: the effect you \emph{could} defend, dropped the moment a
+      referee says ``but it's not an experiment.''
+\end{itemize}
+\end{frame}
+
+% =====================================================================
+\section{The villain}     % ARC 3 (~7 min)
+
+\begin{frame}{One failure, two faces}
+\centering\large
+A \emph{procedure} sitting in the seat where \emph{judgment} belongs.\\[.6em]
+\onslide<2->{\normalsize (Thesis 3, turned into a diagnosis.)}
+\end{frame}
+
+\begin{frame}{Face 1 --- the regression tell \hfill\small(commission; home turf)}
+\small
+\begin{itemize}\makebiggaps
+\item Your output looks identical whether your assumptions were mild or heroic.
+\item A tight CI comes out \emph{either way}. False precision is the house style.
+\end{itemize}
+\medskip
+% REUSE: ../../slides/custom/motivating_cases.tex — contact/prejudice + microfinance
+\onslide<2->{\footnotesize Cases: intergroup contact \& prejudice; microfinance ---
+observational stories that RCTs later cut down to size.}
+\end{frame}
+
+\begin{frame}{Face 2 --- the RCT heuristic \hfill\small(omission)}
+\begin{itemize}\makebiggaps
+\item ``Did it come from an experiment?'' treated as the \emph{whole} test of credibility.
+\item So recoverable knowledge is discarded because it arrived by another route.
+\end{itemize}
+\vfill
+% Keep two-sided: the enemy straddles the RCT/observational line. Not war on RCTs.
+\onslide<2->{\centering\emph{Same failure. Opposite direction.}}
+\end{frame}
+
+% =====================================================================
+\section{The creed}       % ARC 4 (~3 min)
+
+\begin{frame}{Safe inference}
+\begin{enumerate}\makebiggaps
+\item<1-> \textbf{Never assert the indefensible.}
+\item<2-> \textbf{Never refuse to assert the defensible.}
+\end{enumerate}
+\vfill
+\onslide<3->{\footnotesize Calibrated to the defensible --- no bolder, no more timid.
+An idea the lab already argues about; not a slogan coined for this talk.}
+\end{frame}
+
+% =====================================================================
+\section{The engine}      % ARC 5 (~13 min)
+
+\begin{frame}{One generative question}
+\centering\large
+Where can we defensibly \textbf{know}, \textbf{bound}, or \textbf{model}
+the counterfactual $\YY$ --- without an experiment?
+\end{frame}
+
+% ---- METHODS SPINE: they just did 2 days of POs/DAGs. Ground it in notation. ----
+\begin{frame}{The estimand, in your notation}
+\small
+\[ \ATT \;=\; \E\!\left[\,Y_i(1) - Y_i(0)\;\middle|\; D_i = 1\,\right] \]
+\begin{itemize}\makebiggaps
+\item For a treated unit: $Y_i(1)$ is \emph{observed}; $Y_i(0)$ is the \emph{missing}
+      counterfactual.
+\item Estimator: $\displaystyle \att = \frac{1}{n_1}\sum_{i:\,D_i=1}
+      \big[\,Y_i - \widehat{Y_i(0)}\,\big].$
+\end{itemize}
+\vfill
+\onslide<2->{\textbf{Every design is just a claim about $\widehat{Y_i(0)}$.}
+(Thesis 4.) Everything else is bookkeeping.}
+\end{frame}
+
+\begin{frame}{Safe inference in one line}
+\centering\large
+Declare a defensible interval for $\delta$ (the residual bias),\\[.3em]
+then report the \emph{entire} ATT band across that interval.
+\vfill
+\onslide<2->{\normalsize Sensitivity analysis, partial identification, and SCQE
+are all instances of this move.}
+\end{frame}
+
+% ---- The same move, worked mechanically at three levels of knowledge of Y(0) ----
+\begin{frame}{Case 1 --- $\YY$ (nearly) known}
+\small
+\begin{itemize}\makebiggaps
+\item Untreated course near-deterministic (e.g.\ uniformly fatal):
+      $Y_i(0)\approx y_0$, essentially known.
+\item Then $\displaystyle \att = \bar Y_{\text{treated}} - y_0$ --- a
+      \emph{single treated arm} suffices.
+\item No control group needed: the counterfactual was never in doubt.
+\end{itemize}
+\vfill
+\onslide<2->{This is the GBM / melanoma regime. Randomization would buy nothing.}
+\end{frame}
+
+\begin{frame}{Case 2 --- $\YY$ uncertain: carry a $\delta$}
+\small
+Write the imputation \emph{with its own error}, and propagate it:
+\[ \widehat{Y_i(0)} = m_i + \delta
+   \qquad\Longrightarrow\qquad
+   \ATT(\delta) = \bar Y_{\text{treated}} - \bar m - \delta . \]
+\begin{itemize}\makebiggaps
+\item $m_i$: best baseline guess. $\delta$: the residual bias you cannot rule out.
+\item Defensible $\delta \in [\delta_{\text{lo}},\,\delta_{\text{hi}}]
+      \;\Rightarrow\;$ an ATT \emph{band}, not a point.
+\item Whole band clears $0$? \textbf{Defensible claim} (condition 2).
+      Straddles $0$? Then say so --- that's the honest answer.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{SCQE --- model the \emph{trend}, not the confounder}
+\small
+Cohorts as treatment becomes available; $\pi_c=$ treated share in cohort $c$:
+\[ \bar Y_c \;=\; \underbrace{\bar Y(0)_c}_{\text{baseline}} + \ATT\cdot\pi_c
+   \;\;\Longrightarrow\;\;
+   \Delta\bar Y \;=\; \underbrace{\Delta\bar Y(0)}_{\equiv\,\delta\ (\text{untestable})}
+   + \ATT\cdot\Delta\pi . \]
+\[ \boxed{\;\ATT(\delta) \;=\; \dfrac{\Delta\bar Y - \delta}{\Delta\pi}\;} \]
+\begin{itemize}
+\item Ignorability (``no confounding'') is \emph{replaced} by a nameable baseline
+      trend $\delta$.
+\item Name a defensible interval for $\delta$ $\Rightarrow$ report the ATT band ---
+      \emph{the same move as Case 2}.
+\end{itemize}
+% TODO: reconcile notation with Chad's SCQE slides (Hazlett 2020, Stat.\ Med.);
+% he can supply the canonical figures/derivation.
+\end{frame}
+
+\begin{frame}{Four ways at $\YY$}
+\begin{itemize}\makebiggaps
+\item \textbf{Know it} --- prognosis near-deterministic; one treated arm nearly as
+      informative as an RCT.
+\item \textbf{Bound it} --- partial identification: a range you believe.
+\item \textbf{Model its trend} --- SCQE: a nameable, boundable baseline trend
+      replaces untestable ``no confounding.''
+\item \textbf{Stress-test it} --- sensitivity analysis: how wrong would you have to be?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{You already believe in this}
+\small
+% REUSE: ../../slides/custom/motivating_cases.tex — smoking & lung cancer bullet
+\begin{itemize}\makebiggaps
+\item Smoking causes lung cancer --- among the most trusted claims in science.
+\item No RCT. Ever. We believe it because someone formalized \emph{what it would
+      take} to be wrong --- and the confounding required was absurd.
+\end{itemize}
+\vfill
+\onslide<2->{\textbf{That is sensitivity analysis. That is safe inference.} You just
+never called it that.}
+\end{frame}
+
+\begin{frame}{Graceful degradation --- a dimmer, not a switch}
+\begin{itemize}\makebiggaps
+\item RCT fundamentalism: RCT $\Rightarrow$ believe; else $\Rightarrow$ silence.
+\item As knowledge of $\YY$ weakens, the claim weakens \emph{smoothly} through a
+      zone of defensible ranges.
+\end{itemize}
+% TODO FIGURE: switch vs. dimmer schematic.
+\end{frame}
+
+\begin{frame}{The deep point}
+\centering\large
+An RCT's value is \emph{proportional to our ignorance of} $\YY$.\\[.6em]
+\onslide<2->{\normalsize Where $\YY$ is knowable by other means, randomization is
+redundant --- demanding the trial anyway is ritual, not rigor.}
+\end{frame}
+
+\begin{frame}{But: \emph{two} conditions --- this is the sharp part}
+\begin{enumerate}\makebiggaps
+\item<1-> \textbf{Recoverable $\YY$} --- known or defensibly boundable (narrow $\delta$).
+\item<2-> \textbf{Signal clears the band} --- the effect is large relative to the
+      $\delta$-band width $+$ selection.
+\end{enumerate}
+\vfill
+\onslide<3->{\footnotesize When a knowable-but-noisy $\YY$ meets a \emph{small}
+effect, the band straddles zero --- and \emph{that} is exactly when the RCT is
+still doing real work. Match the instrument to where $\YY$ sits.}
+\end{frame}
+
+% =====================================================================
+\section{The ladder}      % ARC 6 (~14 min) — same engine, escalating, both verdicts
+
+\begin{frame}{TB / isoniazid --- \textsc{restraint} \hfill\small(commission)}
+\small
+\begin{itemize}\makebiggaps
+\item Published SCQE application (Statistics in Medicine, 2020).
+\item Naive treated-vs-untreated gap is \emph{dramatic and misleading} --- much
+      therapy went to \emph{low-risk} patients.
+\item SCQE: state the defensible baseline trend, report the ATT band. Rein it in.
+\end{itemize}
+% TODO FIGURE: raw gap vs. SCQE ATT band.
+\end{frame}
+
+\begin{frame}{GBM --- \textsc{rescue} \hfill\small(omission; the flagship)}
+\small
+% RESOLVE THE COLD OPEN HERE.
+\begin{itemize}\makebiggaps
+\item The near-miss from the opening --- named at last.
+\item Not naive $\YY$ imputation: a compromised design, sample \emph{mostly but not
+      entirely} treated.
+\item Use the \emph{whole} study group $+$ SCQE to get $\YY$ for the treated and
+      recover the \textbf{ATT}. Safe inference under non-random selection.
+\end{itemize}
+% TODO FIGURE: study-group -> Y(0) for treated -> ATT band.
+\end{frame}
+
+\begin{frame}{Three COVID treatments --- \textsc{scale} \hfill\small(omission, under time pressure)}
+\begin{itemize}\makebiggaps
+\item Three informative claims impossible under the RCT heuristic.
+\item Waiting for the trial was \emph{itself} the costly choice.
+\end{itemize}
+% TODO: one crisp line per treatment from the dissertation chapters (§7 open item).
+\end{frame}
+
+\begin{frame}{A class, not three anecdotes}
+\small
+\begin{itemize}\makebiggaps
+\item \textbf{Melanoma} (vemurafenib): \emph{shares} the structure. Grim, near-fixed
+      $\YY$; huge signal. The field even argued the RCT was \emph{unethical}.
+\item \textbf{Pancreatic} (daraxonrasib): \emph{boundary case}. $\YY$ equally
+      recoverable, but the effect is incremental --- condition 2 \emph{fails}, so
+      the confirmatory RCT was warranted.
+\end{itemize}
+\vfill
+\onslide<2->{\centering\emph{The boundary is where the method proves it's honest.}}
+\end{frame}
+
+% =====================================================================
+\section{The symmetry}    % ARC 7 (~4 min) — the disarming slide
+
+\begin{frame}{Same engine, opposite verdicts}
+\centering
+\begin{tabular}{ll}
+TB / melanoma-\emph{restraint} & \textsc{rein in} an over-claim\\[.4em]
+GBM / melanoma-\emph{rescue}   & \textsc{recover} a defensible one\\
+\end{tabular}
+\vfill
+\onslide<2->{\textbf{This is calibration --- not skepticism, not boldness.}}
+\end{frame}
+
+\begin{frame}{And it's not just medicine}
+\small
+\begin{itemize}\makebiggaps
+\item \textbf{Rescue:} naloxone / harm-reduction laws --- $\YY$ (overdose-mortality
+      trend) boundable, effect can clear the band, RCT unthinkable.
+\item \textbf{Restraint:} minimum wage, right-to-carry --- $\YY$ boundable, but the
+      effect is small vs.\ baseline volatility. Honest humility, not a bold claim.
+\item \textbf{Already done:} pet ownership \& wellbeing (SCQE on panel data) ---
+      the discipline in action.
+\end{itemize}
+\end{frame}
+
+% =====================================================================
+\section{The cost}        % ARC 8 (~2 min) — ONE sharp beat, then step off.
+
+\begin{frame}[plain]
+\centering\Large
+The omission error has a body count too.\\[.6em]
+\normalsize In social science it just doesn't leave a body to point to.
+\end{frame}
+
+% =====================================================================
+\section{The call}        % ARC 9 (~5 min)
+
+\begin{frame}{Norms to pin above a desk}
+\small
+\begin{enumerate}\makebiggaps
+\item State the untestable assumption \emph{before} the estimate, not in the appendix.
+\item Report how wrong you'd have to be, to be wrong.
+\item Never let a tight interval stand in for a strong assumption.
+\item A range you believe beats a point you don't.
+\item Do not discard defensible evidence for want of a trial.
+\item Reward the honest ``we can't tell yet'' over the confident wrong answer.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{What ``rigor'' should mean}
+\centering\large
+Not the \emph{tightest} interval.\\[.4em]
+The \emph{truest} one.
+\end{frame}
+
+\begin{frame}[plain]
+\centering\large
+% Flips the SICSS title "Causality you can believe in?"
+Causality you can believe in isn't the causality that sounds most certain ---\\[.5em]
+it's the causality still standing after you've told the whole truth\\
+about what you assumed.
+\end{frame}
+
+\end{document}
