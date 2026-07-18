@@ -60,15 +60,15 @@
 % =====================================================================
 \section{The near-miss}   % ARC 1 — cold open (~3 min). GBM, unresolved.
 
-\begin{frame}{A treatment we are nearly sure worked}
-% TODO: tell it as a person, not a method. GBM. ~30 sec, human.
+\begin{frame}{A treatment that may well have worked}
+% Cold open. GBM / DCVax-L, un-named for now. ~30 sec, human.
 \begin{itemize}\makebiggaps
-\item A therapy. A patient population whose untreated course we know all too well.
-\item Strong reason to believe it helped.
-\item \textbf{Not credited} --- because it didn't come from an experiment.
+\item A brain cancer that kills almost everyone in about a year.
+\item A therapy whose patients kept turning up among the rare survivors.
+\item And a trial so broken that no one could agree whether to believe it.
 \end{itemize}
 \vfill
-\onslide<2->{\centering\emph{We'll come back to this. (Hold the name.)}}
+\onslide<2->{\centering\emph{So --- do we throw the evidence away? (Hold that.)}}
 \end{frame}
 
 \begin{frame}{The question under the near-miss}
@@ -363,17 +363,69 @@ still doing real work. Match the instrument to where $\YY$ sits.}
 % TODO FIGURE: raw gap vs. SCQE ATT band.
 \end{frame}
 
-\begin{frame}{GBM --- \textsc{rescue} \hfill\small(omission; the flagship)}
+% ==== GBM FLAGSHIP: DCVax-L. Real analysis from dcvax_memo_v2 (published rates). ====
+\begin{frame}{Glioblastoma --- the trial that fell apart \hfill\small(the flagship)}
 \small
-% RESOLVE THE COLD OPEN HERE.
+\textbf{DCVax-L}, a dendritic-cell vaccine (Liau et al., \emph{JAMA Oncology} 2023).
+GBM kills in $\sim$13--14 months on standard care. \emph{This is the cold open.}
 \begin{itemize}\makebiggaps
-\item The near-miss from the opening --- named at last.
-\item Not naive $\YY$ imputation: a compromised design, sample \emph{mostly but not
-      entirely} treated.
-\item Use the \emph{whole} study group $+$ SCQE to get $\YY$ for the treated and
-      recover the \textbf{ATT}. Safe inference under non-random selection.
+\item Started randomized --- then broke, three ways:
+      \begin{itemize}\small
+        \item primary endpoint (PFS) abandoned (pseudoprogression);
+        \item $\sim$90\% \emph{crossover} gutted the placebo arm;
+        \item a 640-patient \textbf{external control arm} bolted on post hoc.
+      \end{itemize}
+\item Critics: the outside controls may be sicker $\Rightarrow$ the ``benefit''
+      could be \emph{selection}. So the evidence gets dismissed.
 \end{itemize}
-% TODO FIGURE: study-group -> Y(0) for treated -> ATT band.
+\vfill
+\onslide<2->{\textbf{Don't dismiss it --- and don't rubber-stamp it. Ask what you'd
+have to believe.}}
+\end{frame}
+
+\begin{frame}{What would you have to believe? \hfill\small(one-cohort SCQE)}
+\scriptsize
+$\sim$90\% got the vaccine. Split the sample: \textbf{ever-treated} ($N{\approx}296$)
+vs a tiny \textbf{never-treated} group ($N{\approx}35$); published overall 60-mo
+survival is $13.0\%$. Now sweep the one thing we can't see --- the sample's
+\emph{counterfactual} 60-mo survival $\E[\YY]$, had it gone untreated --- and read the effect.
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lc}
+\hline
+Ever-treated 60-mo survival (implied) & $\approx 13.8\%$\\
+Never-treated 60-mo survival (assumed; $N{=}35$, barely matters) & $\approx 6\%$\\
+External controls (ECA), for reference only & $5.7\%$\\
+\hline
+\textbf{Significant positive} effect while $\E[\YY]\le$ & $\mathbf{9.4\%}$\\
+Point estimate still \textbf{positive} while $\E[\YY]\le$ & $13\%$\\
+\textbf{Not} significantly harmful unless $\E[\YY]\ge$ & $17\%$\\
+\hline
+\end{tabular}
+\end{center}
+{\tiny $\E[\YY]$ = assumed counterfactual (untreated) 60-mo survival of the trial sample.
+The within-trial split is not published; the result is \emph{insensitive} to the
+never-treated rate ($N{=}35$). Mock-up on published totals, Liau et al.\ 2023 --- the
+real split needs individual patient data.}
+\end{frame}
+
+\begin{frame}{The honest verdict}
+\small
+\begin{itemize}\makebiggaps
+\item \textbf{Significant benefit} holds as long as you believe the sample's untreated
+      60-mo survival would not have topped $\sim$\textbf{9.4\%} --- comfortably above
+      the $5.7\%$ the external controls showed (though, honestly, not by a huge margin).
+\item To call the effect \textbf{zero}, you must believe it would have reached
+      $\sim$\textbf{13\%} untreated --- essentially what the \emph{treated} achieved.
+      That is near-total selection bias.
+\item You can be confident it was \textbf{not significantly harmful} unless that
+      counterfactual tops $17\%$.
+\end{itemize}
+\vfill
+\onslide<2->{\textbf{That is not ``it worked.''} It is exactly \emph{how much you must
+believe} to say it didn't.}\\[.3em]
+\onslide<3->{\emph{Safe inference: refusing to dismiss, and refusing to overclaim ---
+on the same broken trial.}}
 \end{frame}
 
 % SOURCE: Wulf, Hazlett, et al. 2025, Observational Studies 11(3):301-330,

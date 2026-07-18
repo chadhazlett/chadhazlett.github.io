@@ -214,15 +214,62 @@ trend, report the ATT band. Guards against believing the indefensible.
 available; within a year <1% of treated vs 16% of untreated developed TB —
 exactly the kind of raw gap that needs the SCQE treatment.)*
 
-### (b) GBM — the RESCUE case (omission); the FLAGSHIP
-A treatment we're nearly sure worked, not credited because the inference sits
-outside an RCT and rests on reasoning about Y(0) where prognosis is clear.
-**The wrinkle that makes it the best demo:** it's not naive Y(0) imputation.
-There's a (compromised) trial design → study sample is *mostly but not entirely*
-treated. You *could* use only the treated arm and impute Y(0); instead, use the
-**whole study group + SCQE** to compute Y(0) for the treated and recover the
-**ATT**. So it showcases safe inference under **non-random selection into
-treatment**, not just the easy "Y(0) is known" case.
+### (b) GBM = DCVax-L — the FLAGSHIP (worked 2026-07-18; the CALIBRATION case)
+Named at last: **DCVax-L**, an autologous dendritic-cell vaccine for glioblastoma
+(Liau et al., *JAMA Oncology* 2023, NCT00045968; 331 pts, 94 centers). GBM median
+OS ~13–14 mo on standard care.
+
+**⚠️ WHICH MEMO — read this.** `~/Downloads/scqe_dcvax_memo_v2.docx` is **WRONG**
+(Chad's review: it "mistook the ECA to be the untreated group in the trial, which
+isn't the right setup at all" — IGNORE all its numbers, incl. any 48-mo / "fragile"
+story). The correct analysis is **`scqe_mockup_memo (3).docx`**: a *within-trial*
+treated vs never-treated split. The never-treated group is tiny (N≈35), so the split
+barely matters; mock up its 60-mo survival at ~6%, back out treated survival, run
+one-cohort SCQE sweeping the sample's assumed counterfactual survival E[Y(0)|sample].
+The ECA's 5.7% is only a *plausibility anchor*, not the comparison group.
+
+**Why it's the perfect compromised-trial demo.** Randomized, then broke three ways:
+(1) PFS abandoned (pseudoprogression); (2) ~90% *crossover* gutted the placebo arm;
+(3) a 640-patient **external control arm (ECA)** bolted on post hoc. Critics (Revue
+Neurologique 2023; Rahman/Ventz/Trippa, JAMA Onc correspondence 2023) say the ECA
+may be sicker → the benefit could be selection. So the evidence gets dismissed for
+want of a clean trial — a textbook *omission* setup.
+
+**One-cohort SCQE (correct setup, 60-month; from `scqe_mockup_memo (3)`).** Split the
+trial sample into ever-treated (N≈296) vs never-treated (N≈35); published overall
+60-mo survival 13.0%. Assume never-treated ≈6% ⇒ implied ever-treated ≈13.8%. Sweep
+the assumed counterfactual survival E[Y(0)|sample]; the data give the effect:
+
+| threshold on E[Y(0)\|sample] | value |
+|---|---|
+| External controls (ECA), reference only | 5.7% |
+| **Significant positive** effect while E[Y(0)] ≤ | **9.4%** |
+| Point estimate still **positive** while E[Y(0)] ≤ | 13% |
+| **Not** significantly harmful unless E[Y(0)] ≥ | 17% |
+
+**THE HONEST VERDICT — and why it beats a triumphant rescue:**
+- **Significant benefit** holds unless you believe the sample's untreated 60-mo
+  survival would have topped ~9.4% — above the ECA's 5.7%, though not by a huge margin.
+- **Zero effect** requires believing ~13% untreated ≈ what the *treated* achieved
+  (near-total selection bias — implausible).
+- **Not significantly harmful** unless the counterfactual tops 17%.
+- Result is *insensitive* to the fabricated never-treated rate (N=35 tiny) — driven
+  by the ~296 treated at ~14%. Real within-trial split still needs IPD.
+- So DCVax-L is **NOT "it worked."** It's *exactly how much you must believe to say
+  it didn't.* Safe inference refusing to dismiss AND refusing to overclaim, on one
+  broken trial — the creed in action.
+
+**⚠️ FRAMING DECISION for Chad (see cold open):** because the verdict is calibrated
+(not a slam-dunk), I softened the cold open from "a treatment we're nearly sure
+worked" → "a treatment that may well have worked … a trial too broken to say."
+Confirm you want the honest/calibrated framing (my rec) vs. a bolder rescue tease.
+
+**Caveats to disclose on-slide:** rates are published summary figures; the
+within-trial treated/untreated split is *not* reported (hence the mock-up split and
+the swept E[Y(0)|sample]); result is insensitive to the never-treated rate. The
+**MGMT-methylated subgroup** (OS 30.2 vs 21.3 mo, HR 0.74,
+p=0.03) is where the effect is largest but needs KM-curve digitization before SCQE
+can run — a possible "next slide" if Chad wants to strengthen it.
 
 ### (c) Three COVID treatments — the SCALE case (worked 2026-07-18; FULLY SOURCED)
 Source = **Wulf, Hazlett, et al. (2025), *Observational Studies* 11(3):301–330,
@@ -405,12 +452,14 @@ you assumed.*
   - *Done since:* SCQE notation reconciled to the paper/ps200c; COVID×3 built with
     real result figures; IV/DID-as-special-cases frame; δ-band + dimmer/switch +
     melanoma/pancreatic table drawn. Deck now 62 pages, compiles clean.
+  - *RESOLVED 2026-07-18:* **(item 1) GBM flagship** = DCVax-L, built as 3 frames
+    with the real threshold analysis (see §4b). **(item 5) cold open** = the DCVax
+    tease, softened to match the calibrated verdict. *Awaiting Chad's OK on the
+    honest-vs-bolder framing (see §4b ⚠).*
   - *STILL BLOCKED ON CHAD:*
-    - **(item 1) GBM flagship** — treatment/study, "compromised design," treated
-      share, recovered ATT, and whether it can be named publicly. The cold-open
-      near-miss (item 5) is downstream of this; both stay abstract until supplied.
     - **(item 4) TB figure numbers** — need the actual SCQE ATT band from Hazlett
       2020 (Stat. Med.) to draw the raw-gap-vs-band honestly; currently a TODO.
+    - **(optional) MGMT subgroup** — stronger DCVax result but needs KM digitization.
   - *Build note:* compile from `_keynote/` (so `\graphicspath{{figures/}}`
     resolves). Do NOT leave a stale copy of the `.tex` in the output dir — TeXLive
     will read it instead of the source (cost us a confusing stale-render once).
