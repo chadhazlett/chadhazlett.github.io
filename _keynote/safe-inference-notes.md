@@ -56,9 +56,9 @@ cost of omission, then back to the method
 **The deck is a complete, fully-sourced, compiling draft: `safe-inference-slides.tex`
 (70 pages).** Every ladder example is built from Chad's own papers/figures; only two
 items carry honest "illustrative/mock-up" labels (GBM within-trial split; the
-social-science candidate cases). Review PDFs live in `~/Downloads/`:
-`safe-inference-DRAFT.pdf` (clean) and `safe-inference-DRAFT-notes.pdf` (slides +
-speaker notes side-by-side).
+social-science candidate cases). Review PDFs live in `taiwan/safeinference/`
+(alongside the repo, outside git): `safe-inference-DRAFT.pdf` (clean) and
+`safe-inference-DRAFT-notes.pdf` (slides + speaker notes side-by-side).
 
 **Overnight session log (what I did while Chad slept):**
 - Added a `\note{}` speaker note to *every* frame (hidden in the normal build).
