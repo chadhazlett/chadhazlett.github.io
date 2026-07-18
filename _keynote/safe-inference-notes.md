@@ -204,15 +204,22 @@ what makes the class argument credible rather than triumphalist.
 Same engine (defensible δ → ATT band), three verdicts. This ordering shows the
 method doing *both* jobs, which defeats the "this is just skepticism" prior.
 
-### (a) TB / isoniazid preventive therapy — the RESTRAINT case (commission)
-Published SCQE application. IPT in HIV patients in Tanzania; treatment adopted
-non-randomly. **The naive comparison is dramatic and misleading** — much of the
-therapy went to *low-risk* patients, so a raw treated-vs-untreated gap
-overstates the effect. SCQE reframes it honestly: state the defensible baseline
-trend, report the ATT band. Guards against believing the indefensible.
-*(Public figures: ~26,715 HIV patients; ~25% received IPT after it became
-available; within a year <1% of treated vs 16% of untreated developed TB —
-exactly the kind of raw gap that needs the SCQE treatment.)*
+### (a) TB / isoniazid — the RESTRAINT case (worked 2026-07-18; FULLY SOURCED)
+Source = **Hazlett, Maokola & Wulf (2020), *Statistics in Medicine*** (the founding
+SCQE paper). IPT for 26,715 HIV patients, Tanzania; adopted non-randomly. Real
+headline numbers (from the abstract):
+- After IPT arrived: **16% of untreated developed TB within a year vs 0.5% of
+  treated** ⇒ naive **15.5pp** lower risk (p ≪ 0.001). **Covariate adjustment leaves
+  it effectively unchanged** — i.e., the *regression tell* in the wild.
+- **SCQE:** assume baseline trend ≈ 0 (TB incidence stable absent treatment) ⇒ effect
+  is **small and NOT significant**. To argue IPT helped you must believe non-treatment
+  incidence would have **risen ≥ 0.7pp/year** — "plausible but far from certain."
+- So the dramatic 15.5pp gap is largely selection (IPT went to low-risk patients);
+  the treated's own untreated risk was far below 16%. SCQE reins an indefensible
+  number back to honest uncertainty. **The commission mirror of GBM's rescue.**
+- Figures vendored: `IPT_5.jpg` (Chad's SCQE concept diagram for TB — pre 13%,
+  untreated-post 16%, imputed treated Y(0) ~4%, treated observed ~1%) and
+  `tb_dual_brackets.pdf` (ATT vs baseline-trend band, expert-informed region).
 
 ### (b) GBM = DCVax-L — the FLAGSHIP (worked 2026-07-18; the CALIBRATION case)
 Named at last: **DCVax-L**, an autologous dendritic-cell vaccine for glioblastoma
@@ -456,10 +463,13 @@ you assumed.*
     with the real threshold analysis (see §4b). **(item 5) cold open** = the DCVax
     tease, softened to match the calibrated verdict. *Awaiting Chad's OK on the
     honest-vs-bolder framing (see §4b ⚠).*
-  - *STILL BLOCKED ON CHAD:*
-    - **(item 4) TB figure numbers** — need the actual SCQE ATT band from Hazlett
-      2020 (Stat. Med.) to draw the raw-gap-vs-band honestly; currently a TODO.
+  - *RESOLVED 2026-07-18:* **(item 4) TB** built with real numbers (16% vs 0.5%;
+    15.5pp naive; SCQE needs ≥0.7pp/yr rising baseline for a benefit claim) and
+    Chad's own `IPT_5.jpg` figure. See §4a.
+  - *STILL OPEN (nice-to-have, not blocking):*
     - **(optional) MGMT subgroup** — stronger DCVax result but needs KM digitization.
+    - Every core example is now sourced & built. Next real work = review pass +
+      prose polish on the non-methods frames (villain, creed, call).
   - *Build note:* compile from `_keynote/` (so `\graphicspath{{figures/}}`
     resolves). Do NOT leave a stale copy of the `.tex` in the output dir — TeXLive
     will read it instead of the source (cost us a confusing stale-render once).

@@ -352,15 +352,41 @@ still doing real work. Match the instrument to where $\YY$ sits.}
 % =====================================================================
 \section{The ladder}      % ARC 6 (~14 min) — same engine, escalating, both verdicts
 
+% SOURCE: Hazlett, Maokola & Wulf 2020, Statistics in Medicine. Figure IPT_5 is Chad's own.
 \begin{frame}{TB / isoniazid --- \textsc{restraint} \hfill\small(commission)}
 \small
+Isoniazid preventive therapy (IPT), 26{,}715 HIV patients, Tanzania.
+\begin{columns}[T]
+\begin{column}{0.44\textwidth}
 \begin{itemize}\makebiggaps
-\item Published SCQE application (Statistics in Medicine, 2020).
-\item Naive treated-vs-untreated gap is \emph{dramatic and misleading} --- much
-      therapy went to \emph{low-risk} patients.
-\item SCQE: state the defensible baseline trend, report the ATT band. Rein it in.
+\item After IPT arrived: \textbf{16\%} of untreated developed TB vs \textbf{0.5\%}
+      of treated.
+\item Naive gap: \textbf{15.5pp} lower risk ($p\ll0.001$); covariate adjustment
+      barely moves it.
 \end{itemize}
-% TODO FIGURE: raw gap vs. SCQE ATT band.
+\end{column}
+\begin{column}{0.54\textwidth}
+\includegraphics[width=\linewidth]{IPT_5.jpg}
+\end{column}
+\end{columns}
+\vfill
+\onslide<2->{\footnotesize But IPT went disproportionately to \emph{low-risk} patients ---
+so the treated's own untreated risk sat far below the 16\% seen among the untreated
+(figure: imputed $\sim$4\%, not 16\%).}
+\end{frame}
+
+\begin{frame}{TB --- what SCQE reveals}
+\small
+\begin{itemize}\makebiggaps
+\item Assume the baseline trend $\approx 0$ (TB incidence stable, absent treatment):
+      the effect is \textbf{small and \emph{not} statistically significant}.
+\item To claim IPT \emph{helped}, you must argue non-treatment TB incidence would
+      have \textbf{risen $\ge 0.7$pp per year} --- plausible, but far from certain.
+\end{itemize}
+\vfill
+\onslide<2->{\textbf{The 15.5pp ``effect'' was the regression tell} --- a tight interval
+that came out the same no matter the assumption. SCQE reins it back to an honest
+``we can't be sure it helped.''}
 \end{frame}
 
 % ==== GBM FLAGSHIP: DCVax-L. Real analysis from dcvax_memo_v2 (published rates). ====
