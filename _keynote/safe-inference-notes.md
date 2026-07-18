@@ -51,6 +51,42 @@ cost of omission, then back to the method
 
 ---
 
+## 0. STATE — read this first (updated 2026-07-18, overnight)
+
+**The deck is a complete, fully-sourced, compiling draft: `safe-inference-slides.tex`
+(70 pages).** Every ladder example is built from Chad's own papers/figures; only two
+items carry honest "illustrative/mock-up" labels (GBM within-trial split; the
+social-science candidate cases). Review PDFs live in `~/Downloads/`:
+`safe-inference-DRAFT.pdf` (clean) and `safe-inference-DRAFT-notes.pdf` (slides +
+speaker notes side-by-side).
+
+**Overnight session log (what I did while Chad slept):**
+- Added a `\note{}` speaker note to *every* frame (hidden in the normal build).
+- Fixed 3 bugs: stale header comment; a comment mis-crediting `dcvax_memo_v2`
+  (the WRONG memo); and a director's note ("This is the cold open.") that was
+  **leaking onto the GBM slide** — moved to a speaker note.
+- Tightened the δ through-line so "residual bias δ" (Case 2), "baseline trend δ"
+  (SCQE), and the swept `E[Y(0)]` (GBM) read as one move.
+- Did NOT touch substantive claims/numbers, did NOT push, did NOT do the MGMT work.
+
+**Rough timing tally vs the 45–60 min target** (spine comments in §5):
+~1.5 (bridge) + 3 (cold open) + 4 (two errors) + 7 (villain) + 3 (creed) + ~15
+(engine) + ~16 (ladder) + 4 (symmetry) + 2 (cost) + 5 (call) ≈ **60 min**. Sits at
+the *top* of the window. If trimming is wanted, the most compressible frames are the
+"Four ways at Y(0)" recap and one of the three COVID figure frames (dex could fold
+into remdesivir). Flagged for Chad, not acted on.
+
+**To build the rehearsal (notes) PDF:** copy the `.tex`, uncomment
+`\setbeameroption{show notes on second screen=right}` in the preamble, compile from
+`_keynote/` (so `figures/` resolves), output to a *clean* dir (never leave a stale
+copy of the `.tex` in the output dir — TeXLive reads it instead of the source).
+
+**Open for Chad on waking:** (1) review the framing/verdicts in the PDF; (2) decide
+whether to trim ~5 min; (3) optional MGMT-subgroup strengthening of GBM (needs KM
+digitization); (4) whether to push the branch.
+
+---
+
 ## 1. The concept
 
 **Safe inference** = say only what you can *defend*, and refuse to abandon what
