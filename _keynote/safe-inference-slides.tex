@@ -29,7 +29,12 @@
 % For the rehearsal build, uncomment the next line (or add it in a copy):
 %\setbeameroption{show notes on second screen=right}
 
+% ---- theme matched to day1/day2 lectures ----
+\setbeamertemplate{items}[ball]
+\setbeamertemplate{blocks}[rounded][shadow=true]
 \usetheme{Warsaw}
+\useoutertheme{infolines}   % slim top+bottom info bars (not Warsaw's nav tree)
+
 \definecolor{someblue}{rgb}{0,.1,0.8}
 \newcommand\makebiggaps{\addtolength{\itemsep}{.5\baselineskip}}
 \newcommand\YY{Y(0)}                    % counterfactual shorthand for the talk
@@ -41,6 +46,7 @@
 \title[Safe Inference]{Safe Inference}
 \subtitle{Say only what you can defend --- and refuse to abandon what you can}
 \author{Chad Hazlett}
+\institute[UCLA]{UCLA\\[1ex]\texttt{chazlett@ucla.edu}}
 \date{20 July 2026}
 
 \begin{document}
