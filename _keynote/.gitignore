@@ -1,0 +1,14 @@
+# LaTeX build artifacts (safe to regenerate by compiling safe-inference-slides.tex)
+*.aux
+*.log
+*.nav
+*.snm
+*.toc
+*.out
+*.vrb
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+# Compiled deck + any local notes build (rebuild from the .tex)
+safe-inference-slides.pdf
+_notesbuild.*
