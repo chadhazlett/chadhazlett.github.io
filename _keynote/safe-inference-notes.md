@@ -137,7 +137,26 @@ and Y(0)-imputation, worked at three levels of knowledge of Y(0):
   *(Reconcile notation with Hazlett 2020 Stat. Med. — Chad has canonical SCQE slides.)*
 
 These live as the "methods spine" inside the engine section of the deck
-(`safe-inference-slides.tex`). Sensitivity analysis, partial
+(`safe-inference-slides.tex`).
+
+**Canonical SCQE notation (from Wulf & Hazlett et al. 2025 / ps200c `11-scqe`;
+reconciled 2026-07-18 — supersedes my earlier reconstruction):**
+- Cohort `Z∈{0,1}` (0 = earlier/low-use, 1 = later/high-use), treatment `D`,
+  outcome `Y` (28-day mortality); `π₁ = P(D=1|Z=1)`.
+- Estimand: ATT in the later cohort, `E[Y(1)|Z=1,D=1] − E[Y(0)|Z=1,D=1]`.
+- Baseline trend `δ ≡ E[Y(0)|Z=1] − E[Y(0)|Z=0]` (shift in non-treatment outcome
+  between cohorts, *had the treatment change not occurred*).
+- No-use earlier cohort ⇒ `ATT(δ) = (ΔȲ − δ)/π₁`. General form = paper Eq. (1):
+  `ATT = E[Y|Z=1,D=1] − ( E[Y|Z=0] − E[Y|Z=1,D=0]·(1−π₁) + δ ) / π₁`.
+- Intuition (paper's own): 20%→15% mortality, 0%→50% treated, δ=0 ⇒ ATT = −10pp.
+- **IV = SCQE at δ=0** (time as a "broken instrument"; δ-adjusted Wald). **DID =
+  SCQE at δ = control group's observed change** (parallel trends is a point
+  assumption on δ). → killer "you already know special cases" frame for a room
+  fresh off IV and DID.
+- Two modes: *ex ante* (declare plausible δ range → ATT band) and *ex post* (find
+  the threshold δ needed for a conclusion; ask if that δ is
+  certainly/probably/possibly defensible). Paper argues *against* marginalizing
+  over a δ-distribution — that would undercut "safe." Sensitivity analysis, partial
 identification, and SCQE are all instances. Four ways to get at Y(0):
 
 - **Know it** — prognosis near-deterministic (e.g., uniformly fatal disease),
@@ -205,10 +224,22 @@ treated. You *could* use only the treated arm and impute Y(0); instead, use the
 **ATT**. So it showcases safe inference under **non-random selection into
 treatment**, not just the easy "Y(0) is known" case.
 
-### (c) Three COVID treatments — the SCALE case (omission, under time pressure)
-Informative claims about three treatments that would be impossible under the RCT
-heuristic — where *waiting for the trial was itself the costly choice*. Traces
-to worked dissertation analyses (real, not hypothetical).
+### (c) Three COVID treatments — the SCALE case (worked 2026-07-18; FULLY SOURCED)
+Source = **Wulf, Hazlett, et al. (2025), *Observational Studies* 11(3):301–330,
+"Safe inference outside of randomized trials"** (the talk title's lineage). Two
+hospital systems, early pandemic; SCQE applied to each therapy's sharp usage shift.
+Real result figures now vendored into `_keynote/figures/` and in the deck:
+- **Remdesivir → plausibly beneficial.** Over the expert-defensible δ range, ATT
+  sits below 0; significant harm nearly impossible. (`ATTbyDelta_regions.pdf`)
+- **Dexamethasone → plausibly beneficial.** Same reading. (`scqe_plot_dex_range.png`)
+- **Hydroxychloroquine → RESTRAINT.** In the plausible δ band, harmful-to-null; to
+  call it beneficial you must believe baseline mortality would have *fallen* ≳5pp
+  on its own — indefensible. (`scqe_plot_hcq_range.png`)
+- **Payoff:** all three later *matched the RCTs*. SCQE gave safe, partial guidance
+  months early without asserting "no confounding." SCALE = when waiting for the
+  trial is itself the costly choice, silence isn't safe — calibration is.
+This trio is self-contained: HCQ supplies the restraint verdict and rem/dex the
+rescue, so the COVID section alone demonstrates the whole symmetry.
 
 ### (d) The class — melanoma & pancreatic (worked 2026-07-18; the TWO-CONDITION lesson)
 No longer loose anecdotes. Researched, and together they *define the class
@@ -371,7 +402,18 @@ you assumed.*
     theses 3 & 4).
   - *Not yet compiled* (drafted, not build-verified). TODO figures flagged inline:
     dimmer-vs-switch, TB raw-gap-vs-band, GBM study-group→ATT.
-  - *Still to slot in:* Chad's canonical SCQE slides/figures; COVID×3 one-liners.
+  - *Done since:* SCQE notation reconciled to the paper/ps200c; COVID×3 built with
+    real result figures; IV/DID-as-special-cases frame; δ-band + dimmer/switch +
+    melanoma/pancreatic table drawn. Deck now 62 pages, compiles clean.
+  - *STILL BLOCKED ON CHAD:*
+    - **(item 1) GBM flagship** — treatment/study, "compromised design," treated
+      share, recovered ATT, and whether it can be named publicly. The cold-open
+      near-miss (item 5) is downstream of this; both stay abstract until supplied.
+    - **(item 4) TB figure numbers** — need the actual SCQE ATT band from Hazlett
+      2020 (Stat. Med.) to draw the raw-gap-vs-band honestly; currently a TODO.
+  - *Build note:* compile from `_keynote/` (so `\graphicspath{{figures/}}`
+    resolves). Do NOT leave a stale copy of the `.tex` in the output dir — TeXLive
+    will read it instead of the source (cost us a confusing stale-render once).
 
 ---
 
@@ -393,6 +435,13 @@ you assumed.*
   stability-controlled quasi-experiment on the prevention of tuberculosis.*
   Statistics in Medicine, 39(28), 4169–4186. DOI: 10.1002/sim.8717.
   Open version: https://escholarship.org/uc/item/5f84x9bm
+- **COVID×3 / SCALE source:** Wulf, D.A., Hazlett, C., Hill, B.L., Chiang, J.N.,
+  Goodman-Meza, D., Pasaniuc, B., Arah, O.A., Erlandson, K.M., Montague, B.T.
+  (2025). *Safe inference outside of randomized trials: Application of the
+  stability-controlled quasi-experiment to the effects of three COVID-19
+  therapies.* Observational Studies 11(3), 301–330. DOI: 10.1353/obs.2025.a973069.
+  Result figures + concept diagram vendored to `_keynote/figures/` from
+  `ps200c-2026/slides/11-scqe/SCQE_covid_pres_PCI/`.
 - Related earlier framing: Chad's 2018/2019 JCI piece (cited in lab discussion
   as the non-technical seed of these ideas).
 - **Existing social-science SCQE application** (cite as proof-of-use):

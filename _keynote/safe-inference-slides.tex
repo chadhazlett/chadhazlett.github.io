@@ -12,6 +12,7 @@
 
 \usepackage{xcolor}
 \usepackage{graphicx}
+\graphicspath{{figures/}}
 \usepackage{amsmath,amssymb,amsfonts,bm}
 \usepackage[english]{babel}
 \usepackage{times}
@@ -231,22 +232,57 @@ ignorance you can tolerate before you must say ``we can't tell.''}
 % Slope is $-1$ in Case 2; $-1/\Delta\pi$ in SCQE. Same figure, relabel the axis.
 \end{frame}
 
-\begin{frame}{SCQE --- model the \emph{trend}, not the confounder}
+% Notation now matches Wulf, Hazlett et al. 2025 (Observational Studies) / ps200c 11-scqe.
+\begin{frame}{SCQE --- the intuition (two cohorts)}
 \small
-Cohorts as treatment becomes available; $\pi_c=$ treated share in cohort $c$:
-\[ \bar Y_c \;=\; \underbrace{\bar Y(0)_c}_{\text{baseline}} + \ATT\cdot\pi_c
-   \;\;\Longrightarrow\;\;
-   \Delta\bar Y \;=\; \underbrace{\Delta\bar Y(0)}_{\equiv\,\delta\ (\text{untestable})}
-   + \ATT\cdot\Delta\pi . \]
-\[ \boxed{\;\ATT(\delta) \;=\; \dfrac{\Delta\bar Y - \delta}{\Delta\pi}\;} \]
+\begin{columns}[T]
+\begin{column}{0.54\textwidth}
+\begin{itemize}\makebiggaps
+\item Earlier cohort ($Z{=}0$): \textbf{0\%} treated, \textbf{20\%} die.
+\item Later cohort ($Z{=}1$): \textbf{50\%} treated, \textbf{15\%} die.
+\item \emph{If} nothing else moved the death rate ($\delta{=}0$), the whole $5$pp
+      drop is the treatment ---
+\item concentrated in the $50\%$ who got it: $\;\ATT = -10$pp.
+\end{itemize}
+\medskip
+The \emph{only} lever is $\delta$: how much baseline mortality would have shifted
+anyway, absent the treatment change.
+\end{column}
+\begin{column}{0.44\textwidth}
+\includegraphics[width=\linewidth]{SCQEconcept.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{SCQE --- the identity}
+\small
+Cohort $Z\in\{0,1\}$, treatment $D$, $\pi_1 = P(D{=}1\mid Z{=}1)$.
+The one untestable quantity is the \textbf{baseline trend}
+\[ \delta \;\equiv\; \E[Y(0)\mid Z{=}1] - \E[Y(0)\mid Z{=}0]. \]
+For \emph{any} assumed $\delta$, the data pin a unique effect (no-use earlier cohort):
+\[ \boxed{\;\ATT(\delta) \;=\; \frac{\Delta\bar Y - \delta}{\pi_1}\;}
+   \qquad{\footnotesize\text{(general form: Wulf \& Hazlett et al.\ 2025, Eq.\ 1)}} \]
 \begin{itemize}
-\item Ignorability (``no confounding'') is \emph{replaced} by a nameable baseline
-      trend $\delta$.
-\item Name a defensible interval for $\delta$ $\Rightarrow$ report the ATT band ---
+\item Ignorability (``no confounding'') is \emph{replaced} by a nameable, boundable $\delta$.
+\item Sweep $\delta$ over a defensible range $\Rightarrow$ the ATT band ---
       \emph{the same move as Case 2}.
 \end{itemize}
-% TODO: reconcile notation with Chad's SCQE slides (Hazlett 2020, Stat.\ Med.);
-% he can supply the canonical figures/derivation.
+\end{frame}
+
+\begin{frame}{You already know two special cases of this}
+\small
+The ``SCQE plot'' is $\ATT(\delta)$ --- a whole line. Two methods you just learned
+are single \emph{rows} of it:
+\begin{itemize}\makebiggaps
+\item \textbf{Instrumental variables} $=$ SCQE at $\delta = 0$ (time as a ``broken
+      instrument''; the $\delta$-adjusted Wald estimand). IV \emph{assumes} the
+      baseline trend is exactly zero.
+\item \textbf{Difference-in-differences} $=$ SCQE at $\delta = $ the control group's
+      observed change. Parallel trends \emph{is} a point assumption on $\delta$.
+\end{itemize}
+\vfill
+\onslide<2->{\textbf{Both pick one $\delta$ and hide it.} SCQE shows the whole line
+--- then asks which $\delta$ you can defend.}
 \end{frame}
 
 \begin{frame}{Four ways at $\YY$}
@@ -274,12 +310,24 @@ never called it that.}
 \end{frame}
 
 \begin{frame}{Graceful degradation --- a dimmer, not a switch}
-\begin{itemize}\makebiggaps
-\item RCT fundamentalism: RCT $\Rightarrow$ believe; else $\Rightarrow$ silence.
-\item As knowledge of $\YY$ weakens, the claim weakens \emph{smoothly} through a
-      zone of defensible ranges.
-\end{itemize}
-% TODO FIGURE: switch vs. dimmer schematic.
+\centering
+\begin{tikzpicture}[scale=0.95]
+  \draw[->] (0,0) -- (6.6,0) node[below right] {\footnotesize how well we pin $\YY$};
+  \draw[->] (0,0) -- (0,3.5) node[above] {\footnotesize strength of claim};
+  % RCT fundamentalism: flat silence, then a jump to full belief at "RCT"
+  \draw[very thick, red!70!black] (0,0.15) -- (4,0.15);
+  \draw[very thick, red!70!black, dashed] (4,0.15) -- (4,3);
+  \draw[very thick, red!70!black] (4,3) -- (6.2,3);
+  \node[red!70!black] at (2,0.5) {\footnotesize silence};
+  \node[red!70!black, align=center] at (5.2,3.35) {\footnotesize ``RCT!''};
+  % safe inference: smooth ramp
+  \draw[very thick, someblue] (0,0.15) .. controls (3.2,1.1) and (4.5,2.2) .. (6.2,3.05);
+  \node[someblue] at (2.7,2.1) {\footnotesize safe inference};
+\end{tikzpicture}
+\vfill
+{\footnotesize Fundamentalism: silence until a trial, then full belief --- a
+\emph{switch}. Safe inference: the claim strengthens \emph{smoothly} as $\YY$ gets
+better pinned down --- a \emph{dimmer}.}
 \end{frame}
 
 \begin{frame}{The deep point}
@@ -328,25 +376,77 @@ still doing real work. Match the instrument to where $\YY$ sits.}
 % TODO FIGURE: study-group -> Y(0) for treated -> ATT band.
 \end{frame}
 
-\begin{frame}{Three COVID treatments --- \textsc{scale} \hfill\small(omission, under time pressure)}
-\begin{itemize}\makebiggaps
-\item Three informative claims impossible under the RCT heuristic.
-\item Waiting for the trial was \emph{itself} the costly choice.
-\end{itemize}
-% TODO: one crisp line per treatment from the dissertation chapters (§7 open item).
-\end{frame}
-
-\begin{frame}{A class, not three anecdotes}
+% SOURCE: Wulf, Hazlett, et al. 2025, Observational Studies 11(3):301-330,
+% "Safe inference outside of randomized trials." Figures vendored in figures/.
+\begin{frame}{Three therapies, one method --- \emph{before} the trials}
 \small
+Two hospital systems, early pandemic. Usage of each therapy shifted sharply between
+cohorts. SCQE asks only: \emph{how much could COVID mortality have drifted between
+cohorts, had that shift not happened?} ($=\delta$)
 \begin{itemize}\makebiggaps
-\item \textbf{Melanoma} (vemurafenib): \emph{shares} the structure. Grim, near-fixed
-      $\YY$; huge signal. The field even argued the RCT was \emph{unethical}.
-\item \textbf{Pancreatic} (daraxonrasib): \emph{boundary case}. $\YY$ equally
-      recoverable, but the effect is incremental --- condition 2 \emph{fails}, so
-      the confirmatory RCT was warranted.
+\item \textbf{Remdesivir}, \textbf{dexamethasone}, \textbf{hydroxychloroquine}.
+\item No RCT results yet. Physicians deciding \emph{now}.
 \end{itemize}
 \vfill
-\onslide<2->{\centering\emph{The boundary is where the method proves it's honest.}}
+\onslide<2->{\centering\emph{Same $\delta$-band move. Three different verdicts.}}
+\end{frame}
+
+\begin{frame}{Remdesivir --- plausibly beneficial}
+\centering
+\includegraphics[height=0.72\textheight]{ATTbyDelta_regions.pdf}\\
+{\footnotesize Across the expert-defensible $\delta$ range, $\ATT$ sits \emph{below zero};
+significant \emph{harm} was nearly impossible to sustain.}
+\end{frame}
+
+\begin{frame}{Dexamethasone --- plausibly beneficial}
+\centering
+\includegraphics[height=0.72\textheight]{scqe_plot_dex_range.png}\\
+{\footnotesize Same reading: over the plausible $\delta$ band, a beneficial (at worst
+null) effect; significant harm would need an indefensible baseline trend.}
+\end{frame}
+
+\begin{frame}{Hydroxychloroquine --- the \textsc{restraint} verdict}
+\centering
+\includegraphics[height=0.70\textheight]{scqe_plot_hcq_range.png}\\
+{\footnotesize In the plausible $\delta$ band (shaded), the effect is harmful-to-null.
+To call HCQ \emph{beneficial} you must believe baseline mortality would have
+\emph{fallen} $\gtrsim 5$pp on its own --- indefensible.}
+\end{frame}
+
+\begin{frame}{The payoff}
+\begin{itemize}\makebiggaps
+\item Every verdict later \textbf{matched the RCTs} --- rem/dex help; HCQ doesn't.
+\item SCQE gave \emph{safe, partial} guidance months early, without ever asserting
+      ``no confounding.''
+\end{itemize}
+\vfill
+\onslide<2->{\textbf{\textsc{scale}:} when waiting for the trial is \emph{itself} the
+costly choice, silence isn't the safe option --- \emph{calibration} is.}
+\end{frame}
+
+\begin{frame}{A class --- and its boundary (the two conditions)}
+\scriptsize
+\begin{center}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{p{2.5cm}p{3.3cm}p{3.3cm}}
+\hline
+ & \textbf{Melanoma} (vemurafenib) & \textbf{Pancreatic} (daraxonrasib)\\
+\hline
+Untreated $\YY$ & median OS $\sim$6--9 mo; spontaneous regression $\sim$0.2\%
+   & median OS $\sim$3.5 mo\\
+\textbf{1. Recoverable $\YY$?} & \textcolor{someblue}{\textbf{Yes}}
+   & \textcolor{someblue}{\textbf{Yes}}\\
+Effect size & $\sim$50\% response vs $\sim$0\% baseline & gain in \emph{months}; ORR $\sim$30\%\\
+\textbf{2. Clears the band?} & \textcolor{someblue}{\textbf{Yes}} --- huge vs $\sim$0
+   & \textcolor{red!70!black}{\textbf{No}} --- inside selection noise\\
+\textbf{Verdict} & trial \emph{optional} (some called it unethical)
+   & trial \emph{warranted} (RASOLUTE-302)\\
+\hline
+\end{tabular}
+\end{center}
+\vfill
+\onslide<2->{\centering\normalsize\emph{The boundary is where the method proves it's
+honest --- not triumphalist.}}
 \end{frame}
 
 % =====================================================================
@@ -355,11 +455,13 @@ still doing real work. Match the instrument to where $\YY$ sits.}
 \begin{frame}{Same engine, opposite verdicts}
 \centering
 \begin{tabular}{ll}
-TB / melanoma-\emph{restraint} & \textsc{rein in} an over-claim\\[.4em]
-GBM / melanoma-\emph{rescue}   & \textsc{recover} a defensible one\\
+\textsc{restraint} --- rein in an over-claim & TB $\cdot$ HCQ $\cdot$ pancreatic\\[.5em]
+\textsc{rescue} --- recover a defensible one & GBM $\cdot$ melanoma $\cdot$ rem/dex\\
 \end{tabular}
 \vfill
-\onslide<2->{\textbf{This is calibration --- not skepticism, not boldness.}}
+\onslide<2->{\textbf{One $\delta$-band move. The verdict follows the evidence ---
+not the analyst's temperament.}}\\[.3em]
+\onslide<3->{\emph{This is calibration --- not skepticism, and not boldness.}}
 \end{frame}
 
 \begin{frame}{And it's not just medicine}
