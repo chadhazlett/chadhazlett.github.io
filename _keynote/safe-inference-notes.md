@@ -23,6 +23,12 @@ cost of omission, then back to the method
 >   it *back* to the social scientist's daily bind (the observational study they under- or
 >   over-claim from). **Open TODO:** find/develop a social-science-native example that has
 >   the same two-condition structure (recoverable Y(0), effect clears the band).
+> - **They just finished the machinery.** Per `../slides/custom/keynote_teaser.tex`,
+>   this keynote (**20 July 2026**) follows a 2-day course; the room will have
+>   potential outcomes, DAGs, ignorability, and the backdoor criterion *fresh*. Assume
+>   fluency with those — don't re-teach; build on them. The teaser already frames safe
+>   inference as "willing to say 'we don't know' when honesty demands it" — the talk
+>   should *pay that off*, then push past it to the omission half (silence is also a cost).
 
 > **Resume locally (from an open terminal):**
 > ```bash
@@ -221,6 +227,37 @@ This two-sided class is the §5 climax — it proves calibration, not skepticism
 > reviewer says 'but it's not an experiment' about an effect you can defend."
 > Sources for all figures live in the research memo (scratchpad) / §9.
 
+### (e) Social-science-native cases (scouted 2026-07-18) — the home-turf echo
+So the medical ladder isn't the *only* proof. These reproduce the TB↔GBM
+symmetry inside the room's own literatures, where an RCT is infeasible/unethical
+yet the field still demands one or goes silent.
+
+- **Proof-of-use (existing, published):** *pet ownership → wellbeing*, SCQE on
+  HILDA panel data via a 2020 Victoria rental-reform (renters elsewhere +
+  non-renters as trend benchmarks); finds *no* significant effect — i.e. SCQE
+  disciplining an over-claim. Ananyev, Botha, Lamberova et al. 2026 (§9). *Honesty
+  note: it's a rental-reform event straddling COVID, not a "COVID study" — cite as
+  an accepted SCQE application, don't over-gloss the COVID angle.*
+- **The RESCUE (omission) case — naloxone / harm-reduction access laws.**
+  Staggered state adoption; outcome = opioid-overdose mortality. Y(0) is a steep
+  but smooth, projectable epidemic trend (bracket from prior years + non-adopters).
+  **Condition 2 is favorable** — a genuinely effective law could bend mortality by
+  more than the band's width — and an RCT is ethically unthinkable. This is the
+  social-science GBM: defensible knowledge we'd otherwise discard for want of a trial.
+- **The RESTRAINT (commission / wide-band) cases — minimum wage & right-to-carry.**
+  Staggered legislative adoption; outcomes = low-wage employment / violent crime.
+  Y(0) trends are boundable (business cycle; the crime decline), but the disputed
+  effects are *small relative to baseline volatility* — **condition 2 often fails**.
+  These are the social-science *pancreatic*: same recoverable Y(0), but the band
+  straddles zero, so SCQE's verdict is honest humility, not a bold claim. Rhetorically
+  gold — they dramatize the discipline against over-claiming in debates everyone knows.
+
+**Why this matters for the arc:** naloxone (rescue) + min-wage/right-to-carry
+(restraint) give a *self-contained* social-science version of §5's symmetry slide.
+Suggested use: run the medical ladder for stakes, then land the symmetry on the
+home-turf pair so no one can say "that's just medicine." Still de-novo/illustrative
+— flag as "candidates, not worked analyses" unless we develop one.
+
 ---
 
 ## 5. The arc (manifesto shape) — TIMED for 45–60 min (~52 target)
@@ -297,15 +334,15 @@ you assumed.*
   two-sided; commission is home turf, omission is the provocative half.
 
 **Still open:**
-- **Social-science-native example.** All flagship cases are medical (borrowed
-  drama). Need ≥1 example from the room's own world with the two-condition
-  structure — recoverable Y(0) + effect clears the band. (Candidates to scout:
-  a policy change where the pre-trend / baseline is genuinely nameable-and-boundable
-  — SCQE-style — vs. one where it isn't, mirroring the pancreatic boundary.)
+- **Social-science-native example** → *scouted (§4e).* Have a proof-of-use (pets/
+  SCQE, published) + a rescue/restraint pair (naloxone vs. min-wage/right-to-carry).
+  Remaining call: leave them as *illustrative candidates*, or actually **work one**
+  (naloxone is the strongest rescue) into a real δ-band/ATT figure for the deck.
 - **The COVID×3 case** still needs a crisp one-slide statement of each (from the
   dissertation chapters) so "SCALE" isn't a gesture.
-- **Slide build.** Notes are now rich enough to start an actual deck. Decide
-  medium (Beamer / Keynote / reveal.js) before drafting.
+- **Slide build** → medium decided: **Beamer** (inherit `../slides/day1.tex`
+  preamble; teaser + reusable frames noted in §9). Timeline is tight — keynote is
+  **20 July 2026**. Ready to outline the deck against the timed §5 arc on your go.
 
 ---
 
@@ -329,6 +366,22 @@ you assumed.*
   Open version: https://escholarship.org/uc/item/5f84x9bm
 - Related earlier framing: Chad's 2018/2019 JCI piece (cited in lab discussion
   as the non-technical seed of these ideas).
+- **Existing social-science SCQE application** (cite as proof-of-use):
+  Ananyev, M., Botha, F., Lamberova, N., et al. (2026). *The Causal Effect of Pet
+  Ownership on Health and Well-being.* Applied Research in Quality of Life, 21,
+  781–795. DOI: 10.1007/s11482-026-10550-5.
+  https://link.springer.com/article/10.1007/s11482-026-10550-5
+  (SCQE on HILDA panel; 2020 Victoria rental-reform as the event. Straddles COVID
+  but not framed as a COVID study — cite carefully.)
+- Social-science candidate cases (scouted, illustrative — §4e): naloxone access
+  laws (rescue); minimum wage & right-to-carry (restraint / wide-band).
+
+**Slide production (Beamer — decided; user prefers it, familiar):**
+- Inherit preamble from `../slides/day1.tex`: `\documentclass[xcolor=dvipsnames]{beamer}`,
+  Warsaw theme, `helvet`, `times`, plus Chad's stats macros. `\graphicspath{{figures/}}`.
+- A teaser slide already exists: `../slides/custom/keynote_teaser.tex` (end of Day 2).
+- Keynote date: **20 July 2026.** Other reusable custom frames worth a look when
+  building: `motivating_cases.tex`, `theses.tex`.
 - Site talk pages already live in this repo: `SICSS2026/` ("Causality you can
   believe in?") and `ISSM2026/` (identification foundations).
 
