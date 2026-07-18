@@ -4,6 +4,18 @@
 **Framing chosen:** manifesto, for a *mixed* audience (methodologists + applied + general)
 **Branch:** `claude/safe-inference-keynote-6kb9jc`
 
+> **Resume locally (from an open terminal):**
+> ```bash
+> cd <path to>/chadhazlett.github.io      # your local clone
+> git fetch origin
+> git checkout claude/safe-inference-keynote-6kb9jc && git pull
+> claude                                    # launch Claude Code here
+> ```
+> First thing to tell the local session:
+> *"Read `_keynote/safe-inference-notes.md` — that's the state of my safe-inference
+> keynote; let's continue from the open decisions."* (A local session does not
+> remember the web chat; this file is the handoff.)
+
 > **Privacy note.** This repo is public. This file deliberately contains **only
 > non-sensitive intellectual content** — the talk's argument, structure, and
 > published facts. Private source material (email threads, unpublished data,
