@@ -9,6 +9,7 @@ resources:
   - ISSM2026_Day2_slides.pdf
   - ISSM2026_WS3_reading_dags.pdf
   - ISSM2026_WS4_which_x.pdf
+  - ISSM2026_Keynote_safe_inference.pdf
 ---
 
 **Chad Hazlett** · Academia Sinica ISSM 2026 · July 16–17
@@ -33,6 +34,7 @@ ideas with pencil-and-paper worksheets completed in class.
 |---|---|---|---|
 | **Day 1** <br> July 16 | Potential outcomes and ignorability | [Slides (PDF)](ISSM2026_Day1_slides.pdf){target="_blank"} | [WS1: Potential Outcomes (PDF)](ISSM2026_WS1_potential_outcomes.pdf){target="_blank"} <br> [WS2: Experiments & Ignorability (PDF)](ISSM2026_WS2_experiments_ignorability.pdf){target="_blank"} |
 | **Day 2** <br> July 17 | Causal graphs and what they reveal | [Slides (PDF)](ISSM2026_Day2_slides.pdf){target="_blank"} | [WS3: Reading DAGs (PDF)](ISSM2026_WS3_reading_dags.pdf){target="_blank"} <br> [WS4: Which X, and What Goes Wrong (PDF)](ISSM2026_WS4_which_x.pdf){target="_blank"} |
+| **Keynote** <br> July 20 | Towards safe inference | [Slides (PDF)](ISSM2026_Keynote_safe_inference.pdf){target="_blank"} | — |
 
 : {.striped tbl-colwidths="[14,34,22,30]"}
 
