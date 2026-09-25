@@ -4,6 +4,9 @@ project:
   resources:
     - CNAME
     - assets/
+    # unlisted: copied verbatim, never rendered, so it stays out of
+    # the navbar, sitemap.xml and search.json. Reachable by link only.
+    - talks/
 
 website:
   title: "Chad Hazlett"
